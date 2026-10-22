@@ -1,6 +1,6 @@
 {
-  "output": "./cloud-flight.html",
-  "html_sha256": "ea8d0df5fe8ad31fba050a117e0a69b53737d1ed89290acdb1937fb6e40d1c79",
+  "output": "cloud-flight.html",
+  "html_sha256": "d058bee319cec03a51b63c4e6d2eaa404dea2c899ec52be6a86dddfc0b40e590",
   "compact_characters": 493,
   "compact_ascii": true,
   "compact_sha256": "30f8ad4e5313a50f6c595d742a769d38d70c4f762fa91f75dc01399d2cf02309",
@@ -15,6 +15,7 @@
   "external_network_dependencies": [],
   "video_links_are_relative_sibling_files": true,
   "exact_original_glsl_embedding": true,
+  "source_line_endings": "LF; CRLF checkout newlines normalized without changing source text",
   "glsl_downloads": {
     "cinematic": {
       "filename": "cinematic-webgl2.glsl",
@@ -27,7 +28,7 @@
       "sha256": "8172ddac76108355b97b502e1002dee90d64d571200503989f5f7ddffbcb7f39"
     }
   },
-  "cinematic_webgl_output": "./src/cinematic-webgl2.glsl",
+  "cinematic_webgl_output": "src/cinematic-webgl2.glsl",
   "wrapper_excluded_from_compact_count": true,
   "browser_runtime_tested": false,
   "provenance": "New continuation built from recovered V16 source and the documented V17 design; not resumed original V17 frames.",

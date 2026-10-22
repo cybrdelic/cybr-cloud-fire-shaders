@@ -18,6 +18,10 @@ import re
 import time
 
 from render import moderngl, np, Image, ImageDraw, PREFIX, VERTEX
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
+from portable_gl import create_context
 
 BOUNDS = ((-9., -14., -9.), (9., 14., 9.))
 ALGORITHM_VERSION = 2
@@ -118,7 +122,7 @@ class CachedRenderer:
         self.config['grid'] = list(grid)
         self.config['storage_dtype'] = dtype
         self.progress = progress
-        self.ctx = moderngl.create_standalone_context(backend='egl', require=330)
+        self.ctx = create_context(require=330)
         self.vbo = self.ctx.buffer(np.array([-1,-1,3,-1,-1,3], dtype='f4').tobytes())
         self.fbo = self.ctx.simple_framebuffer((width,height), components=4, dtype='f4')
         self.volume = self.ctx.texture3d(grid, 2, dtype=dtype)

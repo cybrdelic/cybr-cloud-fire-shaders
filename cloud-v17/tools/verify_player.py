@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Check exact player embeddings and compile its runtime shaders with GLES 3.
+"""Check exact player embeddings and compile with native GLES or adapted desktop GL.
 
-Native EGL/GLES compilation is intentionally not reported as a browser test.
+The selected compiler is recorded; neither native path is a browser test.
 No frame is rendered by this command.
 """
 from __future__ import annotations
@@ -16,6 +16,10 @@ from pathlib import Path
 import re
 import subprocess
 import tempfile
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from portable_gl import create_context, desktop_identifiers
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -134,8 +138,37 @@ class GLES:
         self.bind("eglTerminate", U, [V])(self.display)
 
 
+class DesktopGL:
+    """Desktop GLSL adaptation, distinct from WebGL/GLES validation."""
+    kind = "desktop_glsl330_adapted"
+
+    def __init__(self):
+        self.context = create_context(require=330)
+
+    def getstring(self, key):
+        name = "GL_RENDERER" if key == 0x1F01 else "GL_VERSION"
+        return str(self.context.info[name]).encode()
+
+    def check(self, vertex, fragment):
+        def adapt(source):
+            source = re.sub(r"^#version[^\n]*", "#version 330", source)
+            return desktop_identifiers(re.sub(r"^\s*precision\s+\w+\s+\w+\s*;", "", source, flags=re.M))
+        try:
+            program = self.context.program(vertex_shader=adapt(vertex), fragment_shader=adapt(fragment))
+            program.release()
+            return {"passed": True, "linked": True,
+                    "adaptation": "ES version/precision and scalar noise3 identifier namespace; equations unchanged",
+                    "vertex_sha256": sha(adapt(vertex)), "fragment_sha256": sha(adapt(fragment))}
+        except Exception as error:
+            return {"passed": False, "linked": False, "log": str(error)}
+
+    def close(self):
+        self.context.release()
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--compiler", choices=["auto", "gles", "desktop"], default="auto")
     parser.add_argument("--player", type=Path, default=ROOT / "cloud-flight.html")
     parser.add_argument("--cinematic-webgl", type=Path, default=ROOT / "src/cinematic-webgl2.glsl")
     parser.add_argument("--output", type=Path, default=ROOT / "validation/player-verification.json")
@@ -166,18 +199,29 @@ def main():
         parsed = subprocess.run(["node", "--check", str(path)], capture_output=True, text=True)
         result["javascript_parse_passed"] = parsed.returncode == 0
         result["javascript_parse_log"] = parsed.stderr
-    compiler = GLES()
+    if args.compiler == "desktop" or (args.compiler == "auto" and sys.platform != "linux"):
+        compiler = DesktopGL()
+    else:
+        try:
+            compiler = GLES()
+        except (OSError, RuntimeError) as error:
+            if args.compiler == "gles":
+                raise
+            result["gles_unavailable"] = str(error)
+            compiler = DesktopGL()
+    result["compiler_kind"] = getattr(compiler, "kind", "native_gles3")
+    result["scope"] = "Exact embeddings and native shader compile/link; adapted desktop GLSL is not WebGL/GLES validation; no drawing"
     try:
         result["renderer"] = compiler.getstring(0x1F01).decode()
-        result["gles_version"] = compiler.getstring(0x1F02).decode()
+        result["gl_version"] = compiler.getstring(0x1F02).decode()
         for key, data in scenes.items():
-            original = (ROOT / "src" / data["filename"]).read_bytes().decode()
+            original = (ROOT / "src" / data["filename"]).read_bytes().decode().replace("\r\n", "\n")
             result["scenes"][key] = {"source_exact": original == data["source"],
                                      "source_sha256": sha(original),
                                      "runtime_sha256": sha(data["runtime"]),
-                                     "native_gles3": compiler.check(vertex, data["runtime"])}
+                                     "native_shader": compiler.check(vertex, data["runtime"])}
             if key == "cinematic":
-                standalone = args.cinematic_webgl.read_bytes().decode()
+                standalone = args.cinematic_webgl.read_bytes().decode().replace("\r\n", "\n")
                 result["scenes"][key]["standalone_webgl2_export_exact"] = standalone == data["runtime"]
                 result["scenes"][key]["standalone_webgl2_sha256"] = sha(standalone)
                 result["scenes"][key]["download_selects_runtime"] = data.get("download_runtime") is True and data.get("download_filename") == "cinematic-webgl2.glsl"
@@ -189,7 +233,7 @@ def main():
                             not result["external_script_dependencies"],
                             result["scenes"]["cinematic"]["standalone_webgl2_export_exact"],
                             result["scenes"]["cinematic"]["download_selects_runtime"],
-                            all(x["source_exact"] and x["native_gles3"]["passed"] for x in result["scenes"].values())))
+                            all(x["source_exact"] and x["native_shader"]["passed"] for x in result["scenes"].values())))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps(result, indent=2))

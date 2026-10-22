@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build an offline, dependency-free WebGL2 player from the delivered sources.
 
-The original GLSL strings are embedded byte-for-byte. The runtime copy gets
+The original GLSL strings are embedded with canonical LF newlines. The runtime copy gets
 an ES 3.00 preamble where needed; that adaptation is recorded in the manifest.
 The cinematic download is that complete runtime, also written to a GLSL file.
 This wrapper is not part of the compact FragCoord character count.
@@ -22,8 +22,9 @@ def digest(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
-def read_exact(path: Path) -> str:
-    return path.read_bytes().decode("utf-8")
+def read_source(path: Path) -> str:
+    """Git may check text out as CRLF on Windows; keep generated payloads portable."""
+    return path.read_bytes().decode("utf-8").replace("\r\n", "\n")
 
 
 def fragment_for_webgl(source: str) -> str:
@@ -104,7 +105,7 @@ function sync(){playButton.textContent=playing?'Pause':'Play';scrub.value=String
 function resize(){const box=canvas.getBoundingClientRect();const cap=qualityPicker.value==='auto'?autoCap:Number(qualityPicker.value);const width=Math.max(2,Math.round(Math.min(cap,Math.max(2,box.width)*Math.min(devicePixelRatio||1,2))/2)*2);const height=Math.max(2,Math.round(width*9/16));if(canvas.width!==width||canvas.height!==height){canvas.width=width;canvas.height=height;dirty=true;}}
 function schedule(){if(!raf&&!lost&&!failed&&!document.hidden)raf=requestAnimationFrame(tick);}
 function setUniforms(t,dt){for(const [name,u] of Object.entries(active.uniforms)){if(name==='u_resolution'||name==='iResolution'){if(u.type===gl.FLOAT_VEC3)gl.uniform3f(u.location,canvas.width,canvas.height,1);else gl.uniform2f(u.location,canvas.width,canvas.height);}else if(name==='u_time'||name==='iTime')gl.uniform1f(u.location,t);else if(name==='u_time_delta'||name==='iTimeDelta')gl.uniform1f(u.location,dt);else if(name==='u_frame'||name==='iFrame')gl.uniform1i(u.location,frame);}}
-function completePending(now){if(!pending)return true;const result=gl.clientWaitSync(pending,0,0);if(result===gl.WAIT_FAILED){gl.deleteSync(pending);pending=null;error('The browser could not complete a graphics frame. Try a lower preview resolution or use the rendered video.','WebGL synchronization returned WAIT_FAILED.');return false;}if(result!==gl.ALREADY_SIGNALED&&result!==gl.CONDITION_SATISFIED)return false;gl.deleteSync(pending);pending=null;displayedTime=submittedTime;const elapsed=now-submissionStart;emaFrameMs=completedFrames?emaFrameMs*.8+elapsed*.2:elapsed;completedFrames++;if(qualityPicker.value==='auto'&&elapsed>180&&autoCap>160){autoCap=Math.max(160,Math.floor(autoCap*.75/16)*16);dirty=true;}return true;}
+function completePending(now){if(!pending)return true;if(now-submissionStart>10000){gl.deleteSync(pending);pending=null;error('This GPU did not finish a frame within 10 seconds. Restart or use the rendered video.','Frame time limit reached; no further frames will be submitted.');return false;}const result=gl.clientWaitSync(pending,0,0);if(result===gl.WAIT_FAILED){gl.deleteSync(pending);pending=null;error('The browser could not complete a graphics frame. Try a lower preview resolution or use the rendered video.','WebGL synchronization returned WAIT_FAILED.');return false;}if(result!==gl.ALREADY_SIGNALED&&result!==gl.CONDITION_SATISFIED)return false;gl.deleteSync(pending);pending=null;displayedTime=submittedTime;const elapsed=now-submissionStart;emaFrameMs=completedFrames?emaFrameMs*.8+elapsed*.2:elapsed;completedFrames++;if(qualityPicker.value==='auto'&&elapsed>180&&autoCap>160){autoCap=Math.max(160,Math.floor(autoCap*.75/16)*16);dirty=true;}return true;}
 function tick(now){
  raf=0;if(lost||failed||document.hidden)return;
  const ready=completePending(now);if(failed)return;
@@ -143,9 +144,9 @@ def safe_json(value: object) -> str:
 
 
 def build(args: argparse.Namespace) -> dict:
-    cinematic = read_exact(args.cinematic)
-    erosion = read_exact(args.erosion)
-    compact = read_exact(args.compact)
+    cinematic = read_source(args.cinematic)
+    erosion = read_source(args.erosion)
+    compact = read_source(args.compact)
     if not compact.isascii():
         raise ValueError("The compact FragCoord source must be ASCII.")
     if args.expected_compact_chars and len(compact) != args.expected_compact_chars:
@@ -171,7 +172,7 @@ def build(args: argparse.Namespace) -> dict:
     cinematic_webgl_output.parent.mkdir(parents=True, exist_ok=True)
     cinematic_webgl_output.write_bytes(scenes["cinematic"]["runtime"].encode("utf-8"))
     result = {
-        "output": str(args.output.resolve()),
+        "output": args.output.name,
         "html_sha256": digest(page),
         "compact_characters": len(compact),
         "compact_ascii": True,
@@ -184,11 +185,12 @@ def build(args: argparse.Namespace) -> dict:
         "external_network_dependencies": [],
         "video_links_are_relative_sibling_files": not args.no_video_links,
         "exact_original_glsl_embedding": True,
+        "source_line_endings": "LF; CRLF checkout newlines normalized without changing source text",
         "glsl_downloads": {
             "cinematic": {"filename": "cinematic-webgl2.glsl", "content": "exact compiled WebGL2 runtime", "sha256": digest(scenes["cinematic"]["runtime"])},
             "erosion": {"filename": "erosion-flight.glsl", "content": "exact expanded GLSL input", "sha256": digest(erosion)},
         },
-        "cinematic_webgl_output": str(cinematic_webgl_output.resolve()),
+        "cinematic_webgl_output": "src/" + cinematic_webgl_output.name,
         "wrapper_excluded_from_compact_count": True,
         "browser_runtime_tested": False,
         "provenance": "New continuation built from recovered V16 source and the documented V17 design; not resumed original V17 frames.",

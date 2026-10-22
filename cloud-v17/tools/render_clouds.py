@@ -21,10 +21,12 @@ import time
 
 os.environ.setdefault("LP_NUM_THREADS", "8")
 os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
-os.environ.setdefault("MESA_SHADER_CACHE_DIR", "/tmp/cloud-render-mesa-cache")
-if Path("/tmp/cloud-render-deps").exists():
-    sys.path.insert(0, "/tmp/cloud-render-deps")
+os.environ.setdefault("MESA_SHADER_CACHE_DIR", str(__import__("tempfile").gettempdir() + "/cloud-render-mesa-cache"))
 import moderngl
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[2]))
+from portable_gl import create_context, desktop_identifiers
 import numpy as np
 from PIL import Image, ImageDraw
 from scipy.ndimage import maximum_filter
@@ -85,7 +87,7 @@ class Engine:
     def __init__(self, cfg, source):
         self.cfg = cfg
         self.source = source
-        self.ctx = moderngl.create_standalone_context(backend="egl", require=330)
+        self.ctx = create_context(require=330)
         self.vbo = self.ctx.buffer(np.array([-1, -1, 3, -1, -1, 3], dtype="f4").tobytes())
         self.texture = None
         self.occupancy = None
@@ -94,7 +96,7 @@ class Engine:
         self.last_float = None
 
     def program(self, fragment):
-        p = self.ctx.program(vertex_shader=VERTEX, fragment_shader="#version 330\n" + fragment)
+        p = self.ctx.program(vertex_shader=VERTEX, fragment_shader="#version 330\n" + desktop_identifiers(fragment))
         return p, self.ctx.vertex_array(p, [(self.vbo, "2f", "position")])
 
     def tex3(self, grid, channels=2, data=None, nearest=False):
@@ -292,6 +294,7 @@ void main(){{
             self.texture.use(0)
             self.occupancy.use(1)
         self.runtime_hash = digest(shader.encode())
+        self.compiled_runtime_hash = digest(("#version 330\n" + desktop_identifiers(shader)).encode())
         self.direct = direct
 
     def draw(self, seconds):
@@ -310,6 +313,8 @@ void main(){{
                       mean_rgb=value[..., :3].mean(axis=(0, 1)).tolist(),
                       pixel_sha256=digest(rgb.tobytes()), source_sha256=self.cfg["source_sha256"],
                       runtime_sha256=self.runtime_hash, cache_sha256=self.cache_hash,
+                      compiled_runtime_sha256=self.compiled_runtime_hash,
+                      desktop_adaptation="scalar noise3 identifier namespace when declared; equations unchanged",
                       step=self.step, direct=self.direct)
         return Image.fromarray(rgb), record
 

@@ -5,6 +5,10 @@ os.environ.setdefault('LP_NUM_THREADS','8')
 os.environ.setdefault('MESA_SHADER_CACHE_DIR','/tmp/cloud-render-mesa-cache')
 sys.path.insert(0,'/tmp/cloud-render-deps')
 import moderngl
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[2]))
+from portable_gl import create_context
 import numpy as np
 
 root=Path(__file__).resolve().parent
@@ -36,7 +40,7 @@ void main() {
 }
 '''
 vertex='#version 330\nin vec2 position;void main(){gl_Position=vec4(position,0,1);}'
-ctx=moderngl.create_standalone_context(backend='egl',require=330)
+ctx=create_context(require=330)
 vbo=ctx.buffer(np.array([-1,-1,3,-1,-1,3],dtype='f4').tobytes())
 fbo=ctx.simple_framebuffer((32,18),components=4,dtype='f4');fbo.use()
 programs=[]

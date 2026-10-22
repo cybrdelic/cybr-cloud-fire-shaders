@@ -1,5 +1,7 @@
 # CYBR Cloud & Fire Studies
 
+Windows, macOS and Linux setup, native graphics requirements, compiler discovery and bounded validation: [Portability guide](PORTABILITY.md).
+
 Procedural cloud shaders, a standalone WebGL2 viewer, offline cloud-rendering tools, and an earlier reactive pressure-fireball study.
 
 ![Cinematic cloud flight](media/cinematic-cloud.png)

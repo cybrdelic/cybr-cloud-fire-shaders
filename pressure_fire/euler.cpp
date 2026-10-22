@@ -14,7 +14,11 @@
 #include <limits>
 #include <string>
 #include <vector>
+#ifdef _OPENMP
 #include <omp.h>
+#else
+inline void omp_set_num_threads(int) {}
+#endif
 
 using Cell = std::array<float,8>;
 using Totals = std::array<double,8>;

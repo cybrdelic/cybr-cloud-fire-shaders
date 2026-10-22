@@ -9,3 +9,6 @@ cloud-v17/direct-reference/
 pressure_fire/checkpoints/
 pressure_fire/production_oil96/
 pressure_fire/euler
+pressure_fire/euler.exe
+test-results/
+.build/

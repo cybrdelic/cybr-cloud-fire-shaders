@@ -14,10 +14,8 @@ def run(initial, output, end=.5, output_dt=.125, threads=8, extra=(), convert=Tr
     _, meta = fields.load(initial)
     nx, ny, nz = meta["dimensions_xyz"]
     spacing = [(b[1]-b[0])/n for b, n in zip(meta["bounds"], [nx,ny,nz])]
-    exe = ROOT / "euler"
-    src = ROOT / "euler.cpp"
-    if not exe.exists() or exe.stat().st_mtime < src.stat().st_mtime:
-        subprocess.run(["g++", "-O3", "-std=c++17", "-fopenmp", str(src), "-o", str(exe)], check=True)
+    from build_native import build
+    exe = build()
     param_flags={"gamma":"--gamma", "cfl":"--cfl", "buoyancy":"--gravity",
                  "cooling_time":"--cooling", "reaction_rate":"--rate", "heat_release":"--heat",
                  "ignition_temperature":"--ignition", "fully_active_temperature":"--active",
