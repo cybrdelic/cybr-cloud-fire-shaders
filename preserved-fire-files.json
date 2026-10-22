@@ -1,0 +1,207 @@
+{
+  "scope": "Publication copy of the earlier fire-file preservation record. Numerical source is unchanged; one provenance path has been normalized.",
+  "all_unchanged": false,
+  "file_count": 33,
+  "files": [
+    {
+      "path": "pressure-fireball-fragcoord.txt",
+      "sha256": "794e9fe814f3fe5e9582e24d671741f78657702b0b8a0cfdb6a27b6455675985",
+      "size_bytes": 11363,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/README.md",
+      "sha256": "8d82e55f3672accc5f306eaeb9bd3c4c7bba31970c5b2bdaf940400a9ec71c02",
+      "size_bytes": 11106,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/analyze.py",
+      "sha256": "f7f16e9ee511c259a48cf2aab07309065c919ad572695b8f16020918421e9586",
+      "size_bytes": 2116,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/audit_production.py",
+      "sha256": "c533d56a5073c2a353abb3253c42b79a6c6caa0114e98aef9d824e7892e8138a",
+      "size_bytes": 2415,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/euler.cpp",
+      "sha256": "52939ee3a173ab199cfdac037b4ad06c824b65afc04a36eeff669c4a141d2be4",
+      "size_bytes": 20273,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/fields.py",
+      "sha256": "1359db826958ec3b1d990151620677924f02eb720af6dcd84047b7c15a35ae99",
+      "size_bytes": 5480,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/production_audit.json",
+      "sha256": "a00d71e9454b56253c425039e8d7dfdc272432d8df0e6a00763e8d817ab21638",
+      "size_bytes": 30268,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/production_manifest.json",
+      "sha256": "5543d551cb3503ab22a6c2f3e03d223aaf9e334cc01072414af1bf196be4873f",
+      "size_bytes": 1048,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/provenance.json",
+      "sha256": "90b59b28355f6cd7c2599704c962580c5ce48c5a462a378a3556a06e1ac58d0a",
+      "size_bytes": 1900,
+      "unchanged": false,
+      "original_archive_sha256": "60d84b56f30afe3012b51d25a31cf737c10f31faa9ec5f7416b5669ccd5d2168",
+      "change": "Historical machine-specific execution path normalized to project-relative path."
+    },
+    {
+      "path": "pressure_fire/run.py",
+      "sha256": "8f3bc10152209261537b38e8a3b5821693f7f6fd581a497471bfe8f0d972960a",
+      "size_bytes": 3868,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/validate.py",
+      "sha256": "ca768c067b59a130e19cfefc6852517f11e2c0a989a30267a2c312ba0db969f4",
+      "size_bytes": 3501,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_fire/validation/hot/checks.json",
+      "sha256": "b319e311e8ba0681971e89f41d066f8ae361bb67286ae1e7282db9802a37b5c3",
+      "size_bytes": 875,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/build_player.py",
+      "sha256": "7887a637909accd889019b953e5e634557a3afab1ba6808bc87b26af9ea42e74",
+      "size_bytes": 7614,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/check_essl.py",
+      "sha256": "bdf79e617d83a6347b4c268bd686e0783438e1ed329c77a0dceba63ef612c376",
+      "size_bytes": 5017,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/check_gpu.py",
+      "sha256": "faa358d0dc839569b3f0d7785219e1c82e68a25c577a61a25d8cf0dfed1843c0",
+      "size_bytes": 3312,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/check_gpu_full.py",
+      "sha256": "2ae19cac1b605c503dbba3d8173c8170707c01212d1bc468af11dab67e3ba051",
+      "size_bytes": 6766,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/essl-compile.json",
+      "sha256": "7af33260cd58ef0e5c03bf9912f96c98ae205084b88e9e05d96528981a6caa81",
+      "size_bytes": 1285,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/fragcoord/common.glsl",
+      "sha256": "6a523abdf30e7e68035e62e59eb7c33b9e5dcf5c8bfe6833d29932116fccbbf8",
+      "size_bytes": 6383,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/fragcoord/main-validation.json",
+      "sha256": "7aa78339933a96f0c3beb3cb7320131ae9caad5cbdd2cff0b118c157b10b036c",
+      "size_bytes": 230,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/fragcoord/main.glsl",
+      "sha256": "a3bdbb0f8bc4564f2a1d985d9543a1966b86f46737c4b09f344e4be1b04131d2",
+      "size_bytes": 1371,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/fragcoord/shading-validation.json",
+      "sha256": "82385865283fc9d3badad4f4fd64332354f7a1f81194a95874c3633a8f82894b",
+      "size_bytes": 230,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/fragcoord/shading.glsl",
+      "sha256": "bd46e3f7b3477fa073a582d1cf9baf18c25ad7b1a4092585d60e4946eedb94ad",
+      "size_bytes": 678,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/fragcoord/simulation-validation.json",
+      "sha256": "3e26ec20bd23a726b72c603529254ec4ec8802e988146334844bc0ca26eae77e",
+      "size_bytes": 230,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/fragcoord/simulation.glsl",
+      "sha256": "da53e6d9de63bf5e47afd93b143690117ad2100e282d2fcb457479f1b70ca68c",
+      "size_bytes": 886,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/gpu-evolved-parity.json",
+      "sha256": "afaf8ecf00254b7436783355456e6191982177795732f49b11eab0c156f177eb",
+      "size_bytes": 814,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/gpu-final-parity.json",
+      "sha256": "0e806213526d49531e33388688a20f774ce20d7f1f726647034e9e51c31f50b0",
+      "size_bytes": 808,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/gpu-full-run.json",
+      "sha256": "61d838f3d406d4a4de655e8c737efa06e7805c573c835495a23c7381f9388345",
+      "size_bytes": 3414,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/gpu-oil-init.json",
+      "sha256": "31cf02357d63eecc042bcafc4f11fc7777c61460ec903f26036fc4c0ce204f4d",
+      "size_bytes": 692,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/pressure-fireball.html",
+      "sha256": "1d52395388ec4375e4184069149f098f2cf1f26b8e1a08dfa7e7c6d468cdd7d4",
+      "size_bytes": 16730,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/reference-video-manifest.json",
+      "sha256": "29f378befcc6692dc90a01109c0ef7f2cc88ea29b163f606b3fa82247792d25e",
+      "size_bytes": 179229,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/render_fields.py",
+      "sha256": "3d2fb21fbf7e021aba9ba70ce94cf96fe648a702449cab90ddb6b9f825433aff",
+      "size_bytes": 8421,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/render_sequence.py",
+      "sha256": "bb08f1e7d1e7dd214a1ae2d9e0db8c180b41d58cc02476965f7eb4a9a1530d99",
+      "size_bytes": 4742,
+      "unchanged": true
+    },
+    {
+      "path": "pressure_render/webgl-compatibility-fix.json",
+      "sha256": "86259e2dd9c4357ec2b97961b37583de061d7f2565be86f27659f7c49ee76c1a",
+      "size_bytes": 3346,
+      "unchanged": true
+    }
+  ]
+}

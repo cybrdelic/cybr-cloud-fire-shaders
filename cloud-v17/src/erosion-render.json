@@ -1,0 +1,13 @@
+{
+  "source": "erosion-flight-adapter.glsl",
+  "bounds": [[-50.0, -18.0, -1.0], [48.0, 18.0, 84.0]],
+  "extinction": 2.909090909090909,
+  "shadow_step": [-0.125, 0.1875, 0.0625],
+  "shadow_weight": 0.68,
+  "shadow_samples": 64,
+  "shadow_tau_cutoff": 24.0,
+  "view_step": 0.03125,
+  "max_distance": 62.5,
+  "transmittance_cutoff": 0.005,
+  "aerial_coefficient": 0.0
+}

@@ -1,0 +1,43 @@
+{
+  "label": "Erosion Flight \u2014 reconstructed V17 continuation",
+  "provenance": "Rebuilt from saved V16 source and V17 design records; original unfinished V17 source and frames were not saved.",
+  "characters": 493,
+  "ascii": true,
+  "compact_sha256": "30f8ad4e5313a50f6c595d742a769d38d70c4f762fa91f75dc01399d2cf02309",
+  "density_octaves": 6,
+  "shadow_octaves": 4,
+  "density_static": true,
+  "extinction": 2.909090909090909,
+  "sun_extinction": 2.9078023120071776,
+  "sun_direction": [
+    -0.5345224838248488,
+    0.8017837257372732,
+    0.2672612419124244
+  ],
+  "sun_probe_count": 64,
+  "sun_probe_distance": 14.966629547095765,
+  "sun_probe_step": 0.23385358667337133,
+  "view_step": 0.03125,
+  "view_steps": 2000,
+  "view_distance": 62.5,
+  "early_termination": 0.005,
+  "phase": "Compact linear directional response 0.8 - 0.4 * rd.x; not Henyey\u2013Greenstein.",
+  "camera": "(3+sin(t*0.2), 8+t/4, 1.6*t), fixed forward orientation, focal length 1.0 image heights.",
+  "world_bounds_recommended": [
+    -50,
+    -18,
+    -1,
+    48,
+    18,
+    84
+  ],
+  "limitations": [
+    "Static cloud density; movement is camera motion.",
+    "Ambient and aerial perspective are compact approximations.",
+    "No atmospheric transport or cloud-formation fluid solver.",
+    "Offline video should explicitly disclose cached density/light interpolation."
+  ],
+  "open_link": "https://fragcoord.xyz/#code=ZiBnKGYzIHAsZiBiKXtmIGQ9LjQ1LWFiKHAueSouMTIpLGE9MS40O3AqPS4xNTtAKGImJmQ-LTEuMiphKXtmIHY9MTtAKGksMjcpe2YzIHE9ZmxyKHApK2YzKGkzKGksaS8zLGkvOSklMyktMTt2PW1pbih2LGxlbihwLXEtZnJjKHNpbihxK3EueXp4K3Euenh5KjU3KSoxZTQpKSk7fWQrPWEqKC42NS12KTtwPXAqMi4xKzM7YSo9LjQ1O31yZXR1cm4gc21zKDAsLjEyLGQpO31mMyByPW5vcihmMyhDLnh5LVIvMixSLnkpKSxwPWYzKDMrc2luKFQqLjIpLDgrVC80LFQqMS42KS1yLzY0LGMsaz1mMyguMDUsLjE4LC40KS1yLnkvOTtmIHQ9MTtAKGksMmUzJiZ0Pi4wMDUpe3ArPXIvMzI7ZiBhPWV4cCgtZyhwLDYuKS8xMSkscztpZihhPDEpe0Aoaiw2NClzKz1nKHArZjMoLTIsMywxKSooZihqKSsuNSkvMTYsNC4pO2MrPXQqfmEqbWl4KGssZjMoNCw1LDYpLzMwKyguOC0uNCpyLngpKmV4cCgtcyouNjgpLGV4cCgtaS8xZTMpKTt0Kj1hO319Tz1mNChzcXQoYyt0KmspLDEpOw",
+  "open_link_round_trip": true,
+  "glsl_conversion": "Manually expanded GLSL cross-checked against the official FragCoord GOLF converter bundle; converted output passed native GLES3 compile/link. No live browser playback validation."
+}

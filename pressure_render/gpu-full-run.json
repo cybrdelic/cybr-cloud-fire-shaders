@@ -1,0 +1,123 @@
+{
+  "status": "complete",
+  "complete": true,
+  "passed_through_tested_horizon": true,
+  "requested_time": 4.775,
+  "tested_time": 4.775,
+  "dt": 0.0025,
+  "completed_steps": 1910,
+  "requested_steps": 1910,
+  "completed_rk_stages": 3820,
+  "grid_xyz": [
+    48,
+    56,
+    48
+  ],
+  "initialization": "actual GLSL initialization from cleared textures",
+  "checked_volume_states": 192,
+  "unique_checked_volume_states": 192,
+  "check_every_steps": 10,
+  "all_checked_states_finite_positive": true,
+  "minimum_density": 0.05750067159533501,
+  "minimum_pressure": 0.3987789314690155,
+  "minimum_species": -2.1566493702287783e-28,
+  "maximum_checked_acoustic_cfl": 0.337832866112769,
+  "maximum_speed": 24.73534831222243,
+  "phase_clock_checks_passed": true,
+  "seconds": 61.403973517997656,
+  "budget_seconds": 240.0,
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "software_threads": 6,
+  "shader_sha256": {
+    "common": "6a523abdf30e7e68035e62e59eb7c33b9e5dcf5c8bfe6833d29932116fccbbf8",
+    "simulation": "273129568d1d768630551405ef75c855adfc5f452b3975ff3983a7e8d740358a",
+    "shading": "bd46e3f7b3477fa073a582d1cf9baf18c25ad7b1a4092585d60e4946eedb94ad",
+    "main": "a3bdbb0f8bc4564f2a1d985d9543a1966b86f46737c4b09f344e4be1b04131d2"
+  },
+  "compiled": [
+    "common + simulation",
+    "common + shading",
+    "common + main"
+  ],
+  "milestones": [
+    {
+      "step": 0,
+      "time": 0.0,
+      "rho_min": 1.0,
+      "pressure_min": 1.0000001907348635,
+      "acoustic_cfl": 0.1288584908298554
+    },
+    {
+      "step": 200,
+      "time": 0.5,
+      "rho_min": 0.20543812215328217,
+      "pressure_min": 1.0000001907348406,
+      "acoustic_cfl": 0.12794652817988514
+    },
+    {
+      "step": 400,
+      "time": 1.0,
+      "rho_min": 0.13278308510780334,
+      "pressure_min": 1.0000001907348426,
+      "acoustic_cfl": 0.11625013819203385
+    },
+    {
+      "step": 600,
+      "time": 1.5,
+      "rho_min": 0.09834127128124237,
+      "pressure_min": 0.7477550138654361,
+      "acoustic_cfl": 0.11640746152284541
+    },
+    {
+      "step": 800,
+      "time": 2.0,
+      "rho_min": 0.09793409705162048,
+      "pressure_min": 0.5082870912337635,
+      "acoustic_cfl": 0.11673314490780662
+    },
+    {
+      "step": 1000,
+      "time": 2.5,
+      "rho_min": 0.09574251621961594,
+      "pressure_min": 0.41428784384696005,
+      "acoustic_cfl": 0.11681796098499056
+    },
+    {
+      "step": 1200,
+      "time": 3.0,
+      "rho_min": 0.09175250679254532,
+      "pressure_min": 0.4429079032231602,
+      "acoustic_cfl": 0.12218798333963041
+    },
+    {
+      "step": 1400,
+      "time": 3.5,
+      "rho_min": 0.07836341857910156,
+      "pressure_min": 0.4028932812375775,
+      "acoustic_cfl": 0.1421441017375793
+    },
+    {
+      "step": 1600,
+      "time": 4.0,
+      "rho_min": 0.07950510084629059,
+      "pressure_min": 0.4669246557583744,
+      "acoustic_cfl": 0.1987551651101979
+    },
+    {
+      "step": 1800,
+      "time": 4.5,
+      "rho_min": 0.06330603361129761,
+      "pressure_min": 0.4957112894940838,
+      "acoustic_cfl": 0.28042977636717015
+    },
+    {
+      "step": 1910,
+      "time": 4.775,
+      "rho_min": 0.05750067159533501,
+      "pressure_min": 0.4642581608325646,
+      "acoustic_cfl": 0.337832866112769
+    }
+  ],
+  "error": null,
+  "scope": "Unmodified shipped shader bodies under an OpenGL 3.3 test prefix; simulation runtime, not browser UI or visual-quality validation."
+}

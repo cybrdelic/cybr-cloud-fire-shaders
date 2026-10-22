@@ -1,0 +1,19 @@
+{
+  "pressure_on_kinetic_energy": 9.99027218444,
+  "pressure_off_kinetic_energy": 0,
+  "pressure_on_radial_momentum": 21.3480129225,
+  "pressure_off_radial_momentum": 0,
+  "pressure_on_material_rms_radius": 1.12541804958,
+  "pressure_off_material_rms_radius": 0.801783177096,
+  "pressure_off_meaning": "Causal ablation only: constant ambient momentum/energy flux pressure; chemistry/internal energy still evolve; gravity zero for both cases.",
+  "uniform_rest_max_abs_change": 0.0,
+  "on_mass_relative_budget_error": 1.0769926345418889e-08,
+  "on_total_energy_relative_budget_error": 5.150351970277732e-09,
+  "on_mass_absolute_budget_error": -2.17236420907e-05,
+  "on_total_energy_absolute_budget_error": -3.46791570962e-05,
+  "on_min_density": 0.205842450261,
+  "on_min_pressure": 0.999999976158,
+  "on_max_cfl": 0.349099277863,
+  "on_rejected_steps": 0,
+  "passed": true
+}

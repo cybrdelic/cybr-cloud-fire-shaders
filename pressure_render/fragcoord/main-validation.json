@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "glsl": {
+    "ok": true,
+    "error": null
+  },
+  "webgpu_wgsl": {
+    "ok": true,
+    "diagnostics": []
+  },
+  "validated_source_sha256": "82e8f975a153263650258efcf872e73ac7c1d7c9239111b74ef026a8224b8ea7"
+}

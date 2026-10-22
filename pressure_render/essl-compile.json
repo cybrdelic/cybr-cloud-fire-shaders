@@ -1,0 +1,41 @@
+{
+  "scope": "OpenGL ES 3 compiler/linker, not a browser or ANGLE WebGL2 validation",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+  "shading_language": "OpenGL ES GLSL ES 3.20",
+  "vertex": {
+    "compiled": true,
+    "log": "",
+    "sha256": "f1f9cd980fb2a724efa23a03e804dc2d418136a740026af9bab6189d0bd773d9"
+  },
+  "passes": {
+    "simulation": {
+      "compiled": true,
+      "log": "",
+      "sha256": "cd20440e37c13dc015dd92df2971b2e1d5ac000aae3974f865021be797f91146",
+      "linked": true,
+      "link_log": ""
+    },
+    "shading": {
+      "compiled": true,
+      "log": "",
+      "sha256": "e9657033215199089bcdc1e104ad270f060a0731e38d59149a261a11103efe13",
+      "linked": true,
+      "link_log": ""
+    },
+    "main": {
+      "compiled": true,
+      "log": "",
+      "sha256": "3d46040c92206fd99273d51cba30c686291cef9e553e8866587712fa683fce06",
+      "linked": true,
+      "link_log": ""
+    }
+  },
+  "struct_ternary_negative_control": {
+    "compiled": true,
+    "log": "",
+    "sha256": "e77acfbbae6a0a872101456ed518fc7b8677fce35d31c046a28b27bb7442004f"
+  },
+  "webgl_specific_gap": "ANGLE SH_WEBGL2_SPEC forbids struct ternaries even when native GLES3 accepts them.",
+  "all_passes_compiled_linked": true
+}

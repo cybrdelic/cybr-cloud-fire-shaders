@@ -1,0 +1,48 @@
+{
+  "output": "./cloud-flight.html",
+  "html_sha256": "ea8d0df5fe8ad31fba050a117e0a69b53737d1ed89290acdb1937fb6e40d1c79",
+  "compact_characters": 493,
+  "compact_ascii": true,
+  "compact_sha256": "30f8ad4e5313a50f6c595d742a769d38d70c4f762fa91f75dc01399d2cf02309",
+  "duration_seconds": 10,
+  "default_playback": "paused; a single initial frame is requested",
+  "preview_clock": "Advances only when ready to submit; at most 1/24 second per draw. Slow rendering stretches wall-clock playback.",
+  "auto_preview_start_width": {
+    "desktop": 320,
+    "coarse_pointer": 240
+  },
+  "auto_preview_minimum_width": 160,
+  "external_network_dependencies": [],
+  "video_links_are_relative_sibling_files": true,
+  "exact_original_glsl_embedding": true,
+  "glsl_downloads": {
+    "cinematic": {
+      "filename": "cinematic-webgl2.glsl",
+      "content": "exact compiled WebGL2 runtime",
+      "sha256": "508415351af3f4557c48736b708491746308ff408aa3505824b9bee41f1075e5"
+    },
+    "erosion": {
+      "filename": "erosion-flight.glsl",
+      "content": "exact expanded GLSL input",
+      "sha256": "8172ddac76108355b97b502e1002dee90d64d571200503989f5f7ddffbcb7f39"
+    }
+  },
+  "cinematic_webgl_output": "./src/cinematic-webgl2.glsl",
+  "wrapper_excluded_from_compact_count": true,
+  "browser_runtime_tested": false,
+  "provenance": "New continuation built from recovered V16 source and the documented V17 design; not resumed original V17 frames.",
+  "sources": {
+    "cinematic": {
+      "sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+      "webgl_sha256": "508415351af3f4557c48736b708491746308ff408aa3505824b9bee41f1075e5",
+      "characters": 6847,
+      "webgl_adaptation": "ES 3.00 version and precision; missing referenced standard uniforms/output supplied"
+    },
+    "erosion": {
+      "sha256": "8172ddac76108355b97b502e1002dee90d64d571200503989f5f7ddffbcb7f39",
+      "webgl_sha256": "ff2a450b6ae454bda2e1bd661fb0c1b002356c26d2381939af5f71b4ddd6feb3",
+      "characters": 1530,
+      "webgl_adaptation": "ES 3.00 version and precision; missing referenced standard uniforms/output supplied"
+    }
+  }
+}

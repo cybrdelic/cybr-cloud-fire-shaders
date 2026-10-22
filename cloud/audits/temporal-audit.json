@@ -1,0 +1,72 @@
+{
+  "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+  "golf_sha256": "4a410ebe5b0ef4b96358db61d08e00feb17288a1389e95dd5f76708e485ad2fa",
+  "characters": 497,
+  "width": 48,
+  "height": 27,
+  "fps": 24,
+  "sample_count": 35,
+  "time_start": 7.791666666666667,
+  "time_end": 9.208333333333334,
+  "all_finite": true,
+  "unique_float_frames": 35,
+  "scope": "Focused exact low-resolution integration checks near the cloud fringe; does not prove absence of all high-resolution spatial or temporal aliasing.",
+  "frame_delta": {
+    "mean": 0.005386685486882925,
+    "max_mean_abs_rgb": 0.013529579155147076,
+    "max_time": 8.416666666666666,
+    "max_pixel_abs_rgb": 0.11434772610664368,
+    "max_second_difference_mean_rgb": 0.008380862884223461,
+    "second_difference_time": 8.291666666666666
+  },
+  "tiny_time_probe": {
+    "times": [
+      8.349,
+      8.35,
+      8.351
+    ],
+    "delta_time": 0.001,
+    "mean_abs_rgb_per_step": [
+      0.00020181199943181127,
+      0.00020261332974769175
+    ],
+    "p99_abs_rgb_per_step": [
+      0.0007104963297024369,
+      0.0007101382361724973
+    ],
+    "max_abs_rgb_per_step": [
+      0.0012575387954711914,
+      0.0012905001640319824
+    ]
+  },
+  "primary_step_reference": {
+    "delivered_step": 0.03125,
+    "reference_step": 0.015625,
+    "ray_distance": 62.5,
+    "shadow_integration_unchanged": true,
+    "samples": [
+      {
+        "time": 8.125,
+        "mean_abs_rgb": 0.00010782157187350094,
+        "p99_abs_rgb": 0.00065364979673177,
+        "max_abs_rgb": 0.0014983713626861572,
+        "psnr_db": 75.45902521967943
+      },
+      {
+        "time": 8.416666666666666,
+        "mean_abs_rgb": 0.00027744233375415206,
+        "p99_abs_rgb": 0.001636392087675631,
+        "max_abs_rgb": 0.0020813941955566406,
+        "psnr_db": 67.87167697426301
+      },
+      {
+        "time": 8.708333333333334,
+        "mean_abs_rgb": 9.568202221998945e-05,
+        "p99_abs_rgb": 0.0005762833170592785,
+        "max_abs_rgb": 0.0015646964311599731,
+        "psnr_db": 76.04918660789649
+      }
+    ]
+  },
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "Native OpenGL ES 3 compiler/linker, not browser or ANGLE WebGL2 runtime validation",
+  "source": "cloud-v16/final/cloud-flight.glsl",
+  "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+  "shading_language": "OpenGL ES GLSL ES 3.20",
+  "exact_player_prefix": true,
+  "vertex": {
+    "compiled": true,
+    "log": "",
+    "sha256": "9661362d96fa39ce6a268d1185ec8c66110968d17e390b0a676d7a88897e3605"
+  },
+  "fragment": {
+    "compiled": true,
+    "log": "",
+    "sha256": "c54844c6e4e12f94acf31c04ccf89166e2995ee42e08b0bbe865a4c3dfb7aa87"
+  },
+  "linked": true,
+  "link_log": "",
+  "all_compiled_linked": true,
+  "browser_runtime_tested": false
+}

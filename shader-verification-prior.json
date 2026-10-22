@@ -1,0 +1,561 @@
+{
+  "revision": "14.1-webgl-fix",
+  "cloud": {
+    "characters": 494,
+    "utf8_bytes": 494,
+    "official_validation": {
+      "valid": true,
+      "glsl": {
+        "ok": true,
+        "error": null
+      },
+      "webgpu_wgsl": {
+        "ok": true,
+        "diagnostics": []
+      }
+    },
+    "video": {
+      "source": "cloud/cloud-flight-v14.glsl",
+      "source_sha256": "3d7e3f1be77e425e0fea467b45d73c54c31868184e353226c1a8f1f732bde91c",
+      "config_sha256": "6cd3a29812fcd3f0c843b40c59775efa3b1e8d00888a9ade07be0ad312052973",
+      "output": "cloud/cloud-flight-v14.mp4",
+      "frames_directory": "cloud/cloud-flight-v14-frames",
+      "source_uniform_time_present": true,
+      "frame_count": 192,
+      "fps": 24,
+      "duration": 8.0,
+      "source_start": 0,
+      "source_end": 7.958333333333333,
+      "time_scale": 1,
+      "width": 480,
+      "height": 270,
+      "all_finite": true,
+      "unique_frame_hashes": 192,
+      "reused_frames": 24,
+      "new_frames": 168,
+      "elapsed_seconds": 1076.1000015739992,
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "render_threads": 6,
+      "crf": 16,
+      "encoded_stream": {
+        "width": 480,
+        "height": 270,
+        "r_frame_rate": "24/1",
+        "duration": "8.000000",
+        "nb_read_frames": "192"
+      },
+      "contact_sheet": "cloud/cloud-flight-v14-contact.jpg"
+    },
+    "comparison_method": "Both decoded H.264 clips. Previous854x480 clip downsampled with Lanczos to480x270; revised clip rendered natively at480x270. Both encoded atCRF16. No temporal interpolation.",
+    "comparison_note": "Temporal differences include real motion. Shared edge masks reduce moving-edge contamination. These are stability indicators, not proof of zero flicker.",
+    "comparison": [
+      {
+        "name": "previous493",
+        "mean_second_difference": 0.015433803774220378,
+        "fraction_over_0.1": 0.01187012670565302,
+        "interior_mean_second_difference": 0.011385969057875244,
+        "interior_fraction_over_0.1": 0.004213776524961682,
+        "interior_fraction": 0.5928341861598441,
+        "max_absolute_global_frame_change": 0.08222728967666626,
+        "max_global_change_time": 5.208333333333333,
+        "max_absolute_global_second_difference": 0.07014524936676025,
+        "max_global_second_difference_time": 5.25,
+        "worst_local_second_difference": {
+          "frame": 126,
+          "source_time": 5.25,
+          "mean_second_difference": 0.07468409091234207,
+          "fraction_over_0.1": 0.2790663580246914,
+          "interior_mean_second_difference": 0.07673528045415878,
+          "interior_fraction_over_0.1": 0.30608189624583065,
+          "interior_fraction": 0.4349074074074074
+        },
+        "worst_interior_second_difference": {
+          "frame": 126,
+          "source_time": 5.25,
+          "mean_second_difference": 0.07468409091234207,
+          "fraction_over_0.1": 0.2790663580246914,
+          "interior_mean_second_difference": 0.07673528045415878,
+          "interior_fraction_over_0.1": 0.30608189624583065,
+          "interior_fraction": 0.4349074074074074
+        }
+      },
+      {
+        "name": "revised494",
+        "mean_second_difference": 0.008520369101805907,
+        "fraction_over_0.1": 0.0003825942170240416,
+        "interior_mean_second_difference": 0.006916461046785116,
+        "interior_fraction_over_0.1": 3.658539770750415e-05,
+        "interior_fraction": 0.5928341861598441,
+        "max_absolute_global_frame_change": 0.03507721424102783,
+        "max_global_change_time": 5.208333333333333,
+        "max_absolute_global_second_difference": 0.023406982421875,
+        "max_global_second_difference_time": 5.25,
+        "worst_local_second_difference": {
+          "frame": 126,
+          "source_time": 5.25,
+          "mean_second_difference": 0.025627855211496353,
+          "fraction_over_0.1": 0.005092592592592593,
+          "interior_mean_second_difference": 0.023773321881890297,
+          "interior_fraction_over_0.1": 0.0012951529344971968,
+          "interior_fraction": 0.4349074074074074
+        },
+        "worst_interior_second_difference": {
+          "frame": 126,
+          "source_time": 5.25,
+          "mean_second_difference": 0.025627855211496353,
+          "fraction_over_0.1": 0.005092592592592593,
+          "interior_mean_second_difference": 0.023773321881890297,
+          "interior_fraction_over_0.1": 0.0012951529344971968,
+          "interior_fraction": 0.4349074074074074
+        }
+      }
+    ]
+  },
+  "fire": {
+    "shader_characters": 9318,
+    "under_500_characters": false,
+    "stateful_pressure_and_advection": true,
+    "grid_reference": [
+      96,
+      112,
+      96
+    ],
+    "grid_default_interactive": [
+      48,
+      56,
+      48
+    ],
+    "production_audit": {
+      "passed": true,
+      "state_count": 192,
+      "unique_state_hashes": 192,
+      "time_first": 0,
+      "time_last": 4.775,
+      "interval": 0.025,
+      "finite_positive_states": true,
+      "max_mass_relative_budget_error": 4.3996971114946113e-07,
+      "max_total_energy_relative_budget_error": 1.8556740726291538e-07,
+      "final_steps": 1483
+    },
+    "causality": {
+      "pressure_on_kinetic_energy": 9.99027218444,
+      "pressure_off_kinetic_energy": 0,
+      "pressure_on_radial_momentum": 21.3480129225,
+      "pressure_off_radial_momentum": 0,
+      "pressure_on_material_rms_radius": 1.12541804958,
+      "pressure_off_material_rms_radius": 0.801783177096,
+      "pressure_off_meaning": "Causal ablation only: constant ambient momentum/energy flux pressure; chemistry/internal energy still evolve; gravity zero for both cases.",
+      "uniform_rest_max_abs_change": 0.0,
+      "on_mass_relative_budget_error": 1.0769926345418889e-08,
+      "on_total_energy_relative_budget_error": 5.150351970277732e-09,
+      "on_mass_absolute_budget_error": -2.17236420907e-05,
+      "on_total_energy_absolute_budget_error": -3.46791570962e-05,
+      "on_min_density": 0.205842450261,
+      "on_min_pressure": 0.999999976158,
+      "on_max_cfl": 0.349099277863,
+      "on_rejected_steps": 0,
+      "passed": true
+    },
+    "gpu_initial_parity": {
+      "compiled": [
+        "Common + simulation",
+        "Common + shading",
+        "Common + main"
+      ],
+      "grid": [
+        48,
+        56,
+        48,
+        8
+      ],
+      "seconds": 0.5598582950042328,
+      "stages": 4,
+      "finite": true,
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "channel_max_absolute_error": [
+        2.384185791015625e-07,
+        4.470348358154297e-08,
+        4.470348358154297e-08,
+        5.960464477539063e-08,
+        8.58306884765625e-06,
+        1.1920928955078125e-07,
+        4.470348358154297e-08,
+        3.725290298461914e-09
+      ],
+      "channel_rms_error": [
+        7.2558583731514926e-09,
+        3.2907981851960844e-10,
+        3.0476062464790906e-10,
+        3.3748816091097924e-10,
+        5.9493669730746593e-08,
+        9.59189782827102e-10,
+        1.0119133947421252e-09,
+        2.194484466120898e-11
+      ],
+      "max_absolute_error": 8.58306884765625e-06
+    },
+    "gpu_evolved_parity": {
+      "compiled": [
+        "Common + simulation",
+        "Common + shading",
+        "Common + main"
+      ],
+      "grid": [
+        48,
+        56,
+        48,
+        8
+      ],
+      "seconds": 0.12872848400729708,
+      "stages": 2,
+      "finite": true,
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "channel_max_absolute_error": [
+        1.1920928955078125e-07,
+        2.9802322387695312e-08,
+        1.1920928955078125e-07,
+        5.960464477539063e-08,
+        1.430511474609375e-06,
+        7.450580596923828e-09,
+        2.9802322387695312e-08,
+        2.3283064365386963e-10
+      ],
+      "channel_rms_error": [
+        3.386148488632523e-08,
+        3.185445189526291e-09,
+        3.499746376811499e-09,
+        3.4706492556915096e-09,
+        1.0766781536953459e-07,
+        1.4524975977403228e-10,
+        6.833392453492324e-09,
+        1.6561109364970678e-11
+      ],
+      "max_absolute_error": 1.430511474609375e-06
+    },
+    "official_validation": {
+      "simulation": {
+        "valid": true,
+        "glsl": {
+          "ok": true,
+          "error": null
+        },
+        "webgpu_wgsl": {
+          "ok": true,
+          "diagnostics": []
+        },
+        "validated_source_sha256": "735527d2af9f5605c931601e9a5a7301f4d15f5758592568cb4bcbe672fb762d"
+      },
+      "shading": {
+        "valid": true,
+        "glsl": {
+          "ok": true,
+          "error": null
+        },
+        "webgpu_wgsl": {
+          "ok": true,
+          "diagnostics": []
+        },
+        "validated_source_sha256": "546f9414ddbb04f897bb9f46404348419c857cd3227d4dadf3dccfb4fd81f788"
+      },
+      "main": {
+        "valid": true,
+        "glsl": {
+          "ok": true,
+          "error": null
+        },
+        "webgpu_wgsl": {
+          "ok": true,
+          "diagnostics": []
+        },
+        "validated_source_sha256": "82e8f975a153263650258efcf872e73ac7c1d7c9239111b74ef026a8224b8ea7"
+      }
+    },
+    "video": {
+      "config": {
+        "width": 1280,
+        "height": 720,
+        "count": 192,
+        "fps": 24,
+        "soot": 1600,
+        "emission": 0.6,
+        "eye": [
+          5,
+          4.2,
+          -10.5
+        ],
+        "target": [
+          0,
+          2.6,
+          0
+        ],
+        "source_dt": 0.025,
+        "interpolated_frames": 0,
+        "renderer_sha256": "3d2fb21fbf7e021aba9ba70ce94cf96fe648a702449cab90ddb6b9f825433aff"
+      },
+      "unique_frames": 192,
+      "unique_states": 192,
+      "actual_evolved_states": true,
+      "all_finite": true
+    },
+    "appearance": "Still soft and grid-banded; photorealism not solved.",
+    "model_limits": [
+      "Scaled units; no oil-chemistry calibration.",
+      "Explicit vorticity confinement is a subgrid visual closure.",
+      "CPU reference uses adaptive timesteps; interactive GPU uses fixed steps.",
+      "Lighting approximates emission and scattering."
+    ],
+    "gpu_full_run": {
+      "status": "complete",
+      "complete": true,
+      "passed_through_tested_horizon": true,
+      "requested_time": 4.775,
+      "tested_time": 4.775,
+      "dt": 0.0025,
+      "completed_steps": 1910,
+      "requested_steps": 1910,
+      "completed_rk_stages": 3820,
+      "grid_xyz": [
+        48,
+        56,
+        48
+      ],
+      "initialization": "actual GLSL initialization from cleared textures",
+      "checked_volume_states": 192,
+      "unique_checked_volume_states": 192,
+      "check_every_steps": 10,
+      "all_checked_states_finite_positive": true,
+      "minimum_density": 0.05750067159533501,
+      "minimum_pressure": 0.3987789314690155,
+      "minimum_species": -2.1566493702287783e-28,
+      "maximum_checked_acoustic_cfl": 0.337832866112769,
+      "maximum_speed": 24.73534831222243,
+      "phase_clock_checks_passed": true,
+      "seconds": 61.403973517997656,
+      "budget_seconds": 240.0,
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "software_threads": 6,
+      "shader_sha256": {
+        "common": "6a523abdf30e7e68035e62e59eb7c33b9e5dcf5c8bfe6833d29932116fccbbf8",
+        "simulation": "273129568d1d768630551405ef75c855adfc5f452b3975ff3983a7e8d740358a",
+        "shading": "bd46e3f7b3477fa073a582d1cf9baf18c25ad7b1a4092585d60e4946eedb94ad",
+        "main": "a3bdbb0f8bc4564f2a1d985d9543a1966b86f46737c4b09f344e4be1b04131d2"
+      },
+      "compiled": [
+        "common + simulation",
+        "common + shading",
+        "common + main"
+      ],
+      "milestones": [
+        {
+          "step": 0,
+          "time": 0.0,
+          "rho_min": 1.0,
+          "pressure_min": 1.0000001907348635,
+          "acoustic_cfl": 0.1288584908298554
+        },
+        {
+          "step": 200,
+          "time": 0.5,
+          "rho_min": 0.20543812215328217,
+          "pressure_min": 1.0000001907348406,
+          "acoustic_cfl": 0.12794652817988514
+        },
+        {
+          "step": 400,
+          "time": 1.0,
+          "rho_min": 0.13278308510780334,
+          "pressure_min": 1.0000001907348426,
+          "acoustic_cfl": 0.11625013819203385
+        },
+        {
+          "step": 600,
+          "time": 1.5,
+          "rho_min": 0.09834127128124237,
+          "pressure_min": 0.7477550138654361,
+          "acoustic_cfl": 0.11640746152284541
+        },
+        {
+          "step": 800,
+          "time": 2.0,
+          "rho_min": 0.09793409705162048,
+          "pressure_min": 0.5082870912337635,
+          "acoustic_cfl": 0.11673314490780662
+        },
+        {
+          "step": 1000,
+          "time": 2.5,
+          "rho_min": 0.09574251621961594,
+          "pressure_min": 0.41428784384696005,
+          "acoustic_cfl": 0.11681796098499056
+        },
+        {
+          "step": 1200,
+          "time": 3.0,
+          "rho_min": 0.09175250679254532,
+          "pressure_min": 0.4429079032231602,
+          "acoustic_cfl": 0.12218798333963041
+        },
+        {
+          "step": 1400,
+          "time": 3.5,
+          "rho_min": 0.07836341857910156,
+          "pressure_min": 0.4028932812375775,
+          "acoustic_cfl": 0.1421441017375793
+        },
+        {
+          "step": 1600,
+          "time": 4.0,
+          "rho_min": 0.07950510084629059,
+          "pressure_min": 0.4669246557583744,
+          "acoustic_cfl": 0.1987551651101979
+        },
+        {
+          "step": 1800,
+          "time": 4.5,
+          "rho_min": 0.06330603361129761,
+          "pressure_min": 0.4957112894940838,
+          "acoustic_cfl": 0.28042977636717015
+        },
+        {
+          "step": 1910,
+          "time": 4.775,
+          "rho_min": 0.05750067159533501,
+          "pressure_min": 0.4642581608325646,
+          "acoustic_cfl": 0.337832866112769
+        }
+      ],
+      "error": null,
+      "scope": "Unmodified shipped shader bodies under an OpenGL 3.3 test prefix; simulation runtime, not browser UI or visual-quality validation."
+    },
+    "historical_validation_scope": "Numerical trajectory and original official compiler records predate the equivalent conditional-to-if/else rewrite. See webgl_compatibility_fix for current compilation and its limits."
+  },
+  "encoded_streams": {
+    "cloud-flight.mp4": {
+      "width": 480,
+      "height": 270,
+      "r_frame_rate": "24/1",
+      "duration": "8.000000",
+      "nb_frames": "192"
+    },
+    "pressure-fireball.mp4": {
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "24/1",
+      "duration": "8.000000",
+      "nb_frames": "192"
+    }
+  },
+  "html": {
+    "javascript_syntax_check": "passed after compatibility fix",
+    "browser_runtime_tested": false,
+    "simulation_end": 4.775,
+    "end_behavior": "Pause with Replay; no unvalidated continued simulation",
+    "grid_xyz": [
+      48,
+      56,
+      48
+    ],
+    "filename": "pressure-fireball-fixed.html"
+  },
+  "artifacts": {
+    "cloud-flight-494.txt": {
+      "bytes": 494,
+      "sha256": "faaaad2d6e63c1bfbe02c9d4f3c905f4a1b93f5463bf85f4da151f0128fbcc39"
+    },
+    "cloud-flight.mp4": {
+      "bytes": 463088,
+      "sha256": "30babe5e58095caa64f0cb5ebd9aff076071b0f063e0eb97637533d9c3715f2d"
+    },
+    "cloud-flight-1600.jpg": {
+      "bytes": 243437,
+      "sha256": "dae0b862aad5a16823e21f116dd3438e5cb8d6906e456b8d6dd28d63d9a512a0"
+    },
+    "pressure-fireball.mp4": {
+      "bytes": 529374,
+      "sha256": "25f18714c67a6c3bc1ee84e9b5f6bf895be566c872c801fb5e96b0cf51f15ba2"
+    },
+    "pressure-fireball-1600.jpg": {
+      "bytes": 98543,
+      "sha256": "dda7c7aecab20f820866f3bceeb1ee4ab7f690bda7cf86b1d19d929ef6bd43b4"
+    },
+    "pressure-fireball-fixed.html": {
+      "bytes": 16730,
+      "sha256": "1d52395388ec4375e4184069149f098f2cf1f26b8e1a08dfa7e7c6d468cdd7d4"
+    }
+  },
+  "webgl_compatibility_fix": {
+    "reported_error": "ERROR: 0:146: '?:' : ternary operator is not allowed for structures in ESSL 1.0 and webgl",
+    "cause": "WebGL2 forbids conditional expressions whose result type is a struct. Native desktop GLSL and GLES3 accept this case, so earlier compilation checks missed the browser restriction.",
+    "before": "s=first?sourceStep(old,DT*.5):readS(u_pass1,p,1);",
+    "after": "if(first)s=sourceStep(old,DT*.5); else s=readS(u_pass1,p,1);",
+    "behavior_change": "Equivalent branch selection. Physics, camera, lighting, and the existing reference videos are unchanged.",
+    "struct_valued_ternaries_remaining": 0,
+    "other_ternaries": "Three remaining expressions return float or vec4 and are allowed.",
+    "html_javascript_syntax_checked": true,
+    "html_embedded_sources_exactly_match_glsl_files": true,
+    "essl_compile_link": {
+      "scope": "OpenGL ES 3 compiler/linker, not a browser or ANGLE WebGL2 validation",
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+      "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+      "shading_language": "OpenGL ES GLSL ES 3.20",
+      "vertex": {
+        "compiled": true,
+        "log": "",
+        "sha256": "f1f9cd980fb2a724efa23a03e804dc2d418136a740026af9bab6189d0bd773d9"
+      },
+      "passes": {
+        "simulation": {
+          "compiled": true,
+          "log": "",
+          "sha256": "cd20440e37c13dc015dd92df2971b2e1d5ac000aae3974f865021be797f91146",
+          "linked": true,
+          "link_log": ""
+        },
+        "shading": {
+          "compiled": true,
+          "log": "",
+          "sha256": "e9657033215199089bcdc1e104ad270f060a0731e38d59149a261a11103efe13",
+          "linked": true,
+          "link_log": ""
+        },
+        "main": {
+          "compiled": true,
+          "log": "",
+          "sha256": "3d46040c92206fd99273d51cba30c686291cef9e553e8866587712fa683fce06",
+          "linked": true,
+          "link_log": ""
+        }
+      },
+      "struct_ternary_negative_control": {
+        "compiled": true,
+        "log": "",
+        "sha256": "e77acfbbae6a0a872101456ed518fc7b8677fce35d31c046a28b27bb7442004f"
+      },
+      "webgl_specific_gap": "ANGLE SH_WEBGL2_SPEC forbids struct ternaries even when native GLES3 accepts them.",
+      "all_passes_compiled_linked": true
+    },
+    "browser_runtime_tested": false,
+    "webgl_validation_limit": "No local ANGLE WebGL2 compiler or functioning browser graphics context was available. The exact prohibited construct was removed and audited against ANGLE source; native GLES compilation is not presented as a browser runtime test.",
+    "primary_source": "https://chromium.googlesource.com/angle/angle/+/refs/heads/main/src/compiler/translator/ParseContext.cpp",
+    "primary_source_condition": "(mShaderVersion < 300 || mShaderSpec == SH_WEBGL2_SPEC) && basicType == EbtStruct",
+    "historical_reports": "GPU numerical and official validation reports already in this archive were run before this equivalent branch rewrite; their recorded source hashes are retained.",
+    "shader_body_characters": 9318,
+    "current_shader_sha256": {
+      "main.glsl": "a3bdbb0f8bc4564f2a1d985d9543a1966b86f46737c4b09f344e4be1b04131d2",
+      "simulation.glsl": "da53e6d9de63bf5e47afd93b143690117ad2100e282d2fcb457479f1b70ca68c",
+      "common.glsl": "6a523abdf30e7e68035e62e59eb7c33b9e5dcf5c8bfe6833d29932116fccbbf8",
+      "shading.glsl": "bd46e3f7b3477fa073a582d1cf9baf18c25ad7b1a4092585d60e4946eedb94ad"
+    }
+  },
+  "prior_revision_browser": {
+    "drafts_updated": true,
+    "cloud_char_count_visible": 494,
+    "fire_glsl_source_verified": true,
+    "webgl2_context_available": false,
+    "video_rendering": "Offline EGL renderer"
+  },
+  "browser": {
+    "runtime_tested": false,
+    "existing_fragcoord_drafts_modified_this_revision": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "compact_characters": 497,
+  "compact_ascii": true,
+  "compact_source_sha256": "4a410ebe5b0ef4b96358db61d08e00feb17288a1389e95dd5f76708e485ad2fa",
+  "glsl_source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+  "html_sha256": "1f8cc2b312ff56203ef4d6fad7db8af63781f249fbcade3f0f52ab8ac0c473fe",
+  "exact_embedded_source": true,
+  "browser_runtime_tested": false,
+  "duration_shader_seconds": 10,
+  "html_wrapper_excluded_from_compact_count": true,
+  "external_dependencies": [],
+  "resolution_caps": [
+    480,
+    960,
+    1600
+  ],
+  "hidden_page_clock_paused": true,
+  "frame_timing": "Wall-clock interval between render submissions, GPU fenced; not a GPU timer query.",
+  "javascript_parse_passed": true,
+  "independent_source_embedding_check": true,
+  "exact_open_link_round_trip": true,
+  "native_gles_compiles_and_links": true,
+  "compiled_preamble_matches_actual_html": true,
+  "compiled_vertex_matches_actual_html": true,
+  "verification_scope": "Independent JavaScript parse and exact-source/preamble checks plus native GLES compilation/linking; no browser runtime test."
+}

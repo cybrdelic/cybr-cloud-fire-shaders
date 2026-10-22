@@ -1,0 +1,6 @@
+# Versions used for this delivery on Python 3.12.
+moderngl==5.13.0
+glcontext==3.1.0
+numpy==2.3.5
+Pillow==12.3.0
+scipy==1.17.0

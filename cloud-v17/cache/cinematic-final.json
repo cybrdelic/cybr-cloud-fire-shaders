@@ -1,0 +1,60 @@
+{
+  "configuration": {
+    "source": "cinematic.glsl",
+    "bounds": [
+      [
+        -44.0,
+        -12.0,
+        -20.0
+      ],
+      [
+        48.0,
+        35.0,
+        112.0
+      ]
+    ],
+    "extinction": 1.65,
+    "shadow_step": [
+      -0.25304088,
+      0.32895312,
+      0.241164144
+    ],
+    "shadow_weight": 0.792,
+    "shadow_samples": 96,
+    "shadow_tau_cutoff": 16.0,
+    "view_step": 0.065,
+    "max_distance": 156.0,
+    "transmittance_cutoff": 0.002,
+    "aerial_coefficient": 0.009,
+    "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+    "scene": "cinematic"
+  },
+  "grid": [
+    768,
+    384,
+    1024
+  ],
+  "dtype": "f2",
+  "channels": 2,
+  "channel_meanings": [
+    "density",
+    "density_times_sun_optical_depth"
+  ],
+  "voxel_spacing": [
+    0.11979166666666667,
+    0.12239583333333333,
+    0.12890625
+  ],
+  "occupancy_grid": [
+    96,
+    48,
+    128
+  ],
+  "occupancy_fraction": 0.1630706787109375,
+  "density_fraction": 0.07682992683516608,
+  "density_seconds": 8.106668458000058,
+  "total_bake_seconds": 42.45184792899818,
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "cache_sha256": "fd38a150bed1b7d3cca57afed32b13f17d09ab1ab03467fc04abb8a635f25941",
+  "approximation": "Spatial trilinear density and density-weighted optical depth; standalone procedural source retained"
+}

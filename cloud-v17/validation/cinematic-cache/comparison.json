@@ -1,0 +1,359 @@
+{
+  "scene": "cinematic",
+  "dimensions": [
+    48,
+    27
+  ],
+  "cached_step": 0.065,
+  "direct_shader_step": 0.065,
+  "half_step_compared": true,
+  "scope": "Matched native pixel dimensions and times. Accuracy is measured at these samples only; this is not a full-film quality guarantee.",
+  "error_visualization_scale": 8.0,
+  "cache": "./cache/cinematic-final.bin",
+  "cache_sha256": "fd38a150bed1b7d3cca57afed32b13f17d09ab1ab03467fc04abb8a635f25941",
+  "cache_grid": [
+    768,
+    384,
+    1024
+  ],
+  "cache_voxel_spacing": [
+    0.11979166666666667,
+    0.12239583333333333,
+    0.12890625
+  ],
+  "cache_adapter_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+  "direct_source": "./src/cinematic.glsl",
+  "direct_source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "total_seconds": 3.155958750001446,
+  "records": [
+    {
+      "time": 0.0,
+      "stem": "sample-000-t0.000000",
+      "direct_file": "sample-000-t0.000000-direct.png",
+      "direct_render": {
+        "time": 0.0,
+        "render_seconds": 0.6524776149999525,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.4941359758377075,
+          0.5883776545524597,
+          0.6789378523826599
+        ],
+        "pixel_sha256": "2194f48dac93be8409500069f69c6523d03570997c623a8e9c27e3198a1bf8a3",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "b526446cf1fa9541099110450e9eee02d0a98e21d4b2dfae999b1efda79ca991",
+        "cache_sha256": null,
+        "step": 0.065,
+        "direct": true
+      },
+      "cached_file": "sample-000-t0.000000-cached.png",
+      "cache_error_file": "sample-000-t0.000000-cache-error-x8.png",
+      "cached_render": {
+        "time": 0.0,
+        "render_seconds": 0.020159156003501266,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.49449464678764343,
+          0.588529109954834,
+          0.6789100170135498
+        ],
+        "pixel_sha256": "ba536e22e965ecb080309ec55478e86ff95e2b72a3a39460149560ff8224671f",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "a2734a7587c464a356a759f267e2312a7fae654418df4d20d2ec791b31da2993",
+        "cache_sha256": "fd38a150bed1b7d3cca57afed32b13f17d09ab1ab03467fc04abb8a635f25941",
+        "step": 0.065,
+        "direct": false
+      },
+      "direct_vs_cache": {
+        "domain": "Display-transformed RGB before clipping; not linear scene radiance.",
+        "all_finite": true,
+        "mean_absolute_error": 0.0022859210876648318,
+        "root_mean_square_error": 0.0071841491743246545,
+        "maximum_absolute_error": 0.1587371826171875,
+        "p95_absolute_channel_error": 0.009600403904914834,
+        "p99_absolute_channel_error": 0.03097026228904728,
+        "mean_signed_difference_rgb": [
+          0.0003588263773255878,
+          0.00015185055909333405,
+          -2.8368821482599518e-05
+        ],
+        "fraction_channels_above_1_over_255": 0.14300411522633744,
+        "fraction_channels_above_5_over_255": 0.0205761316872428,
+        "clipped_rgb_psnr_db": 42.87249316792468,
+        "clipped_rgb_exact_match": false,
+        "quantized_mean_absolute_error_0_255": 0.5745884773662552,
+        "quantized_maximum_error_0_255": 40,
+        "quantized_changed_channels": 1086,
+        "quantized_changed_pixels": 510,
+        "total_pixels": 1296
+      },
+      "half_step_file": "sample-000-t0.000000-cached-half-step.png",
+      "step_error_file": "sample-000-t0.000000-step-error-x8.png",
+      "half_step_render": {
+        "time": 0.0,
+        "render_seconds": 0.14727663200028474,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.4944889545440674,
+          0.5885319709777832,
+          0.6789238452911377
+        ],
+        "pixel_sha256": "4b0f2e071daed13d13358e2c84f7e9387308eb1d2a3c063419523c0cf4733ff3",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "30c12c0b901390ffb68393d637ade31af5ab603300f804ab7f9876e9e0b6a2bc",
+        "cache_sha256": "fd38a150bed1b7d3cca57afed32b13f17d09ab1ab03467fc04abb8a635f25941",
+        "step": 0.0325,
+        "direct": false
+      },
+      "half_step_reference_vs_cached_step": {
+        "domain": "Display-transformed RGB before clipping; not linear scene radiance.",
+        "all_finite": true,
+        "mean_absolute_error": 4.921723233819498e-05,
+        "root_mean_square_error": 0.00012498448812655412,
+        "maximum_absolute_error": 0.002546250820159912,
+        "p95_absolute_channel_error": 0.00021740198135375942,
+        "p99_absolute_channel_error": 0.0005333489179611215,
+        "mean_signed_difference_rgb": [
+          4.942080488911381e-06,
+          -3.787815386866346e-06,
+          -1.3595492935475008e-05
+        ],
+        "fraction_channels_above_1_over_255": 0.0,
+        "fraction_channels_above_5_over_255": 0.0,
+        "clipped_rgb_psnr_db": 78.06287768209052,
+        "clipped_rgb_exact_match": false,
+        "quantized_mean_absolute_error_0_255": 0.013631687242798354,
+        "quantized_maximum_error_0_255": 1,
+        "quantized_changed_channels": 53,
+        "quantized_changed_pixels": 52,
+        "total_pixels": 1296
+      }
+    },
+    {
+      "time": 5.333333333333333,
+      "stem": "sample-001-t5.333333",
+      "direct_file": "sample-001-t5.333333-direct.png",
+      "direct_render": {
+        "time": 5.333333333333333,
+        "render_seconds": 0.4666512629992212,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.9153645634651184,
+          0.9123030304908752,
+          0.9043780565261841
+        ],
+        "pixel_sha256": "985bb3e0d2e75a1066879a935897943522a21139db767e67dcdc9fbb25cc247d",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "b526446cf1fa9541099110450e9eee02d0a98e21d4b2dfae999b1efda79ca991",
+        "cache_sha256": null,
+        "step": 0.065,
+        "direct": true
+      },
+      "cached_file": "sample-001-t5.333333-cached.png",
+      "cache_error_file": "sample-001-t5.333333-cache-error-x8.png",
+      "cached_render": {
+        "time": 5.333333333333333,
+        "render_seconds": 0.014331098998809466,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.9127511978149414,
+          0.9096584320068359,
+          0.9016275405883789
+        ],
+        "pixel_sha256": "4f9b4acdc451097c9976ed8f66cef12920ef91e5c343bd3c7181be3dde20c8e9",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "a2734a7587c464a356a759f267e2312a7fae654418df4d20d2ec791b31da2993",
+        "cache_sha256": "fd38a150bed1b7d3cca57afed32b13f17d09ab1ab03467fc04abb8a635f25941",
+        "step": 0.065,
+        "direct": false
+      },
+      "direct_vs_cache": {
+        "domain": "Display-transformed RGB before clipping; not linear scene radiance.",
+        "all_finite": true,
+        "mean_absolute_error": 0.0028458247612778544,
+        "root_mean_square_error": 0.0032528860065495708,
+        "maximum_absolute_error": 0.007806897163391113,
+        "p95_absolute_channel_error": 0.005395302176475524,
+        "p99_absolute_channel_error": 0.006311594247817995,
+        "mean_signed_difference_rgb": [
+          -0.0026139313883987475,
+          -0.002644030354273172,
+          -0.0027506105417822615
+        ],
+        "fraction_channels_above_1_over_255": 0.29732510288065844,
+        "fraction_channels_above_5_over_255": 0.0,
+        "clipped_rgb_psnr_db": 49.754623115512246,
+        "clipped_rgb_exact_match": false,
+        "quantized_mean_absolute_error_0_255": 0.7265946502057613,
+        "quantized_maximum_error_0_255": 2,
+        "quantized_changed_channels": 2561,
+        "quantized_changed_pixels": 1084,
+        "total_pixels": 1296
+      },
+      "half_step_file": "sample-001-t5.333333-cached-half-step.png",
+      "step_error_file": "sample-001-t5.333333-step-error-x8.png",
+      "half_step_render": {
+        "time": 5.333333333333333,
+        "render_seconds": 0.021312600001692772,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.9126768708229065,
+          0.9095871448516846,
+          0.9015564918518066
+        ],
+        "pixel_sha256": "609ab2dfca1d8d8f5f6744d770bc750e977a2e63e2c63e1f4c9d325b9d6fe296",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "30c12c0b901390ffb68393d637ade31af5ab603300f804ab7f9876e9e0b6a2bc",
+        "cache_sha256": "fd38a150bed1b7d3cca57afed32b13f17d09ab1ab03467fc04abb8a635f25941",
+        "step": 0.0325,
+        "direct": false
+      },
+      "half_step_reference_vs_cached_step": {
+        "domain": "Display-transformed RGB before clipping; not linear scene radiance.",
+        "all_finite": true,
+        "mean_absolute_error": 7.416254269733351e-05,
+        "root_mean_square_error": 8.565973819758868e-05,
+        "maximum_absolute_error": 0.00032961368560791016,
+        "p95_absolute_channel_error": 0.00014666020870208725,
+        "p99_absolute_channel_error": 0.00020814120769500753,
+        "mean_signed_difference_rgb": [
+          7.367488226772826e-05,
+          7.220031118687288e-05,
+          7.068830323807987e-05
+        ],
+        "fraction_channels_above_1_over_255": 0.0,
+        "fraction_channels_above_5_over_255": 0.0,
+        "clipped_rgb_psnr_db": 81.34446514548904,
+        "clipped_rgb_exact_match": false,
+        "quantized_mean_absolute_error_0_255": 0.0205761316872428,
+        "quantized_maximum_error_0_255": 1,
+        "quantized_changed_channels": 80,
+        "quantized_changed_pixels": 79,
+        "total_pixels": 1296
+      }
+    },
+    {
+      "time": 9.958333333333334,
+      "stem": "sample-002-t9.958333",
+      "direct_file": "sample-002-t9.958333-direct.png",
+      "direct_render": {
+        "time": 9.958333333333334,
+        "render_seconds": 0.4272402599999623,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.543277382850647,
+          0.6413843035697937,
+          0.725461483001709
+        ],
+        "pixel_sha256": "e5c159a6b5281813b20d07b686c3f37b72a4fc91504401b793406646fd9f44c8",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "b526446cf1fa9541099110450e9eee02d0a98e21d4b2dfae999b1efda79ca991",
+        "cache_sha256": null,
+        "step": 0.065,
+        "direct": true
+      },
+      "cached_file": "sample-002-t9.958333-cached.png",
+      "cache_error_file": "sample-002-t9.958333-cache-error-x8.png",
+      "cached_render": {
+        "time": 9.958333333333334,
+        "render_seconds": 0.01417005600160337,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.5432215929031372,
+          0.6411795616149902,
+          0.7251761555671692
+        ],
+        "pixel_sha256": "5fa3c98c79d13db76b8ec38d67062be62073c083897a39b9210103cb63ea553c",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "a2734a7587c464a356a759f267e2312a7fae654418df4d20d2ec791b31da2993",
+        "cache_sha256": "fd38a150bed1b7d3cca57afed32b13f17d09ab1ab03467fc04abb8a635f25941",
+        "step": 0.065,
+        "direct": false
+      },
+      "direct_vs_cache": {
+        "domain": "Display-transformed RGB before clipping; not linear scene radiance.",
+        "all_finite": true,
+        "mean_absolute_error": 0.001672976899416849,
+        "root_mean_square_error": 0.004443927923654397,
+        "maximum_absolute_error": 0.14453613758087158,
+        "p95_absolute_channel_error": 0.006778195500373831,
+        "p99_absolute_channel_error": 0.0148624384403229,
+        "mean_signed_difference_rgb": [
+          -5.640425247910582e-05,
+          -0.00020458342300521003,
+          -0.0002856364956608525
+        ],
+        "fraction_channels_above_1_over_255": 0.12037037037037036,
+        "fraction_channels_above_5_over_255": 0.0051440329218107,
+        "clipped_rgb_psnr_db": 47.04465987046956,
+        "clipped_rgb_exact_match": false,
+        "quantized_mean_absolute_error_0_255": 0.42901234567901236,
+        "quantized_maximum_error_0_255": 37,
+        "quantized_changed_channels": 1124,
+        "quantized_changed_pixels": 554,
+        "total_pixels": 1296
+      },
+      "half_step_file": "sample-002-t9.958333-cached-half-step.png",
+      "step_error_file": "sample-002-t9.958333-step-error-x8.png",
+      "half_step_render": {
+        "time": 9.958333333333334,
+        "render_seconds": 0.01861877299961634,
+        "all_finite": true,
+        "width": 48,
+        "height": 27,
+        "mean_rgb": [
+          0.5432165861129761,
+          0.6411831974983215,
+          0.7251870036125183
+        ],
+        "pixel_sha256": "948f51ec3e72eeb7e53c62f6ede66cf3261ebb8df889479dcc93db5239165c54",
+        "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+        "runtime_sha256": "30c12c0b901390ffb68393d637ade31af5ab603300f804ab7f9876e9e0b6a2bc",
+        "cache_sha256": "fd38a150bed1b7d3cca57afed32b13f17d09ab1ab03467fc04abb8a635f25941",
+        "step": 0.0325,
+        "direct": false
+      },
+      "half_step_reference_vs_cached_step": {
+        "domain": "Display-transformed RGB before clipping; not linear scene radiance.",
+        "all_finite": true,
+        "mean_absolute_error": 4.004094550393736e-05,
+        "root_mean_square_error": 8.679405972570775e-05,
+        "maximum_absolute_error": 0.00171661376953125,
+        "p95_absolute_channel_error": 0.00015561878681182842,
+        "p99_absolute_channel_error": 0.0003413885831832888,
+        "mean_signed_difference_rgb": [
+          4.521881540616353e-06,
+          -3.713056629086718e-06,
+          -1.0757488601001693e-05
+        ],
+        "fraction_channels_above_1_over_255": 0.0,
+        "fraction_channels_above_5_over_255": 0.0,
+        "clipped_rgb_psnr_db": 81.2301999473059,
+        "clipped_rgb_exact_match": false,
+        "quantized_mean_absolute_error_0_255": 0.009002057613168725,
+        "quantized_maximum_error_0_255": 1,
+        "quantized_changed_channels": 35,
+        "quantized_changed_pixels": 33,
+        "total_pixels": 1296
+      }
+    }
+  ],
+  "all_finite": true
+}

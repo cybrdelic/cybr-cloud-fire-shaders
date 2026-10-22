@@ -1,0 +1,4829 @@
+{
+  "config": {
+    "width": 1280,
+    "height": 720,
+    "count": 192,
+    "fps": 24,
+    "soot": 1600,
+    "emission": 0.6,
+    "eye": [
+      5,
+      4.2,
+      -10.5
+    ],
+    "target": [
+      0,
+      2.6,
+      0
+    ],
+    "source_dt": 0.025,
+    "interpolated_frames": 0,
+    "renderer_sha256": "3d2fb21fbf7e021aba9ba70ce94cf96fe648a702449cab90ddb6b9f825433aff"
+  },
+  "unique_frames": 192,
+  "unique_states": 192,
+  "actual_evolved_states": true,
+  "all_finite": true,
+  "frames": [
+    {
+      "index": 0,
+      "video_time": 0.0,
+      "simulation_time": 0,
+      "state_sha256": "284d20d664bd8214376ff663d54d61c1ddddeed15513bd1b56576dd675c36753",
+      "pixel_sha256": "699a1a59ab153142de52a5cebac486500f7f571a3d21c1f44ed8a10227289d7e",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 1.0,
+        "density_max": 1.385037899017334,
+        "pressure_min": 1.0,
+        "pressure_max": 19.629924774169922,
+        "temperature_max_kelvin_scaled": 4339.765625,
+        "soot_max": 0.001999845262616873,
+        "soot_sum": 2.687915802001953,
+        "sigma_max": 3.1997523307800293,
+        "emission_max": 805.93896484375
+      },
+      "mean_rgb": [
+        141.2028168402778,
+        155.23134765625,
+        166.51789605034722
+      ]
+    },
+    {
+      "index": 1,
+      "video_time": 0.041666666666666664,
+      "simulation_time": 0.025,
+      "state_sha256": "0d9ea42d74354834587fc1afc4e03147e7dfae68287cc804fb47b983d34dac0f",
+      "pixel_sha256": "9302f1e30ac8d0b460b6a31766fe92e71bb4440ef3f5f32302cf4106441e2bce",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.9874208569526672,
+        "density_max": 1.61954927444458,
+        "pressure_min": 1.0,
+        "pressure_max": 15.302659034729004,
+        "temperature_max_kelvin_scaled": 4218.71142578125,
+        "soot_max": 0.0034758341498672962,
+        "soot_sum": 2.9576263427734375,
+        "sigma_max": 5.561334609985352,
+        "emission_max": 695.6290283203125
+      },
+      "mean_rgb": [
+        141.58790473090278,
+        155.54844075520833,
+        166.7496484375
+      ]
+    },
+    {
+      "index": 2,
+      "video_time": 0.08333333333333333,
+      "simulation_time": 0.05,
+      "state_sha256": "867a2ce7eb50c8b07e40e941323a72842bf7129b7bb91dabaa7e657d75b34336",
+      "pixel_sha256": "8b04a0c7783a3499d777e549d0c0e0c8905390d111b615f0322a6ca50c3ed1e3",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.5992183089256287,
+        "density_max": 1.8707398176193237,
+        "pressure_min": 1.0,
+        "pressure_max": 8.92725944519043,
+        "temperature_max_kelvin_scaled": 3776.684814453125,
+        "soot_max": 0.005161800887435675,
+        "soot_sum": 3.2816648483276367,
+        "sigma_max": 8.258881568908691,
+        "emission_max": 375.5130310058594
+      },
+      "mean_rgb": [
+        141.4602690972222,
+        155.28686848958333,
+        166.29280924479167
+      ]
+    },
+    {
+      "index": 3,
+      "video_time": 0.125,
+      "simulation_time": 0.075,
+      "state_sha256": "c768d293577326dc7ced7a3ca9bcfcc7a276615af07dd31e934f73123058296e",
+      "pixel_sha256": "e38350aef80c7f4e6e8eae81b167f2e9980ec471cabc1db7c36f7e233c0269cf",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.3712000548839569,
+        "density_max": 2.0793251991271973,
+        "pressure_min": 1.0,
+        "pressure_max": 7.316743850708008,
+        "temperature_max_kelvin_scaled": 3410.888916015625,
+        "soot_max": 0.006423763930797577,
+        "soot_sum": 3.7259960174560547,
+        "sigma_max": 10.278022766113281,
+        "emission_max": 200.0184326171875
+      },
+      "mean_rgb": [
+        141.28001302083334,
+        154.965439453125,
+        165.76855685763888
+      ]
+    },
+    {
+      "index": 4,
+      "video_time": 0.16666666666666666,
+      "simulation_time": 0.1,
+      "state_sha256": "879ee2674e256710fa8702192490b0c09ab969d8b47bd085b1782faa5e8a3d58",
+      "pixel_sha256": "a5d2213ebb2ddd3e6c87488ff3f2b87ce8160d72d83860fc4ef488b926d2b854",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.2635161578655243,
+        "density_max": 2.1286683082580566,
+        "pressure_min": 1.0,
+        "pressure_max": 7.039283275604248,
+        "temperature_max_kelvin_scaled": 3241.081787109375,
+        "soot_max": 0.007477027364075184,
+        "soot_sum": 4.314131736755371,
+        "sigma_max": 11.96324348449707,
+        "emission_max": 142.3047637939453
+      },
+      "mean_rgb": [
+        141.22462890625,
+        154.77843207465278,
+        165.39104709201388
+      ]
+    },
+    {
+      "index": 5,
+      "video_time": 0.20833333333333334,
+      "simulation_time": 0.125,
+      "state_sha256": "31a3c609d9de389d9d0870cd2f99e2ef0befd72dadf9b413b84055269101899d",
+      "pixel_sha256": "590a9a912005ddb7a1c5934cbf194a5501d5e4ebc0f2706c9e484963ffdd937b",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.2199927121400833,
+        "density_max": 2.1418581008911133,
+        "pressure_min": 1.0,
+        "pressure_max": 6.655948638916016,
+        "temperature_max_kelvin_scaled": 3191.023681640625,
+        "soot_max": 0.007986036129295826,
+        "soot_sum": 5.058826446533203,
+        "sigma_max": 12.777657508850098,
+        "emission_max": 127.83312225341797
+      },
+      "mean_rgb": [
+        141.34272352430557,
+        154.79415907118056,
+        165.2446343315972
+      ]
+    },
+    {
+      "index": 6,
+      "video_time": 0.25,
+      "simulation_time": 0.15,
+      "state_sha256": "c30be22b5a2649b044a12dd78f323f45c08a052c92289a07956f6a37fa6abcd1",
+      "pixel_sha256": "f7862177bdbcc09ed7045c871d291daeb0aa6546c415b8a9624409ec98a542e9",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.21414482593536377,
+        "density_max": 2.0686252117156982,
+        "pressure_min": 1.0,
+        "pressure_max": 6.406683444976807,
+        "temperature_max_kelvin_scaled": 3259.56982421875,
+        "soot_max": 0.007816212251782417,
+        "soot_sum": 5.9670796394348145,
+        "sigma_max": 12.505939483642578,
+        "emission_max": 147.93167114257812
+      },
+      "mean_rgb": [
+        141.60043294270832,
+        154.99343967013888,
+        165.32260633680556
+      ]
+    },
+    {
+      "index": 7,
+      "video_time": 0.2916666666666667,
+      "simulation_time": 0.175,
+      "state_sha256": "03e812ae39e665d1985fc07a98e55a7ec270ef2b305b366976f817c57f9bd870",
+      "pixel_sha256": "cc7cd42744e714755eae62aa97416a7fac94eff9ceb902cf395e3f4efea978af",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.2168387919664383,
+        "density_max": 2.020822525024414,
+        "pressure_min": 1.0,
+        "pressure_max": 6.261070728302002,
+        "temperature_max_kelvin_scaled": 3403.686279296875,
+        "soot_max": 0.008224944584071636,
+        "soot_sum": 7.032898902893066,
+        "sigma_max": 13.159911155700684,
+        "emission_max": 197.28628540039062
+      },
+      "mean_rgb": [
+        141.92968641493056,
+        155.29512912326388,
+        165.54781792534723
+      ]
+    },
+    {
+      "index": 8,
+      "video_time": 0.3333333333333333,
+      "simulation_time": 0.2,
+      "state_sha256": "71c214a03bb46480f9911fdabdaede78079369586ee35c7796dee4da19944805",
+      "pixel_sha256": "e1be0265f19fce4d5682b1efe4755c135c46db5e1204c387193c9a42c5e3ca70",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.23016658425331116,
+        "density_max": 1.9859740734100342,
+        "pressure_min": 1.0,
+        "pressure_max": 6.186545372009277,
+        "temperature_max_kelvin_scaled": 3579.0283203125,
+        "soot_max": 0.008196728304028511,
+        "soot_sum": 8.265816688537598,
+        "sigma_max": 13.114765167236328,
+        "emission_max": 271.4622802734375
+      },
+      "mean_rgb": [
+        142.24637044270833,
+        155.58567708333334,
+        165.7824945746528
+      ]
+    },
+    {
+      "index": 9,
+      "video_time": 0.375,
+      "simulation_time": 0.225,
+      "state_sha256": "9595999c07225519f67f184392ac7a8fc08780454fdf0241cff8d643bf9697c9",
+      "pixel_sha256": "9a52fce9020583322a33445803c1c082cd2167213b4b46fd13c0ef480ddffc9e",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.24283285439014435,
+        "density_max": 1.938443899154663,
+        "pressure_min": 0.9881075024604797,
+        "pressure_max": 5.931953430175781,
+        "temperature_max_kelvin_scaled": 3691.765380859375,
+        "soot_max": 0.007850184105336666,
+        "soot_sum": 9.654767990112305,
+        "sigma_max": 12.560294151306152,
+        "emission_max": 328.03369140625
+      },
+      "mean_rgb": [
+        142.47745985243054,
+        155.76375434027779,
+        165.8825802951389
+      ]
+    },
+    {
+      "index": 10,
+      "video_time": 0.4166666666666667,
+      "simulation_time": 0.25,
+      "state_sha256": "f036d7df5b8be7173979cf624f9da33e48c8e11a386afde70eaabc099eb7b6c1",
+      "pixel_sha256": "10ca0bbb0477d3e4fd449257f5d768a667a231bc6c30cdfc54c8cd4fb5ef001a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.24697907269001007,
+        "density_max": 1.9473942518234253,
+        "pressure_min": 0.9815115928649902,
+        "pressure_max": 5.599723815917969,
+        "temperature_max_kelvin_scaled": 3742.433837890625,
+        "soot_max": 0.007643911521881819,
+        "soot_sum": 11.191646575927734,
+        "sigma_max": 12.230257987976074,
+        "emission_max": 355.8479919433594
+      },
+      "mean_rgb": [
+        142.57922960069445,
+        155.77152777777778,
+        165.77496744791668
+      ]
+    },
+    {
+      "index": 11,
+      "video_time": 0.4583333333333333,
+      "simulation_time": 0.275,
+      "state_sha256": "baeb6a010ba4de167b912768f7707645f407e15af1f9ee9f479d04c4862e236f",
+      "pixel_sha256": "c4777d82a8fabd7f2185d2a57adf0d74ffca51039722b6ac23c87451cb01ef65",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.2413078397512436,
+        "density_max": 1.969504952430725,
+        "pressure_min": 0.975310742855072,
+        "pressure_max": 5.668854713439941,
+        "temperature_max_kelvin_scaled": 3771.274169921875,
+        "soot_max": 0.007370145991444588,
+        "soot_sum": 12.861857414245605,
+        "sigma_max": 11.79223346710205,
+        "emission_max": 372.359619140625
+      },
+      "mean_rgb": [
+        142.53906032986112,
+        155.60007269965277,
+        165.46484266493056
+      ]
+    },
+    {
+      "index": 12,
+      "video_time": 0.5,
+      "simulation_time": 0.3,
+      "state_sha256": "7529127cb05ce89a7a5f51a9663e118bb41dafa575c0cf5515419e00d26afbc5",
+      "pixel_sha256": "e0a5dba6fd2e467493601c66760ca509b85e3e32df6c284a50be93eae01ed6b7",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.2327757477760315,
+        "density_max": 2.0101780891418457,
+        "pressure_min": 0.9736239314079285,
+        "pressure_max": 5.726984024047852,
+        "temperature_max_kelvin_scaled": 3795.054931640625,
+        "soot_max": 0.0072873239405453205,
+        "soot_sum": 14.648003578186035,
+        "sigma_max": 11.65971851348877,
+        "emission_max": 386.3506164550781
+      },
+      "mean_rgb": [
+        142.3484646267361,
+        155.25571180555556,
+        164.98527777777778
+      ]
+    },
+    {
+      "index": 13,
+      "video_time": 0.5416666666666666,
+      "simulation_time": 0.325,
+      "state_sha256": "23067de420a2d8875f948090f60c756969d961cb1bb8fa3df5fc250b631785cc",
+      "pixel_sha256": "b6b61526b6318c1b20c2f4e80fbe83c4e1cde8a62afe4043fdd581c073a17032",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.22631751000881195,
+        "density_max": 2.046780824661255,
+        "pressure_min": 0.9911094307899475,
+        "pressure_max": 5.794399738311768,
+        "temperature_max_kelvin_scaled": 3821.08837890625,
+        "soot_max": 0.007291292771697044,
+        "soot_sum": 16.52655792236328,
+        "sigma_max": 11.666068077087402,
+        "emission_max": 402.060302734375
+      },
+      "mean_rgb": [
+        142.03126519097222,
+        154.77074869791667,
+        164.3803927951389
+      ]
+    },
+    {
+      "index": 14,
+      "video_time": 0.5833333333333334,
+      "simulation_time": 0.35,
+      "state_sha256": "dd4ebfa4f99e5c9578a305df3f8527ada2207a1c011c04aefe7d914ca7dde2ea",
+      "pixel_sha256": "3b423a941feeaea8e168c7822621ca5b0b8459ce37a0ec08849434d5809ffd2a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.2211594432592392,
+        "density_max": 2.1039373874664307,
+        "pressure_min": 1.0,
+        "pressure_max": 5.80721378326416,
+        "temperature_max_kelvin_scaled": 3848.20751953125,
+        "soot_max": 0.007279041688889265,
+        "soot_sum": 18.47564697265625,
+        "sigma_max": 11.646466255187988,
+        "emission_max": 418.8670654296875
+      },
+      "mean_rgb": [
+        141.61651584201388,
+        154.18046223958333,
+        163.6893532986111
+      ]
+    },
+    {
+      "index": 15,
+      "video_time": 0.625,
+      "simulation_time": 0.375,
+      "state_sha256": "9af7647ca9249923f507fe6115501240a67a33410d00c7f1953a550fbaf30c20",
+      "pixel_sha256": "4b9257e8fdff9c2fe9134bd5bd0524c7965af3fb47acbb6594ec4f3528ae6d24",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.21594040095806122,
+        "density_max": 2.205993413925171,
+        "pressure_min": 1.0,
+        "pressure_max": 5.72814416885376,
+        "temperature_max_kelvin_scaled": 3868.755126953125,
+        "soot_max": 0.007299175951629877,
+        "soot_sum": 20.458782196044922,
+        "sigma_max": 11.678681373596191,
+        "emission_max": 431.9035949707031
+      },
+      "mean_rgb": [
+        141.153115234375,
+        153.5258669704861,
+        162.94311631944444
+      ]
+    },
+    {
+      "index": 16,
+      "video_time": 0.6666666666666666,
+      "simulation_time": 0.4,
+      "state_sha256": "3deae6e47bd63999265666fe7d7a7c53f53ed1078bcdb2979eac220848be7348",
+      "pixel_sha256": "3643aede25eb0a30345e4e9ae103ad6bbfa989acf91d5715c73a25ac27aded47",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.2102223038673401,
+        "density_max": 2.287003993988037,
+        "pressure_min": 1.0,
+        "pressure_max": 5.785397529602051,
+        "temperature_max_kelvin_scaled": 3880.4521484375,
+        "soot_max": 0.0073088388890028,
+        "soot_sum": 22.43603515625,
+        "sigma_max": 11.69414234161377,
+        "emission_max": 439.4422302246094
+      },
+      "mean_rgb": [
+        140.7055154079861,
+        152.85755316840277,
+        162.17288845486112
+      ]
+    },
+    {
+      "index": 17,
+      "video_time": 0.7083333333333334,
+      "simulation_time": 0.425,
+      "state_sha256": "df8d04227c8df3c3912fb8099da8367fe62524363c84e245a64ff44acb02a4bb",
+      "pixel_sha256": "8959346209a405d4e3f864a3c6e467859960c1ea98488fd1b66a9930387d11bc",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.20462854206562042,
+        "density_max": 2.3023221492767334,
+        "pressure_min": 1.0,
+        "pressure_max": 5.792440414428711,
+        "temperature_max_kelvin_scaled": 3884.8017578125,
+        "soot_max": 0.007355735171586275,
+        "soot_sum": 24.376136779785156,
+        "sigma_max": 11.769176483154297,
+        "emission_max": 442.2673034667969
+      },
+      "mean_rgb": [
+        140.32852430555556,
+        152.21205620659723,
+        161.39948350694445
+      ]
+    },
+    {
+      "index": 18,
+      "video_time": 0.75,
+      "simulation_time": 0.45,
+      "state_sha256": "cc3b140a747b5fce8e2a1e2735969d1a4d07d8d6d3705da821f61018ff071209",
+      "pixel_sha256": "9812100421678902bdc3e54542026cf20fe5ef02456c7a95f112b0597e86dab7",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.1994074285030365,
+        "density_max": 2.317263603210449,
+        "pressure_min": 1.0,
+        "pressure_max": 5.818976402282715,
+        "temperature_max_kelvin_scaled": 3883.596435546875,
+        "soot_max": 0.00737453019246459,
+        "soot_sum": 26.246801376342773,
+        "sigma_max": 11.799248695373535,
+        "emission_max": 441.4831237792969
+      },
+      "mean_rgb": [
+        140.05241644965278,
+        151.61107421875,
+        160.6346853298611
+      ]
+    },
+    {
+      "index": 19,
+      "video_time": 0.7916666666666666,
+      "simulation_time": 0.475,
+      "state_sha256": "79fe1da59d0d09e299b8af9926d1baf1d188ce4a751b1705bee4b1b20f8b0717",
+      "pixel_sha256": "8e7d369e62eb1c857a2f48364e46aa76ba0292913dd1f7df1f3b2523581951d1",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.19448858499526978,
+        "density_max": 2.335916042327881,
+        "pressure_min": 1.0,
+        "pressure_max": 5.878963470458984,
+        "temperature_max_kelvin_scaled": 3878.6396484375,
+        "soot_max": 0.007471057586371899,
+        "soot_sum": 28.028278350830078,
+        "sigma_max": 11.953692436218262,
+        "emission_max": 438.2683410644531
+      },
+      "mean_rgb": [
+        139.89984266493056,
+        151.07530164930554,
+        159.89506293402778
+      ]
+    },
+    {
+      "index": 20,
+      "video_time": 0.8333333333333334,
+      "simulation_time": 0.5,
+      "state_sha256": "cb1d577dc7afd1733b9cb671e60b680c49b9f99772472bd3979596b9d2cf9d05",
+      "pixel_sha256": "d7cbfeee70bccca66df8f2a96fe92fd0ae8cc53848f890e7712361cf3cc19f2c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.18988622725009918,
+        "density_max": 2.3328680992126465,
+        "pressure_min": 1.0,
+        "pressure_max": 5.848808765411377,
+        "temperature_max_kelvin_scaled": 3870.19677734375,
+        "soot_max": 0.007451966404914856,
+        "soot_sum": 29.697303771972656,
+        "sigma_max": 11.92314624786377,
+        "emission_max": 432.8282165527344
+      },
+      "mean_rgb": [
+        139.88326171875,
+        150.61802625868054,
+        159.19175130208333
+      ]
+    },
+    {
+      "index": 21,
+      "video_time": 0.875,
+      "simulation_time": 0.525,
+      "state_sha256": "9557a9814c5fece661466d8e20718199f30df0d9d878078fa471d52f7351ea0e",
+      "pixel_sha256": "d08ee0766c44b493e97df682a0699b08ed6197b803844d433d35108179bf4427",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.18562734127044678,
+        "density_max": 2.3174548149108887,
+        "pressure_min": 1.0,
+        "pressure_max": 5.9421539306640625,
+        "temperature_max_kelvin_scaled": 3864.003173828125,
+        "soot_max": 0.007473386824131012,
+        "soot_sum": 31.243366241455078,
+        "sigma_max": 11.957418441772461,
+        "emission_max": 428.8653869628906
+      },
+      "mean_rgb": [
+        139.99662109375,
+        150.24375108506945,
+        158.52724826388888
+      ]
+    },
+    {
+      "index": 22,
+      "video_time": 0.9166666666666666,
+      "simulation_time": 0.55,
+      "state_sha256": "0cb6245121f9ac99c1b356e43d74296bcd0714f5c658582287fe6af666526fc8",
+      "pixel_sha256": "c1da169194df920c95823a52d7fee5b338a57397d3b0e570c0da2692a536ff5f",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.1819111406803131,
+        "density_max": 2.317638635635376,
+        "pressure_min": 1.0,
+        "pressure_max": 5.794106483459473,
+        "temperature_max_kelvin_scaled": 3858.447021484375,
+        "soot_max": 0.0072866277769207954,
+        "soot_sum": 32.67497253417969,
+        "sigma_max": 11.658604621887207,
+        "emission_max": 425.3309020996094
+      },
+      "mean_rgb": [
+        140.22008246527778,
+        149.9530392795139,
+        157.90327799479167
+      ]
+    },
+    {
+      "index": 23,
+      "video_time": 0.9583333333333334,
+      "simulation_time": 0.575,
+      "state_sha256": "7728da0a4b5b4c4346c8cd70fc4afb22d5f3c75d1fe76066cdbc2748df1262a6",
+      "pixel_sha256": "1980b21c6480ddd1fc7559e36e6b0a00f3d3cca8cabe9eac87907aa1ac5e9939",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.17866604030132294,
+        "density_max": 2.3121140003204346,
+        "pressure_min": 1.0,
+        "pressure_max": 5.525203704833984,
+        "temperature_max_kelvin_scaled": 3852.10888671875,
+        "soot_max": 0.007042683195322752,
+        "soot_sum": 33.997825622558594,
+        "sigma_max": 11.268293380737305,
+        "emission_max": 421.32208251953125
+      },
+      "mean_rgb": [
+        140.52208441840278,
+        149.74079752604166,
+        157.3195681423611
+      ]
+    },
+    {
+      "index": 24,
+      "video_time": 1.0,
+      "simulation_time": 0.6,
+      "state_sha256": "17f479182e11a3ed8448c2f788fdc78b703c7b3ae98acafa00837ef98ccce266",
+      "pixel_sha256": "98adc435299fa078873f5843920226f99fbe7968e2ac038d1751556c2ca391bb",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.17538726329803467,
+        "density_max": 2.2931582927703857,
+        "pressure_min": 1.0,
+        "pressure_max": 5.1030144691467285,
+        "temperature_max_kelvin_scaled": 3845.99365234375,
+        "soot_max": 0.006433719303458929,
+        "soot_sum": 35.21827697753906,
+        "sigma_max": 10.293951034545898,
+        "emission_max": 417.47802734375
+      },
+      "mean_rgb": [
+        140.88345811631945,
+        149.59607530381945,
+        156.77190972222223
+      ]
+    },
+    {
+      "index": 25,
+      "video_time": 1.0416666666666667,
+      "simulation_time": 0.625,
+      "state_sha256": "1c7b59590872e99449a964a90a47ae5c3eeeb9e2265f7c7d1d50c76e78362de0",
+      "pixel_sha256": "51054c1ac8e5e57f440aa8cf9a0df5a636bbc9b85da58308e4143dad49acc596",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.17229878902435303,
+        "density_max": 2.276559829711914,
+        "pressure_min": 1.0,
+        "pressure_max": 4.6036295890808105,
+        "temperature_max_kelvin_scaled": 3841.441650390625,
+        "soot_max": 0.006117283366620541,
+        "soot_sum": 36.34186553955078,
+        "sigma_max": 9.787652969360352,
+        "emission_max": 414.6316223144531
+      },
+      "mean_rgb": [
+        141.2934624565972,
+        149.5073947482639,
+        156.256337890625
+      ]
+    },
+    {
+      "index": 26,
+      "video_time": 1.0833333333333333,
+      "simulation_time": 0.65,
+      "state_sha256": "bf1752917c106355c9f480b1b87663137f873b5a70c503a5afdc696be1b3307b",
+      "pixel_sha256": "60add5afcf46da44cc8c3f6e56ba0d51ee15f22578439b81025bca7873ad75e5",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.16918008029460907,
+        "density_max": 2.261000871658325,
+        "pressure_min": 1.0,
+        "pressure_max": 4.218941688537598,
+        "temperature_max_kelvin_scaled": 3832.908447265625,
+        "soot_max": 0.005532410461455584,
+        "soot_sum": 37.37744903564453,
+        "sigma_max": 8.85185718536377,
+        "emission_max": 409.3301086425781
+      },
+      "mean_rgb": [
+        141.7368869357639,
+        149.47084092881946,
+        155.77091688368054
+      ]
+    },
+    {
+      "index": 27,
+      "video_time": 1.125,
+      "simulation_time": 0.675,
+      "state_sha256": "c7205d093f08d054eb0cec76ecac69059b90ec95175e08c9e04064f2db7758f5",
+      "pixel_sha256": "0a9d04c386da17886747dfbed44cf24f4ca04dd423055357b0daa1feb447a7ca",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.1658838838338852,
+        "density_max": 2.2367794513702393,
+        "pressure_min": 1.0,
+        "pressure_max": 3.886928081512451,
+        "temperature_max_kelvin_scaled": 3819.585693359375,
+        "soot_max": 0.005043954588472843,
+        "soot_sum": 38.334251403808594,
+        "sigma_max": 8.070327758789062,
+        "emission_max": 401.1423645019531
+      },
+      "mean_rgb": [
+        142.1759450954861,
+        149.46797960069443,
+        155.3062163628472
+      ]
+    },
+    {
+      "index": 28,
+      "video_time": 1.1666666666666667,
+      "simulation_time": 0.7,
+      "state_sha256": "fa5fcc70fff8df142e7f192ce480479e016051faf01c357426ac5b8230fcae17",
+      "pixel_sha256": "5af739fa9d8abdbc9a53e22402bcf4ef8642850a2beaae09d6ab2031ae21f944",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.16248168051242828,
+        "density_max": 2.2300283908843994,
+        "pressure_min": 1.0,
+        "pressure_max": 3.611968994140625,
+        "temperature_max_kelvin_scaled": 3802.654296875,
+        "soot_max": 0.004738849587738514,
+        "soot_sum": 39.218719482421875,
+        "sigma_max": 7.582159519195557,
+        "emission_max": 390.8936462402344
+      },
+      "mean_rgb": [
+        142.5983376736111,
+        149.481376953125,
+        154.86088324652778
+      ]
+    },
+    {
+      "index": 29,
+      "video_time": 1.2083333333333333,
+      "simulation_time": 0.725,
+      "state_sha256": "0986ba0a68685a2fb07b52e7ca80e73ab657ca67302ef1685f8b6748c75161bc",
+      "pixel_sha256": "f275efb0d876bfd073e6ae387d6ac8e8b82d8be18c73f6f6154eb4a3625aba93",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.1587943732738495,
+        "density_max": 2.1970038414001465,
+        "pressure_min": 1.0,
+        "pressure_max": 3.4094789028167725,
+        "temperature_max_kelvin_scaled": 3781.65087890625,
+        "soot_max": 0.0046073137782514095,
+        "soot_sum": 40.036407470703125,
+        "sigma_max": 7.371702194213867,
+        "emission_max": 378.4226989746094
+      },
+      "mean_rgb": [
+        142.9998025173611,
+        149.49589735243055,
+        154.427978515625
+      ]
+    },
+    {
+      "index": 30,
+      "video_time": 1.25,
+      "simulation_time": 0.75,
+      "state_sha256": "4d9e2f6fc90ca2b0fc29da485c8ac93d931009036f29680d93b2bd0f73aeb726",
+      "pixel_sha256": "b8daeeb5166f924dc8ddebbf53432674bc0af60a5acf3ca2494cca006b37d214",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.15475837886333466,
+        "density_max": 2.1899867057800293,
+        "pressure_min": 1.0,
+        "pressure_max": 3.2499945163726807,
+        "temperature_max_kelvin_scaled": 3757.745849609375,
+        "soot_max": 0.004532848950475454,
+        "soot_sum": 40.79248046875,
+        "sigma_max": 7.25255823135376,
+        "emission_max": 364.5524597167969
+      },
+      "mean_rgb": [
+        143.3734646267361,
+        149.4979177517361,
+        154.00142686631943
+      ]
+    },
+    {
+      "index": 31,
+      "video_time": 1.2916666666666667,
+      "simulation_time": 0.775,
+      "state_sha256": "003e91661a8574a128e6a0a361a38535fed0e6036b5470c5be621974e7e53824",
+      "pixel_sha256": "94e6ad8ba27b62378dc9d291fd2b4c9992d4694232cd9c95eee3546f04a248f2",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.15072818100452423,
+        "density_max": 2.157428026199341,
+        "pressure_min": 1.0,
+        "pressure_max": 3.1068789958953857,
+        "temperature_max_kelvin_scaled": 3733.7900390625,
+        "soot_max": 0.004391744267195463,
+        "soot_sum": 41.49225616455078,
+        "sigma_max": 7.026790618896484,
+        "emission_max": 350.995849609375
+      },
+      "mean_rgb": [
+        143.72790581597224,
+        149.49092881944443,
+        153.58068684895832
+      ]
+    },
+    {
+      "index": 32,
+      "video_time": 1.3333333333333333,
+      "simulation_time": 0.8,
+      "state_sha256": "dfa05f9e21a1906217a8d0b1ba15665f55836489b7794160656db6347586bd70",
+      "pixel_sha256": "97a9c1d0f73a670d1c1f58c9956ace3d4c23742834a75f9a4dbdc93d9327d54c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.1467498540878296,
+        "density_max": 2.144850254058838,
+        "pressure_min": 1.0,
+        "pressure_max": 2.958111524581909,
+        "temperature_max_kelvin_scaled": 3706.411376953125,
+        "soot_max": 0.004249552730470896,
+        "soot_sum": 42.13983917236328,
+        "sigma_max": 6.7992844581604,
+        "emission_max": 335.91839599609375
+      },
+      "mean_rgb": [
+        144.07455946180556,
+        149.48581922743057,
+        153.17076497395834
+      ]
+    },
+    {
+      "index": 33,
+      "video_time": 1.375,
+      "simulation_time": 0.825,
+      "state_sha256": "8e2ac5c3b49a4ef1ed407669e80c327740588ee632927b114fdde401427ca045",
+      "pixel_sha256": "6ae53d50c27958b7680ecf84d31fb92803136775f295df3a08eca0282387089a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.14283661544322968,
+        "density_max": 2.121901750564575,
+        "pressure_min": 1.0,
+        "pressure_max": 2.864712953567505,
+        "temperature_max_kelvin_scaled": 3676.825439453125,
+        "soot_max": 0.004093191586434841,
+        "soot_sum": 42.73848342895508,
+        "sigma_max": 6.549106597900391,
+        "emission_max": 320.1192626953125
+      },
+      "mean_rgb": [
+        144.3990939670139,
+        149.47192816840277,
+        152.76908745659722
+      ]
+    },
+    {
+      "index": 34,
+      "video_time": 1.4166666666666667,
+      "simulation_time": 0.85,
+      "state_sha256": "9447826745dd635fd3c28f818e667bc536cc3fd42ebe991831f4c4a14728f783",
+      "pixel_sha256": "7d8733ea973d6098592213c5170048aa194d3428444aec0ec841469d35608ff1",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.13902494311332703,
+        "density_max": 2.1039226055145264,
+        "pressure_min": 1.0,
+        "pressure_max": 2.8156685829162598,
+        "temperature_max_kelvin_scaled": 3646.63037109375,
+        "soot_max": 0.004077501129359007,
+        "soot_sum": 43.293182373046875,
+        "sigma_max": 6.524001598358154,
+        "emission_max": 304.5169372558594
+      },
+      "mean_rgb": [
+        144.6920529513889,
+        149.44173936631944,
+        152.3725759548611
+      ]
+    },
+    {
+      "index": 35,
+      "video_time": 1.4583333333333333,
+      "simulation_time": 0.875,
+      "state_sha256": "f04821951ca6093e86a484171c4a0f826b43c65f075724af8cc5b798a9a6b757",
+      "pixel_sha256": "5c4ce6abc4fb8b96c5d4d2eefc2eec99e4fc6be327cbb3306e751f18a3ae9f89",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.13538816571235657,
+        "density_max": 2.079432487487793,
+        "pressure_min": 1.0,
+        "pressure_max": 2.7594451904296875,
+        "temperature_max_kelvin_scaled": 3615.35546875,
+        "soot_max": 0.004037532489746809,
+        "soot_sum": 43.80799865722656,
+        "sigma_max": 6.460052013397217,
+        "emission_max": 288.9054260253906
+      },
+      "mean_rgb": [
+        144.9649142795139,
+        149.40404839409723,
+        151.98725043402777
+      ]
+    },
+    {
+      "index": 36,
+      "video_time": 1.5,
+      "simulation_time": 0.9,
+      "state_sha256": "d7daf502413ed825f2f7d1237802886538c418ee9cc5cd50bdf2e447cf67758e",
+      "pixel_sha256": "30c706392cf12cd986b3e4f57bb533ffdd225dbed6c7f48b8b377713d3e4a079",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.1319238394498825,
+        "density_max": 2.05926513671875,
+        "pressure_min": 1.0,
+        "pressure_max": 2.7151565551757812,
+        "temperature_max_kelvin_scaled": 3583.75830078125,
+        "soot_max": 0.004016338847577572,
+        "soot_sum": 44.285438537597656,
+        "sigma_max": 6.42614221572876,
+        "emission_max": 273.6919250488281
+      },
+      "mean_rgb": [
+        145.22330512152777,
+        149.35860894097223,
+        151.61140625
+      ]
+    },
+    {
+      "index": 37,
+      "video_time": 1.5416666666666667,
+      "simulation_time": 0.925,
+      "state_sha256": "032d834ba9c1f767f7be8876eb143bd7d1743c349fde72070d318b56db159e4b",
+      "pixel_sha256": "7b8ccc201146d84a68b298cd6bafed9ed4a159bc48fd3be01aa3fd1e84276e9f",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.128439262509346,
+        "density_max": 2.035245895385742,
+        "pressure_min": 1.0,
+        "pressure_max": 2.661057949066162,
+        "temperature_max_kelvin_scaled": 3551.696533203125,
+        "soot_max": 0.00398166524246335,
+        "soot_sum": 44.72792053222656,
+        "sigma_max": 6.370664596557617,
+        "emission_max": 258.8203125
+      },
+      "mean_rgb": [
+        145.46756293402777,
+        149.3045431857639,
+        151.24251085069446
+      ]
+    },
+    {
+      "index": 38,
+      "video_time": 1.5833333333333333,
+      "simulation_time": 0.95,
+      "state_sha256": "be162a4ad6c7237e08430574f578dd3fff205592ef2b0ba9fb339a53b8b6323f",
+      "pixel_sha256": "74da87bafd8a9a0f3683be93f307031d7640375609ff8c3034715dea70051887",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.1250961720943451,
+        "density_max": 2.018078565597534,
+        "pressure_min": 1.0,
+        "pressure_max": 2.625291347503662,
+        "temperature_max_kelvin_scaled": 3518.7529296875,
+        "soot_max": 0.0039017389062792063,
+        "soot_sum": 45.13761520385742,
+        "sigma_max": 6.242782115936279,
+        "emission_max": 244.1236114501953
+      },
+      "mean_rgb": [
+        145.69682291666666,
+        149.24712239583334,
+        150.88301866319443
+      ]
+    },
+    {
+      "index": 39,
+      "video_time": 1.625,
+      "simulation_time": 0.975,
+      "state_sha256": "9ce8fd19bb5f9ec838004ca911f1b224da3627ff2246eba168236dd96b1d8ab0",
+      "pixel_sha256": "b06735d8917be0dfd49cd5691f506b2df2ca439518933f266ac7dbfbd998e66d",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.12182264029979706,
+        "density_max": 1.9895880222320557,
+        "pressure_min": 1.0,
+        "pressure_max": 2.5712454319000244,
+        "temperature_max_kelvin_scaled": 3484.821044921875,
+        "soot_max": 0.00382826616987586,
+        "soot_sum": 45.51715087890625,
+        "sigma_max": 6.125226020812988,
+        "emission_max": 229.5939178466797
+      },
+      "mean_rgb": [
+        145.90347547743056,
+        149.18826605902777,
+        150.5359743923611
+      ]
+    },
+    {
+      "index": 40,
+      "video_time": 1.6666666666666667,
+      "simulation_time": 1,
+      "state_sha256": "718c71dc142c0277fffeb868ec6806dd898e2b9df7045d80d88aa5dcbe2149e6",
+      "pixel_sha256": "77bfb770786aff5589645e8ca43f5a3c59b2afb98dbfe1a8870fb97519b49204",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.11866392940282822,
+        "density_max": 1.9717024564743042,
+        "pressure_min": 1.0,
+        "pressure_max": 2.5361292362213135,
+        "temperature_max_kelvin_scaled": 3450.49462890625,
+        "soot_max": 0.0037991616409271955,
+        "soot_sum": 45.86865997314453,
+        "sigma_max": 6.078658580780029,
+        "emission_max": 215.51173400878906
+      },
+      "mean_rgb": [
+        146.071845703125,
+        149.11392361111112,
+        150.20058268229167
+      ]
+    },
+    {
+      "index": 41,
+      "video_time": 1.7083333333333333,
+      "simulation_time": 1.025,
+      "state_sha256": "58a82160c2dc5428cd53de2f9447feb50599b2d3d13762d2c17c9151b7a99ff6",
+      "pixel_sha256": "5b10d0d3718b9bce4a67849f93edaf76fef773a5592142ec6b3b7e50af15b478",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.11569010466337204,
+        "density_max": 1.950073480606079,
+        "pressure_min": 1.0,
+        "pressure_max": 2.492272138595581,
+        "temperature_max_kelvin_scaled": 3416.761474609375,
+        "soot_max": 0.003697952488437295,
+        "soot_sum": 46.19445037841797,
+        "sigma_max": 5.91672420501709,
+        "emission_max": 202.26531982421875
+      },
+      "mean_rgb": [
+        146.19364800347222,
+        149.01090711805554,
+        149.87115885416668
+      ]
+    },
+    {
+      "index": 42,
+      "video_time": 1.75,
+      "simulation_time": 1.05,
+      "state_sha256": "f6f3f57fa52d997003fcf96242f03bc219cd00cb2e4f8f1a3ccf71c1f4887b9d",
+      "pixel_sha256": "0e41f519ace25802cd9c4e293abb0467f68ce79acd728a486a63d3abd25916fe",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.11295729130506516,
+        "density_max": 1.9278382062911987,
+        "pressure_min": 1.0,
+        "pressure_max": 2.448796033859253,
+        "temperature_max_kelvin_scaled": 3384.159912109375,
+        "soot_max": 0.003589096013456583,
+        "soot_sum": 46.49631118774414,
+        "sigma_max": 5.7425537109375,
+        "emission_max": 190.01022338867188
+      },
+      "mean_rgb": [
+        146.26697374131945,
+        148.86896918402778,
+        149.54437934027777
+      ]
+    },
+    {
+      "index": 43,
+      "video_time": 1.7916666666666667,
+      "simulation_time": 1.075,
+      "state_sha256": "10e2bbccfc494881ae9b5cab8b99ce2b70aa6850f81947876d014b5e79307bd5",
+      "pixel_sha256": "77a3de5e6746c54cb9f799e16184136d6243f19b8f2947369ebdafd57a22336e",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.11047527939081192,
+        "density_max": 1.9063186645507812,
+        "pressure_min": 1.0,
+        "pressure_max": 2.4112610816955566,
+        "temperature_max_kelvin_scaled": 3352.9326171875,
+        "soot_max": 0.003497521160170436,
+        "soot_sum": 46.776031494140625,
+        "sigma_max": 5.596034049987793,
+        "emission_max": 178.76564025878906
+      },
+      "mean_rgb": [
+        146.30094835069445,
+        148.69144422743057,
+        149.22111219618054
+      ]
+    },
+    {
+      "index": 44,
+      "video_time": 1.8333333333333333,
+      "simulation_time": 1.1,
+      "state_sha256": "bd846d58b512751052c6f5349639b4f9cbaf7f44b352a5b01e761f9be435f663",
+      "pixel_sha256": "0c6384056750fba2a620525191ad41fc9147c2995bc787bb9ef7075b0a638930",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.10823725163936615,
+        "density_max": 1.8891634941101074,
+        "pressure_min": 1.0,
+        "pressure_max": 2.3748772144317627,
+        "temperature_max_kelvin_scaled": 3323.34375,
+        "soot_max": 0.0034489633981138468,
+        "soot_sum": 47.03504180908203,
+        "sigma_max": 5.518341541290283,
+        "emission_max": 168.54800415039062
+      },
+      "mean_rgb": [
+        146.301884765625,
+        148.4817241753472,
+        148.90051215277776
+      ]
+    },
+    {
+      "index": 45,
+      "video_time": 1.875,
+      "simulation_time": 1.125,
+      "state_sha256": "cef62617b84e14ff0c91f176afe7e67b4de68bd26f8d1fa9ab0c563314074da0",
+      "pixel_sha256": "b66d05c3e8d945c5710217d4c48b44aeb3b1bb829e84bfab287b1f30dcd3bb21",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.106184221804142,
+        "density_max": 1.868789792060852,
+        "pressure_min": 1.0,
+        "pressure_max": 2.3363332748413086,
+        "temperature_max_kelvin_scaled": 3295.1044921875,
+        "soot_max": 0.0033687457907944918,
+        "soot_sum": 47.27495193481445,
+        "sigma_max": 5.389993190765381,
+        "emission_max": 159.1851806640625
+      },
+      "mean_rgb": [
+        146.27528211805554,
+        148.2438031684028,
+        148.582236328125
+      ]
+    },
+    {
+      "index": 46,
+      "video_time": 1.9166666666666667,
+      "simulation_time": 1.15,
+      "state_sha256": "7e5b95d5b485c1a0c49e8ae0b11f6323072638d10fd4f4347a0da28f0c7a780c",
+      "pixel_sha256": "e2530f535ab738b734fb7f28ccf4a6ce87b792bb825bb6559f57c3a5aa735ff7",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.10431305319070816,
+        "density_max": 1.8496063947677612,
+        "pressure_min": 1.0,
+        "pressure_max": 2.303375720977783,
+        "temperature_max_kelvin_scaled": 3268.24462890625,
+        "soot_max": 0.003287404077127576,
+        "soot_sum": 47.4973030090332,
+        "sigma_max": 5.2598466873168945,
+        "emission_max": 150.62539672851562
+      },
+      "mean_rgb": [
+        146.2216091579861,
+        147.9787771267361,
+        148.26485243055555
+      ]
+    },
+    {
+      "index": 47,
+      "video_time": 1.9583333333333333,
+      "simulation_time": 1.175,
+      "state_sha256": "9b83ef52a0ac7f21d7c9c504bb9945c5278035e2464b94289fea26e0f2e7a68b",
+      "pixel_sha256": "bbbcedbef1498c5f7318c56f901f3ff16cecec509d67fdd436e7856ba457e4d3",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.10260844230651855,
+        "density_max": 1.8367856740951538,
+        "pressure_min": 1.0,
+        "pressure_max": 2.2748727798461914,
+        "temperature_max_kelvin_scaled": 3242.388671875,
+        "soot_max": 0.0032152088824659586,
+        "soot_sum": 47.70351791381836,
+        "sigma_max": 5.144334316253662,
+        "emission_max": 142.697509765625
+      },
+      "mean_rgb": [
+        146.13829644097223,
+        147.68838975694445,
+        147.94894965277777
+      ]
+    },
+    {
+      "index": 48,
+      "video_time": 2.0,
+      "simulation_time": 1.2,
+      "state_sha256": "8db261fe82ef9353b57363b24dcae847a4a16243509b98ada1f4404dc3d25985",
+      "pixel_sha256": "16df0d7dbf5ecdebac378f9b1e198c9f5cff9ef621b4e6278167d3f7589d4e2a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.10103174299001694,
+        "density_max": 1.8175419569015503,
+        "pressure_min": 0.9855986833572388,
+        "pressure_max": 2.238558530807495,
+        "temperature_max_kelvin_scaled": 3217.05712890625,
+        "soot_max": 0.00314339529722929,
+        "soot_sum": 47.89501190185547,
+        "sigma_max": 5.02943229675293,
+        "emission_max": 135.2216339111328
+      },
+      "mean_rgb": [
+        146.02721354166667,
+        147.37721788194443,
+        147.63577907986112
+      ]
+    },
+    {
+      "index": 49,
+      "video_time": 2.0416666666666665,
+      "simulation_time": 1.225,
+      "state_sha256": "51ced774795755e715db7d7a504db391cf03fb87b48026c8393d901742aa56a8",
+      "pixel_sha256": "0388cf82ea0acfe9681d85223eed139531c691c5bd124ddfb97e755264e53302",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09946458786725998,
+        "density_max": 1.803634524345398,
+        "pressure_min": 0.9543039798736572,
+        "pressure_max": 2.2137176990509033,
+        "temperature_max_kelvin_scaled": 3191.76025390625,
+        "soot_max": 0.0030871566850692034,
+        "soot_sum": 48.072845458984375,
+        "sigma_max": 4.939450740814209,
+        "emission_max": 128.03810119628906
+      },
+      "mean_rgb": [
+        145.88810004340277,
+        147.04879991319444,
+        147.32633897569445
+      ]
+    },
+    {
+      "index": 50,
+      "video_time": 2.0833333333333335,
+      "simulation_time": 1.25,
+      "state_sha256": "3087bd6e99beee784ab8471e343d63321c811e09612f79c90f9b1406070532f0",
+      "pixel_sha256": "aa14a8f1e84b0ee05a02b865a2967e35513c9c0c9b09b933c99717f17286916c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09783000499010086,
+        "density_max": 1.7876814603805542,
+        "pressure_min": 0.9256380796432495,
+        "pressure_max": 2.1840479373931885,
+        "temperature_max_kelvin_scaled": 3166.791015625,
+        "soot_max": 0.00304359570145607,
+        "soot_sum": 48.23822784423828,
+        "sigma_max": 4.869752883911133,
+        "emission_max": 121.21857452392578
+      },
+      "mean_rgb": [
+        145.72577039930556,
+        146.70839301215278,
+        147.02174696180555
+      ]
+    },
+    {
+      "index": 51,
+      "video_time": 2.125,
+      "simulation_time": 1.275,
+      "state_sha256": "acd78725d32fc26825c6bef4bec94717c3e79ce586d65bd88cffc802757511f4",
+      "pixel_sha256": "fc5fe12922673adf36b3ecc7511677579fd256d90236dbc3c5e221fdb473de1e",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09626155346632004,
+        "density_max": 1.7721045017242432,
+        "pressure_min": 0.8970097899436951,
+        "pressure_max": 2.157994508743286,
+        "temperature_max_kelvin_scaled": 3141.888916015625,
+        "soot_max": 0.0029913114849478006,
+        "soot_sum": 48.39194869995117,
+        "sigma_max": 4.786098480224609,
+        "emission_max": 114.68006896972656
+      },
+      "mean_rgb": [
+        145.5383420138889,
+        146.35275390625,
+        146.72205729166666
+      ]
+    },
+    {
+      "index": 52,
+      "video_time": 2.1666666666666665,
+      "simulation_time": 1.3,
+      "state_sha256": "241f64ae4967c5bdcac96ca584106a92c9b6d5b6c8470aa2c6f62a425d050c22",
+      "pixel_sha256": "8394580b23c72fa2a24fbc663ae05bfa6a1e228c9faab48f0c013d5d8b3cd155",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09478063136339188,
+        "density_max": 1.7592954635620117,
+        "pressure_min": 0.8699780106544495,
+        "pressure_max": 2.1337478160858154,
+        "temperature_max_kelvin_scaled": 3116.8916015625,
+        "soot_max": 0.002945700893178582,
+        "soot_sum": 48.5351448059082,
+        "sigma_max": 4.71312141418457,
+        "emission_max": 108.37488555908203
+      },
+      "mean_rgb": [
+        145.32480794270833,
+        145.9781423611111,
+        146.42417426215277
+      ]
+    },
+    {
+      "index": 53,
+      "video_time": 2.2083333333333335,
+      "simulation_time": 1.325,
+      "state_sha256": "dbfa947522bd868db149cec01f441e7bb08321541bf415e829212cffc024b2a1",
+      "pixel_sha256": "478982ff89445f26f4ddb02f6b8103de29f9659a30b2f90cfc8943cf1623c0c8",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09340881556272507,
+        "density_max": 1.7435590028762817,
+        "pressure_min": 0.8442780375480652,
+        "pressure_max": 2.1067419052124023,
+        "temperature_max_kelvin_scaled": 3091.929931640625,
+        "soot_max": 0.002922344719991088,
+        "soot_sum": 48.669044494628906,
+        "sigma_max": 4.675751686096191,
+        "emission_max": 102.33153533935547
+      },
+      "mean_rgb": [
+        145.0891460503472,
+        145.589375,
+        146.12924045138888
+      ]
+    },
+    {
+      "index": 54,
+      "video_time": 2.25,
+      "simulation_time": 1.35,
+      "state_sha256": "a64ba33ab24e77c25992d1539ee42d3b46adbffa75eb9632c854caebbd5a127b",
+      "pixel_sha256": "8339353474db398e3ee839ab8e10b66bd232f49967da27500fb8ed77c4528b88",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09216774255037308,
+        "density_max": 1.7317525148391724,
+        "pressure_min": 0.8188210129737854,
+        "pressure_max": 2.085045576095581,
+        "temperature_max_kelvin_scaled": 3068.48046875,
+        "soot_max": 0.0028872410766780376,
+        "soot_sum": 48.79449462890625,
+        "sigma_max": 4.6195855140686035,
+        "emission_max": 96.8794174194336
+      },
+      "mean_rgb": [
+        144.8350249565972,
+        145.19311957465277,
+        145.83941514756944
+      ]
+    },
+    {
+      "index": 55,
+      "video_time": 2.2916666666666665,
+      "simulation_time": 1.375,
+      "state_sha256": "c399d11d1a7f85ba5b32bedc604ac3f7370ceec31cc29018c7480c42a1cf08d7",
+      "pixel_sha256": "175996912f2e66c8c50583013836cf2bdeeeace3f0c93a2cbf053a0e69da69f5",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09103693813085556,
+        "density_max": 1.7149053812026978,
+        "pressure_min": 0.7947534918785095,
+        "pressure_max": 2.0567262172698975,
+        "temperature_max_kelvin_scaled": 3048.454345703125,
+        "soot_max": 0.002864216919988394,
+        "soot_sum": 48.912288665771484,
+        "sigma_max": 4.582746982574463,
+        "emission_max": 92.39236450195312
+      },
+      "mean_rgb": [
+        144.5684592013889,
+        144.79643120659722,
+        145.55622612847222
+      ]
+    },
+    {
+      "index": 56,
+      "video_time": 2.3333333333333335,
+      "simulation_time": 1.4,
+      "state_sha256": "81cd414b9dedc389b57b0ae3914b0872798abdb66f6eaf9c74bcdd1c2ed62a87",
+      "pixel_sha256": "dab57492a71552dc19221c75b1a6e1e09c321cb25ec7fe528c8b6982cb5a8b39",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08998408168554306,
+        "density_max": 1.7043039798736572,
+        "pressure_min": 0.772487461566925,
+        "pressure_max": 2.038294553756714,
+        "temperature_max_kelvin_scaled": 3034.880615234375,
+        "soot_max": 0.002849810989573598,
+        "soot_sum": 49.02326965332031,
+        "sigma_max": 4.55969762802124,
+        "emission_max": 89.43807983398438
+      },
+      "mean_rgb": [
+        144.29650607638888,
+        144.40721896701388,
+        145.28248046875
+      ]
+    },
+    {
+      "index": 57,
+      "video_time": 2.375,
+      "simulation_time": 1.425,
+      "state_sha256": "c92e01dd4ffb39a6c97cdb3abaa2641b16ab0e67b2d0c4ef7eba9f5003ad49c8",
+      "pixel_sha256": "1172051bda13fc70f6453419bbb547786f379787e093e6f003cf269a986f832a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0890352725982666,
+        "density_max": 1.6897919178009033,
+        "pressure_min": 0.7516323328018188,
+        "pressure_max": 2.0122203826904297,
+        "temperature_max_kelvin_scaled": 3021.386962890625,
+        "soot_max": 0.0028338287957012653,
+        "soot_sum": 49.128028869628906,
+        "sigma_max": 4.534126281738281,
+        "emission_max": 86.56979370117188
+      },
+      "mean_rgb": [
+        144.02092990451388,
+        144.0281640625,
+        145.01840711805556
+      ]
+    },
+    {
+      "index": 58,
+      "video_time": 2.4166666666666665,
+      "simulation_time": 1.45,
+      "state_sha256": "8bc62c8ae2988c9051336362e6d2a965ba5bd593e5773da48e3d10a134b20b2a",
+      "pixel_sha256": "9bc6b041f1865e6abf99e57c4a4f1dff53fdfa31bbc07c44ed1387d49863ebc5",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08818446099758148,
+        "density_max": 1.678155779838562,
+        "pressure_min": 0.7318717837333679,
+        "pressure_max": 1.994132161140442,
+        "temperature_max_kelvin_scaled": 3006.41259765625,
+        "soot_max": 0.002812552498653531,
+        "soot_sum": 49.2271728515625,
+        "sigma_max": 4.500083923339844,
+        "emission_max": 83.46587371826172
+      },
+      "mean_rgb": [
+        143.74149197048612,
+        143.65965277777778,
+        144.764052734375
+      ]
+    },
+    {
+      "index": 59,
+      "video_time": 2.4583333333333335,
+      "simulation_time": 1.475,
+      "state_sha256": "4b13635c2e8261515666599ba56f40a6311f683af2a9e7150248f1d74ddb7fdb",
+      "pixel_sha256": "8f6d2bd120c6e6912f7f437ab855bb50f9a499827f253a3e3ced0346faf3f4bb",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0874374732375145,
+        "density_max": 1.6652677059173584,
+        "pressure_min": 0.7127107977867126,
+        "pressure_max": 1.971487045288086,
+        "temperature_max_kelvin_scaled": 2989.1103515625,
+        "soot_max": 0.002797903725877404,
+        "soot_sum": 49.32138442993164,
+        "sigma_max": 4.4766459465026855,
+        "emission_max": 79.9813232421875
+      },
+      "mean_rgb": [
+        143.45626193576388,
+        143.29960828993055,
+        144.51949869791667
+      ]
+    },
+    {
+      "index": 60,
+      "video_time": 2.5,
+      "simulation_time": 1.5,
+      "state_sha256": "985b1dfd29dfadfe03571660e837277a38e8c1ec9421df4dea66eb471bb121c5",
+      "pixel_sha256": "358a73f842ea4ae2429e1be75b7a6ea9a93779d3b17fa6b6f0df0b459df54fa0",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08672267943620682,
+        "density_max": 1.6521886587142944,
+        "pressure_min": 0.6934381723403931,
+        "pressure_max": 1.9506171941757202,
+        "temperature_max_kelvin_scaled": 2969.6484375,
+        "soot_max": 0.0027982790488749743,
+        "soot_sum": 49.411346435546875,
+        "sigma_max": 4.477246284484863,
+        "emission_max": 76.19023132324219
+      },
+      "mean_rgb": [
+        143.16786566840278,
+        142.94884114583334,
+        144.28476345486112
+      ]
+    },
+    {
+      "index": 61,
+      "video_time": 2.5416666666666665,
+      "simulation_time": 1.525,
+      "state_sha256": "8fbe22eb0981ed70cb4467a5cdaac4001aaebbbb488edc34fe1b005c96ae59ba",
+      "pixel_sha256": "941676bcefe24600b90dd509014098dc67b03c4b7c5acef8c429bf6c46aa2927",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08609822392463684,
+        "density_max": 1.6414037942886353,
+        "pressure_min": 0.6746587157249451,
+        "pressure_max": 1.9318352937698364,
+        "temperature_max_kelvin_scaled": 2954.908935546875,
+        "soot_max": 0.0027867681346833706,
+        "soot_sum": 49.497474670410156,
+        "sigma_max": 4.458828926086426,
+        "emission_max": 73.40794372558594
+      },
+      "mean_rgb": [
+        142.8797026909722,
+        142.60838216145834,
+        144.05694227430556
+      ]
+    },
+    {
+      "index": 62,
+      "video_time": 2.5833333333333335,
+      "simulation_time": 1.55,
+      "state_sha256": "28194420ba653889c980a8542ea2b29968048752cd9a31329ebb7fa2e886dfd5",
+      "pixel_sha256": "a731a0f3d197a5c52242e810d534d7cf7abfae5fe056e9d4c5b53586aac944b9",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08556300401687622,
+        "density_max": 1.6278735399246216,
+        "pressure_min": 0.6570530533790588,
+        "pressure_max": 1.9106559753417969,
+        "temperature_max_kelvin_scaled": 2938.100830078125,
+        "soot_max": 0.0027674667071551085,
+        "soot_sum": 49.57989501953125,
+        "sigma_max": 4.4279465675354,
+        "emission_max": 70.32694244384766
+      },
+      "mean_rgb": [
+        142.58834526909723,
+        142.2778537326389,
+        143.83796549479166
+      ]
+    },
+    {
+      "index": 63,
+      "video_time": 2.625,
+      "simulation_time": 1.575,
+      "state_sha256": "b126f0c8e172ac8cff971920ec9bcb9212f9de65f325b36556dd9e1c9629a80c",
+      "pixel_sha256": "7550fb37af4ebba1945572165a24183a51504ba2a69a7b742a0f70a5321db518",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08509567379951477,
+        "density_max": 1.6175024509429932,
+        "pressure_min": 0.6410126686096191,
+        "pressure_max": 1.8929070234298706,
+        "temperature_max_kelvin_scaled": 2920.289794921875,
+        "soot_max": 0.0027771745808422565,
+        "soot_sum": 49.659027099609375,
+        "sigma_max": 4.443479537963867,
+        "emission_max": 67.16698455810547
+      },
+      "mean_rgb": [
+        142.2943695746528,
+        141.95689127604166,
+        143.62842447916665
+      ]
+    },
+    {
+      "index": 64,
+      "video_time": 2.6666666666666665,
+      "simulation_time": 1.6,
+      "state_sha256": "72654c41941671341d2581d35516c61db8f11f8b3a29855bbd25d295ebaa07d0",
+      "pixel_sha256": "efdbdf41c286b00d26c6d6668e46603ca0760c76f200e2bf706484c7b383b0d7",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08473142981529236,
+        "density_max": 1.6038477420806885,
+        "pressure_min": 0.6255633234977722,
+        "pressure_max": 1.8713030815124512,
+        "temperature_max_kelvin_scaled": 2904.54833984375,
+        "soot_max": 0.002777749439701438,
+        "soot_sum": 49.7353515625,
+        "sigma_max": 4.444398880004883,
+        "emission_max": 64.46240997314453
+      },
+      "mean_rgb": [
+        142.00032877604167,
+        141.64678276909723,
+        143.42652777777778
+      ]
+    },
+    {
+      "index": 65,
+      "video_time": 2.7083333333333335,
+      "simulation_time": 1.625,
+      "state_sha256": "b9b1bf30d5f08cc1b09fe2da118459fd820c6ad32169fd823c31ed6ff4b8d580",
+      "pixel_sha256": "cdb274dba1dfb1eac887c2f770779c39be350c66f173616c78e7d14d8c42e104",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08449187129735947,
+        "density_max": 1.5959315299987793,
+        "pressure_min": 0.6101313829421997,
+        "pressure_max": 1.8576527833938599,
+        "temperature_max_kelvin_scaled": 2891.1708984375,
+        "soot_max": 0.0027763950638473034,
+        "soot_sum": 49.80922317504883,
+        "sigma_max": 4.442232131958008,
+        "emission_max": 62.227909088134766
+      },
+      "mean_rgb": [
+        141.705888671875,
+        141.34652994791668,
+        143.23271050347222
+      ]
+    },
+    {
+      "index": 66,
+      "video_time": 2.75,
+      "simulation_time": 1.65,
+      "state_sha256": "ad4957af5cc7e0eafa0e713b7f385499948f4585be30c29701a0075822f3481b",
+      "pixel_sha256": "bece1a8482fcbe559170f75531cca34a75209b1659b3a62bd19c55bdd2a48da0",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08441372960805893,
+        "density_max": 1.5825610160827637,
+        "pressure_min": 0.5958462953567505,
+        "pressure_max": 1.8358943462371826,
+        "temperature_max_kelvin_scaled": 2883.03271484375,
+        "soot_max": 0.002786728087812662,
+        "soot_sum": 49.88081741333008,
+        "sigma_max": 4.458765029907227,
+        "emission_max": 60.89687728881836
+      },
+      "mean_rgb": [
+        141.40952473958333,
+        141.05292860243057,
+        143.04492838541665
+      ]
+    },
+    {
+      "index": 67,
+      "video_time": 2.7916666666666665,
+      "simulation_time": 1.675,
+      "state_sha256": "060c73f5fe5dff598a93746bc1dce06e7b5a4e73417569c07655fc8c40769596",
+      "pixel_sha256": "83f19d336738da18d5f72ad9175b24b813868f469b2487556e05b94a0d0a5418",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08433592319488525,
+        "density_max": 1.5736281871795654,
+        "pressure_min": 0.5826295614242554,
+        "pressure_max": 1.8216034173965454,
+        "temperature_max_kelvin_scaled": 2872.589599609375,
+        "soot_max": 0.002808227436617017,
+        "soot_sum": 49.95061492919922,
+        "sigma_max": 4.4931640625,
+        "emission_max": 59.21990966796875
+      },
+      "mean_rgb": [
+        141.111923828125,
+        140.76620334201388,
+        142.86330946180556
+      ]
+    },
+    {
+      "index": 68,
+      "video_time": 2.8333333333333335,
+      "simulation_time": 1.7,
+      "state_sha256": "81b705940c6466d13f62a0c1ea6b86a2b6b3e929d39b79f569e8be9ee91cf1dd",
+      "pixel_sha256": "f98103a12e535aebbde8c18e65d2d750eac5da42633467a7fd6ba729d5ac5df6",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08430105447769165,
+        "density_max": 1.5630029439926147,
+        "pressure_min": 0.5704668164253235,
+        "pressure_max": 1.8042871952056885,
+        "temperature_max_kelvin_scaled": 2861.134765625,
+        "soot_max": 0.002817911794409156,
+        "soot_sum": 50.01881790161133,
+        "sigma_max": 4.5086588859558105,
+        "emission_max": 57.42006301879883
+      },
+      "mean_rgb": [
+        140.81123372395834,
+        140.48406575520832,
+        142.6875238715278
+      ]
+    },
+    {
+      "index": 69,
+      "video_time": 2.875,
+      "simulation_time": 1.725,
+      "state_sha256": "26d566b4fcb2be2be929a0f716d0fb0efb66a4ecd188fdb0a8b569a2032c8767",
+      "pixel_sha256": "7a1e684cc1945aa02f28c0afc0e9dd86295b04784bcdd094006d5fb403e45005",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08429671078920364,
+        "density_max": 1.5533381700515747,
+        "pressure_min": 0.5593034625053406,
+        "pressure_max": 1.7895410060882568,
+        "temperature_max_kelvin_scaled": 2855.55712890625,
+        "soot_max": 0.0028310450725257397,
+        "soot_sum": 50.085716247558594,
+        "sigma_max": 4.529672145843506,
+        "emission_max": 56.55854797363281
+      },
+      "mean_rgb": [
+        140.51202582465277,
+        140.20836588541667,
+        142.5163519965278
+      ]
+    },
+    {
+      "index": 70,
+      "video_time": 2.9166666666666665,
+      "simulation_time": 1.75,
+      "state_sha256": "ee5c8bdc158e5031f6d706ac36980d0266fa95b2ee16968324a7456f1092c006",
+      "pixel_sha256": "66d5da7fedc48c8851e2c9075c1543aeb53ea8988c1ebbb6e45d59c3239643e6",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08434879779815674,
+        "density_max": 1.5434046983718872,
+        "pressure_min": 0.5488083958625793,
+        "pressure_max": 1.7726229429244995,
+        "temperature_max_kelvin_scaled": 2846.005615234375,
+        "soot_max": 0.002839299151673913,
+        "soot_sum": 50.15122985839844,
+        "sigma_max": 4.5428786277771,
+        "emission_max": 55.105525970458984
+      },
+      "mean_rgb": [
+        140.21533094618056,
+        139.94126844618054,
+        142.35079644097223
+      ]
+    },
+    {
+      "index": 71,
+      "video_time": 2.9583333333333335,
+      "simulation_time": 1.775,
+      "state_sha256": "d4d6894cdfc8b59ee7bfe1c84609b5c2223f6b13f6366e0ce1c56cb6214857e8",
+      "pixel_sha256": "cc51973b56e6c9aeecf5d0ba97166ba9513876b1deee0593c5b3b5f4168dd33d",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08441710472106934,
+        "density_max": 1.5383368730545044,
+        "pressure_min": 0.5389614105224609,
+        "pressure_max": 1.758888840675354,
+        "temperature_max_kelvin_scaled": 2838.617919921875,
+        "soot_max": 0.0028406584169715643,
+        "soot_sum": 50.215431213378906,
+        "sigma_max": 4.545053482055664,
+        "emission_max": 54.000850677490234
+      },
+      "mean_rgb": [
+        139.9195779079861,
+        139.68094075520833,
+        142.18977973090279
+      ]
+    },
+    {
+      "index": 72,
+      "video_time": 3.0,
+      "simulation_time": 1.8,
+      "state_sha256": "d869c6e965d5f8034bf683ce6bed3732ab8dad22dd4ff419eda9da8e5f121ff5",
+      "pixel_sha256": "a0aa0959e82523369283a96f67d6cf7d88f855cfaf5b67508ebf811a5ecaf71f",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08453203737735748,
+        "density_max": 1.5343767404556274,
+        "pressure_min": 0.5287730097770691,
+        "pressure_max": 1.7576260566711426,
+        "temperature_max_kelvin_scaled": 2836.5830078125,
+        "soot_max": 0.002856096252799034,
+        "soot_sum": 50.278594970703125,
+        "sigma_max": 4.569754123687744,
+        "emission_max": 53.69948196411133
+      },
+      "mean_rgb": [
+        139.62135633680555,
+        139.42544270833332,
+        142.03333333333333
+      ]
+    },
+    {
+      "index": 73,
+      "video_time": 3.0416666666666665,
+      "simulation_time": 1.825,
+      "state_sha256": "bd0886cbd14db2232961b9ea1d8bed2f8bb1465d49a6ad66ad663ef3855ecd18",
+      "pixel_sha256": "ef5debf29b9d88e47156a7440cf8174935da7dace7d27b9ab4a9b599db7960ed",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08460791409015656,
+        "density_max": 1.529140830039978,
+        "pressure_min": 0.5182746052742004,
+        "pressure_max": 1.7450510263442993,
+        "temperature_max_kelvin_scaled": 2829.499267578125,
+        "soot_max": 0.002880793297663331,
+        "soot_sum": 50.34095764160156,
+        "sigma_max": 4.609269142150879,
+        "emission_max": 52.66019821166992
+      },
+      "mean_rgb": [
+        139.3197829861111,
+        139.17267469618056,
+        141.88145073784722
+      ]
+    },
+    {
+      "index": 74,
+      "video_time": 3.0833333333333335,
+      "simulation_time": 1.85,
+      "state_sha256": "25d32ce906479a47e8f051ff71ccd7892fc439c2a951575dbec4d93894b6f0ec",
+      "pixel_sha256": "878db08efc773d73e02b237de010dbcfac86f48e7fe76607248f260e8f921d3d",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08479510247707367,
+        "density_max": 1.5253973007202148,
+        "pressure_min": 0.5083230137825012,
+        "pressure_max": 1.743359923362732,
+        "temperature_max_kelvin_scaled": 2824.7548828125,
+        "soot_max": 0.002904049586504698,
+        "soot_sum": 50.40285110473633,
+        "sigma_max": 4.64647912979126,
+        "emission_max": 51.972530364990234
+      },
+      "mean_rgb": [
+        139.01443250868056,
+        138.9228754340278,
+        141.73282660590277
+      ]
+    },
+    {
+      "index": 75,
+      "video_time": 3.125,
+      "simulation_time": 1.875,
+      "state_sha256": "7599b025091b4731c033ae3699f02c4963ae9d14b41f9490ec7314649150604a",
+      "pixel_sha256": "d28905fa729d0235d9945860fff342507294cadb94f77de7434eb91e8608b3c4",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08493053168058395,
+        "density_max": 1.5197632312774658,
+        "pressure_min": 0.49947047233581543,
+        "pressure_max": 1.7308684587478638,
+        "temperature_max_kelvin_scaled": 2825.749755859375,
+        "soot_max": 0.002915850607678294,
+        "soot_sum": 50.46428298950195,
+        "sigma_max": 4.665360927581787,
+        "emission_max": 52.116153717041016
+      },
+      "mean_rgb": [
+        138.7049848090278,
+        138.67533637152778,
+        141.58825846354168
+      ]
+    },
+    {
+      "index": 76,
+      "video_time": 3.1666666666666665,
+      "simulation_time": 1.9,
+      "state_sha256": "3ed313d3b3c0d84c795c5db1e79aab073714fbb922e208d977a86c79a1dfe83c",
+      "pixel_sha256": "5d81cdfc19bab289703326ad9ff574685cd65d0e044cce3610069d57ff39a1e7",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0850808247923851,
+        "density_max": 1.5166537761688232,
+        "pressure_min": 0.48936983942985535,
+        "pressure_max": 1.7296701669692993,
+        "temperature_max_kelvin_scaled": 2819.659912109375,
+        "soot_max": 0.002924731932580471,
+        "soot_sum": 50.52524185180664,
+        "sigma_max": 4.679571151733398,
+        "emission_max": 51.241519927978516
+      },
+      "mean_rgb": [
+        138.39828016493055,
+        138.43450520833332,
+        141.447666015625
+      ]
+    },
+    {
+      "index": 77,
+      "video_time": 3.2083333333333335,
+      "simulation_time": 1.925,
+      "state_sha256": "f735c32f797e681459e2942ffd2636770d8d5f15daf0f0c49da43d5533a741be",
+      "pixel_sha256": "21d1114a0a4984182184a113abfdabb9ea7ccf763cbdb01de00496c0d25df65a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08536163717508316,
+        "density_max": 1.5104763507843018,
+        "pressure_min": 0.4801616966724396,
+        "pressure_max": 1.7172292470932007,
+        "temperature_max_kelvin_scaled": 2815.168212890625,
+        "soot_max": 0.0029373925644904375,
+        "soot_sum": 50.585838317871094,
+        "sigma_max": 4.699828147888184,
+        "emission_max": 50.60346984863281
+      },
+      "mean_rgb": [
+        138.0981206597222,
+        138.2017165798611,
+        141.3126638454861
+      ]
+    },
+    {
+      "index": 78,
+      "video_time": 3.25,
+      "simulation_time": 1.95,
+      "state_sha256": "7579e5e13107a06d09bd58dd738a2ab6143fbac54e467a17eb29ca2218ef91f3",
+      "pixel_sha256": "179080182540da7e74a09cf45f959682bc51b311764f1eedfaad364569a640be",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08543292433023453,
+        "density_max": 1.5074037313461304,
+        "pressure_min": 0.4721623361110687,
+        "pressure_max": 1.7152271270751953,
+        "temperature_max_kelvin_scaled": 2819.990478515625,
+        "soot_max": 0.0029418321792036295,
+        "soot_sum": 50.64637756347656,
+        "sigma_max": 4.7069315910339355,
+        "emission_max": 51.28871536254883
+      },
+      "mean_rgb": [
+        137.80544704861111,
+        137.977783203125,
+        141.18286024305556
+      ]
+    },
+    {
+      "index": 79,
+      "video_time": 3.2916666666666665,
+      "simulation_time": 1.975,
+      "state_sha256": "22c9e64e93827d57c0ad1ce593ba036f7ed682700256bfd0c7a0af72509fa4be",
+      "pixel_sha256": "0d9fa9182803789422665f7ed23e90ebea4127f5ebfa960954d9703e12bfb19c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08487043529748917,
+        "density_max": 1.5004490613937378,
+        "pressure_min": 0.4655102789402008,
+        "pressure_max": 1.7039684057235718,
+        "temperature_max_kelvin_scaled": 2815.2236328125,
+        "soot_max": 0.0029414913151413202,
+        "soot_sum": 50.70710754394531,
+        "sigma_max": 4.706386089324951,
+        "emission_max": 50.611297607421875
+      },
+      "mean_rgb": [
+        137.51829644097222,
+        137.7617697482639,
+        141.05712131076388
+      ]
+    },
+    {
+      "index": 80,
+      "video_time": 3.3333333333333335,
+      "simulation_time": 2,
+      "state_sha256": "3acfe880e800fe209c4b959a712c1420e5f052a464e650420e796ae74ebaa43f",
+      "pixel_sha256": "f30a5ce56616553821aa966256cfb090be1e1e6ec31758b4ae3709f0439487d8",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08446784317493439,
+        "density_max": 1.4980578422546387,
+        "pressure_min": 0.45975610613822937,
+        "pressure_max": 1.7008142471313477,
+        "temperature_max_kelvin_scaled": 2804.968017578125,
+        "soot_max": 0.0029482569079846144,
+        "soot_sum": 50.76789855957031,
+        "sigma_max": 4.7172112464904785,
+        "emission_max": 49.176517486572266
+      },
+      "mean_rgb": [
+        137.23591688368055,
+        137.55346571180556,
+        140.93576063368056
+      ]
+    },
+    {
+      "index": 81,
+      "video_time": 3.375,
+      "simulation_time": 2.025,
+      "state_sha256": "227ed7bfced1fa8aa85506d6af49eb6fb6648c2102b53c47f7a0a9fecea6643b",
+      "pixel_sha256": "d3053bc007c16d2575070d01c2e693c8ce7c3381e2a666bb986ae5d955896ff3",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08427201211452484,
+        "density_max": 1.4918495416641235,
+        "pressure_min": 0.45504531264305115,
+        "pressure_max": 1.690934181213379,
+        "temperature_max_kelvin_scaled": 2812.214111328125,
+        "soot_max": 0.0029782962519675493,
+        "soot_sum": 50.82850646972656,
+        "sigma_max": 4.7652740478515625,
+        "emission_max": 50.18706512451172
+      },
+      "mean_rgb": [
+        136.955224609375,
+        137.35140733506944,
+        140.81912543402777
+      ]
+    },
+    {
+      "index": 82,
+      "video_time": 3.4166666666666665,
+      "simulation_time": 2.05,
+      "state_sha256": "fab3480f36940285dcfd4a511c70eb6116cdb40f640bc233c8bef0005af0b556",
+      "pixel_sha256": "bca7edb5c865f8056698a2db1cf2d8f48475a56006ff3030614b8e4c01487961",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08411038666963577,
+        "density_max": 1.4886630773544312,
+        "pressure_min": 0.4493856430053711,
+        "pressure_max": 1.6863383054733276,
+        "temperature_max_kelvin_scaled": 2809.52392578125,
+        "soot_max": 0.0030023492872714996,
+        "soot_sum": 50.889034271240234,
+        "sigma_max": 4.80375862121582,
+        "emission_max": 49.81008529663086
+      },
+      "mean_rgb": [
+        136.67378580729167,
+        137.15162651909722,
+        140.7064919704861
+      ]
+    },
+    {
+      "index": 83,
+      "video_time": 3.4583333333333335,
+      "simulation_time": 2.075,
+      "state_sha256": "d2c625d6230d0834ba1fcb27ec2a6d386e4eef2045dfe38806a9277ee356b0fd",
+      "pixel_sha256": "9881078e5b40cdc7a6806c87adb86273aa01265bbd566721fa67f927f95765cc",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08365168422460556,
+        "density_max": 1.4835014343261719,
+        "pressure_min": 0.44173428416252136,
+        "pressure_max": 1.6780437231063843,
+        "temperature_max_kelvin_scaled": 2796.657958984375,
+        "soot_max": 0.0030142648611217737,
+        "soot_sum": 50.94987487792969,
+        "sigma_max": 4.822824001312256,
+        "emission_max": 48.036407470703125
+      },
+      "mean_rgb": [
+        136.3908865017361,
+        136.954541015625,
+        140.59833875868057
+      ]
+    },
+    {
+      "index": 84,
+      "video_time": 3.5,
+      "simulation_time": 2.1,
+      "state_sha256": "496fcfee5e650927d803c2cba30ed0423ac8904310075689f3c983e017ef5a88",
+      "pixel_sha256": "3f5555b11573356101618dc379d6fcec98ea6d7677884c851f1263ffee1c6c54",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0832827240228653,
+        "density_max": 1.4790380001068115,
+        "pressure_min": 0.43500831723213196,
+        "pressure_max": 1.6716452836990356,
+        "temperature_max_kelvin_scaled": 2798.896240234375,
+        "soot_max": 0.0030240050982683897,
+        "soot_sum": 51.01118469238281,
+        "sigma_max": 4.83840799331665,
+        "emission_max": 48.341529846191406
+      },
+      "mean_rgb": [
+        136.11029622395833,
+        136.76083984375,
+        140.49367838541667
+      ]
+    },
+    {
+      "index": 85,
+      "video_time": 3.5416666666666665,
+      "simulation_time": 2.125,
+      "state_sha256": "8615d6a00bf0e3091deaa302f416844144b8c0d36e875824d14888a350868694",
+      "pixel_sha256": "ef72afe6a5daf908dfab96212726d68ae37a9c18c9259132608229bdba48f8d0",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0832720473408699,
+        "density_max": 1.4750913381576538,
+        "pressure_min": 0.4297328293323517,
+        "pressure_max": 1.6651419401168823,
+        "temperature_max_kelvin_scaled": 2796.7578125,
+        "soot_max": 0.0030311881564557552,
+        "soot_sum": 51.07279968261719,
+        "sigma_max": 4.84990119934082,
+        "emission_max": 48.04997253417969
+      },
+      "mean_rgb": [
+        135.83916666666667,
+        136.57444010416665,
+        140.39398546006944
+      ]
+    },
+    {
+      "index": 86,
+      "video_time": 3.5833333333333335,
+      "simulation_time": 2.15,
+      "state_sha256": "5c74d00e1512a1417f51bcde8ed323ed107f4f60daf6f9bac578e70a9c277e83",
+      "pixel_sha256": "7eeb39f57388b74dd2518ef94559705c5e5586ec219b427e34e23c57a586a601",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08358857780694962,
+        "density_max": 1.4699515104293823,
+        "pressure_min": 0.42583513259887695,
+        "pressure_max": 1.6577693223953247,
+        "temperature_max_kelvin_scaled": 2783.314453125,
+        "soot_max": 0.0030388410668820143,
+        "soot_sum": 51.13502502441406,
+        "sigma_max": 4.862145900726318,
+        "emission_max": 46.24721145629883
+      },
+      "mean_rgb": [
+        135.58086263020834,
+        136.3977983940972,
+        140.298193359375
+      ]
+    },
+    {
+      "index": 87,
+      "video_time": 3.625,
+      "simulation_time": 2.175,
+      "state_sha256": "3c06133dcb529956baae3969998cedc0bc6411b5d11b4947c26e50812cc6f845",
+      "pixel_sha256": "f99e40e7102c9c080160164cc56a877396616bc2931720d1993d2dff5b2d0b44",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08342619985342026,
+        "density_max": 1.4670771360397339,
+        "pressure_min": 0.42138421535491943,
+        "pressure_max": 1.6529083251953125,
+        "temperature_max_kelvin_scaled": 2778.57421875,
+        "soot_max": 0.0030462283175438643,
+        "soot_sum": 51.198150634765625,
+        "sigma_max": 4.873965263366699,
+        "emission_max": 45.623783111572266
+      },
+      "mean_rgb": [
+        135.33707899305554,
+        136.23177408854167,
+        140.20759114583333
+      ]
+    },
+    {
+      "index": 88,
+      "video_time": 3.6666666666666665,
+      "simulation_time": 2.2,
+      "state_sha256": "92be0deb3f7751cd7ded06e0fe4812601244dffd5b47b448e84630ef8a3c41f5",
+      "pixel_sha256": "0694ad74a6695f06992e707525ba069ffdf2641dc54df2b0db6b078af3a21671",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08337008208036423,
+        "density_max": 1.4603002071380615,
+        "pressure_min": 0.41668543219566345,
+        "pressure_max": 1.6431890726089478,
+        "temperature_max_kelvin_scaled": 2770.921875,
+        "soot_max": 0.003064993768930435,
+        "soot_sum": 51.2619514465332,
+        "sigma_max": 4.903989791870117,
+        "emission_max": 44.63064193725586
+      },
+      "mean_rgb": [
+        135.10434461805556,
+        136.07422200520833,
+        140.121796875
+      ]
+    },
+    {
+      "index": 89,
+      "video_time": 3.7083333333333335,
+      "simulation_time": 2.225,
+      "state_sha256": "9107c4c8d40ba5aea10e77566559d987c625593ed74af9443ed363d357a27454",
+      "pixel_sha256": "d30b7d8ad0f78e0385af3694b95d7bb1478d3e073476f0d2c2c7e3aa77141339",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08374643325805664,
+        "density_max": 1.4586617946624756,
+        "pressure_min": 0.41432061791419983,
+        "pressure_max": 1.6401596069335938,
+        "temperature_max_kelvin_scaled": 2762.833740234375,
+        "soot_max": 0.0030843487475067377,
+        "soot_sum": 51.325958251953125,
+        "sigma_max": 4.934957981109619,
+        "emission_max": 43.59870147705078
+      },
+      "mean_rgb": [
+        134.87650173611112,
+        135.92167100694445,
+        140.03953450520834
+      ]
+    },
+    {
+      "index": 90,
+      "video_time": 3.75,
+      "simulation_time": 2.25,
+      "state_sha256": "005bacd6a61dcf694c58d5c485e7376f5e10367f7d1ab895d741231d7e1786aa",
+      "pixel_sha256": "1a61284671023ed2bd6078d1d8a85756431302f6e7a238e9dea2516c5f46a162",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08402743190526962,
+        "density_max": 1.451202630996704,
+        "pressure_min": 0.41054174304008484,
+        "pressure_max": 1.629478931427002,
+        "temperature_max_kelvin_scaled": 2756.351318359375,
+        "soot_max": 0.0031067891977727413,
+        "soot_sum": 51.39037322998047,
+        "sigma_max": 4.970862865447998,
+        "emission_max": 42.78464889526367
+      },
+      "mean_rgb": [
+        134.6452072482639,
+        135.7684689670139,
+        139.95904622395832
+      ]
+    },
+    {
+      "index": 91,
+      "video_time": 3.7916666666666665,
+      "simulation_time": 2.275,
+      "state_sha256": "3db076f63bfd12ec893ec9bd1ff295fa37ae8341090c46bbd1047c05c0797362",
+      "pixel_sha256": "9202bfcf1f135ee932dd656c796a6ab31a6c386f763654050274327997110db4",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0840335339307785,
+        "density_max": 1.4501769542694092,
+        "pressure_min": 0.4070865213871002,
+        "pressure_max": 1.6273795366287231,
+        "temperature_max_kelvin_scaled": 2740.39404296875,
+        "soot_max": 0.0031225739512592554,
+        "soot_sum": 51.45571517944336,
+        "sigma_max": 4.996118545532227,
+        "emission_max": 40.829383850097656
+      },
+      "mean_rgb": [
+        134.4109939236111,
+        135.61567274305557,
+        139.88263563368056
+      ]
+    },
+    {
+      "index": 92,
+      "video_time": 3.8333333333333335,
+      "simulation_time": 2.3,
+      "state_sha256": "da3c1653ea1e4627256a3347a071efa736d1ed75e0b8998baa38490b6ad692a6",
+      "pixel_sha256": "ecea5fef86da711f30cb28cbeca445068188a5e24e229afce69c5f69b4921687",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0843985378742218,
+        "density_max": 1.4427331686019897,
+        "pressure_min": 0.40223753452301025,
+        "pressure_max": 1.6159162521362305,
+        "temperature_max_kelvin_scaled": 2742.941162109375,
+        "soot_max": 0.003132967045530677,
+        "soot_sum": 51.52200698852539,
+        "sigma_max": 5.012747287750244,
+        "emission_max": 41.13692092895508
+      },
+      "mean_rgb": [
+        134.18297200520834,
+        135.46711805555555,
+        139.80929904513889
+      ]
+    },
+    {
+      "index": 93,
+      "video_time": 3.875,
+      "simulation_time": 2.325,
+      "state_sha256": "31f7281dd8d2841c359f750dfa13825f008a02bedd609393728a5f3c190fc244",
+      "pixel_sha256": "42baa7ec8bd45a0c510af52dcd754ea64be87f7543288cb0c5329d050d34d727",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08493819832801819,
+        "density_max": 1.4413219690322876,
+        "pressure_min": 0.3998103439807892,
+        "pressure_max": 1.614120364189148,
+        "temperature_max_kelvin_scaled": 2732.278076171875,
+        "soot_max": 0.0031422607135027647,
+        "soot_sum": 51.5894775390625,
+        "sigma_max": 5.02761697769165,
+        "emission_max": 39.86115264892578
+      },
+      "mean_rgb": [
+        133.9647384982639,
+        135.32478515625,
+        139.7389898003472
+      ]
+    },
+    {
+      "index": 94,
+      "video_time": 3.9166666666666665,
+      "simulation_time": 2.35,
+      "state_sha256": "6732badd5aea0df92f77bdeb19d82f7a8833d5cae9374c117f1939e514a7bbb5",
+      "pixel_sha256": "fc415ac2648da69d4b1b0f198aeca50de340fb5cdbc3ac25e48525f6abd6d2d7",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08501613885164261,
+        "density_max": 1.4359130859375,
+        "pressure_min": 0.3969580829143524,
+        "pressure_max": 1.6056513786315918,
+        "temperature_max_kelvin_scaled": 2709.760009765625,
+        "soot_max": 0.0031528521794825792,
+        "soot_sum": 51.65831756591797,
+        "sigma_max": 5.044563293457031,
+        "emission_max": 37.265228271484375
+      },
+      "mean_rgb": [
+        133.75598415798612,
+        135.18806098090278,
+        139.67239908854165
+      ]
+    },
+    {
+      "index": 95,
+      "video_time": 3.9583333333333335,
+      "simulation_time": 2.375,
+      "state_sha256": "ea113eccf0f72a612c1de210bd0e68bbbd1ba98b513ad7fc7f8361ee435d978d",
+      "pixel_sha256": "3043b8ce6a0dd71bb8e7e7f335e0cb78a1e3899351e224b8f89f22cb9df36bc5",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08508259057998657,
+        "density_max": 1.4325566291809082,
+        "pressure_min": 0.39370566606521606,
+        "pressure_max": 1.601047158241272,
+        "temperature_max_kelvin_scaled": 2712.83056640625,
+        "soot_max": 0.0031727671157568693,
+        "soot_sum": 51.728275299072266,
+        "sigma_max": 5.076427459716797,
+        "emission_max": 37.61146926879883
+      },
+      "mean_rgb": [
+        133.55659830729167,
+        135.05656358506945,
+        139.60931315104168
+      ]
+    },
+    {
+      "index": 96,
+      "video_time": 4.0,
+      "simulation_time": 2.4,
+      "state_sha256": "3cfa128c388a1f62c5543e84a4073a851904ba44e20dfde6b462d75b2934b85f",
+      "pixel_sha256": "7012d590ab7fcb27dddf898f8a6673a31683e3afc37944ac5031e9f29297f981",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08537246286869049,
+        "density_max": 1.428850531578064,
+        "pressure_min": 0.39281588792800903,
+        "pressure_max": 1.5951262712478638,
+        "temperature_max_kelvin_scaled": 2700.076904296875,
+        "soot_max": 0.0031951514538377523,
+        "soot_sum": 51.79925537109375,
+        "sigma_max": 5.112242221832275,
+        "emission_max": 36.18907928466797
+      },
+      "mean_rgb": [
+        133.3619162326389,
+        134.9284375,
+        139.54864149305556
+      ]
+    },
+    {
+      "index": 97,
+      "video_time": 4.041666666666667,
+      "simulation_time": 2.425,
+      "state_sha256": "4cdf5571c93b53e02b30b8e5d880be6d1e7c7dea24285e054627195477707ba5",
+      "pixel_sha256": "855551bed38432fad6f0caa91d13869ebae67acd1b537b65e37be337378e9ee2",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08506090193986893,
+        "density_max": 1.4236376285552979,
+        "pressure_min": 0.39182910323143005,
+        "pressure_max": 1.5878139734268188,
+        "temperature_max_kelvin_scaled": 2673.53955078125,
+        "soot_max": 0.003212611423805356,
+        "soot_sum": 51.87126159667969,
+        "sigma_max": 5.140178203582764,
+        "emission_max": 33.36023712158203
+      },
+      "mean_rgb": [
+        133.16223090277776,
+        134.79981987847222,
+        139.4888042534722
+      ]
+    },
+    {
+      "index": 98,
+      "video_time": 4.083333333333333,
+      "simulation_time": 2.45,
+      "state_sha256": "7a234ae01c4ae5dfd60e95080c038cd7c43df0e231b6ebcb4e77c4cf43b4e3d8",
+      "pixel_sha256": "6e557bf12ffb280211d108b6ae9c1b6c9ecc34120f5e28455235f85c1c8cd555",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08460986614227295,
+        "density_max": 1.4213950634002686,
+        "pressure_min": 0.38872283697128296,
+        "pressure_max": 1.5840134620666504,
+        "temperature_max_kelvin_scaled": 2675.551513671875,
+        "soot_max": 0.003222543513402343,
+        "soot_sum": 51.94434356689453,
+        "sigma_max": 5.156069755554199,
+        "emission_max": 33.56862258911133
+      },
+      "mean_rgb": [
+        132.96198893229166,
+        134.6723513454861,
+        139.4310818142361
+      ]
+    },
+    {
+      "index": 99,
+      "video_time": 4.125,
+      "simulation_time": 2.475,
+      "state_sha256": "fa753b7bbe5d22563423dabeb698586ad9440b4be77608a97ff5dbadde760b72",
+      "pixel_sha256": "d23021d7a104f619c7734faddaaec533000655383bdc9e988feebc11b6c67adc",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08441349864006042,
+        "density_max": 1.4148362874984741,
+        "pressure_min": 0.3864332437515259,
+        "pressure_max": 1.5747747421264648,
+        "temperature_max_kelvin_scaled": 2663.33203125,
+        "soot_max": 0.003233421826735139,
+        "soot_sum": 52.018959045410156,
+        "sigma_max": 5.1734747886657715,
+        "emission_max": 32.318023681640625
+      },
+      "mean_rgb": [
+        132.7684201388889,
+        134.54964301215279,
+        139.37635308159722
+      ]
+    },
+    {
+      "index": 100,
+      "video_time": 4.166666666666667,
+      "simulation_time": 2.5,
+      "state_sha256": "631aaa122b1e7f66dfed5e86fd33311770d301093fe51b5c148d9fa18e614d35",
+      "pixel_sha256": "475ddb14d61efbef61ebd2596dcbe021ca54f919fff827bceef3811077eb9b33",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08475717902183533,
+        "density_max": 1.4134374856948853,
+        "pressure_min": 0.3870610296726227,
+        "pressure_max": 1.5722167491912842,
+        "temperature_max_kelvin_scaled": 2632.330810546875,
+        "soot_max": 0.0032417969778180122,
+        "soot_sum": 52.0953483581543,
+        "sigma_max": 5.186875343322754,
+        "emission_max": 29.303964614868164
+      },
+      "mean_rgb": [
+        132.5779318576389,
+        134.42898220486111,
+        139.32254340277777
+      ]
+    },
+    {
+      "index": 101,
+      "video_time": 4.208333333333333,
+      "simulation_time": 2.525,
+      "state_sha256": "c96c22371cd1beddc64a11b19dde71654eeae2b0fbaa5f6dadd0869f488e0c94",
+      "pixel_sha256": "c87b70c408872ec8943ab871d58a09034eadbba55259a956a52459e44ce57139",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0850638821721077,
+        "density_max": 1.407477855682373,
+        "pressure_min": 0.3874291479587555,
+        "pressure_max": 1.5631781816482544,
+        "temperature_max_kelvin_scaled": 2628.7275390625,
+        "soot_max": 0.0032473548781126738,
+        "soot_sum": 52.17337417602539,
+        "sigma_max": 5.195767879486084,
+        "emission_max": 28.968042373657227
+      },
+      "mean_rgb": [
+        132.38771809895835,
+        134.30948133680556,
+        139.268798828125
+      ]
+    },
+    {
+      "index": 102,
+      "video_time": 4.25,
+      "simulation_time": 2.55,
+      "state_sha256": "1afd0044a39f55dae3c4bf874643830735e0293493edbc9a2085d21e3c263976",
+      "pixel_sha256": "c1d12b923e04e7fcd31d72a349707ffa9043b77f36749413e28748b2545876cc",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08493649959564209,
+        "density_max": 1.4057244062423706,
+        "pressure_min": 0.3869490921497345,
+        "pressure_max": 1.5608454942703247,
+        "temperature_max_kelvin_scaled": 2616.923095703125,
+        "soot_max": 0.003255154937505722,
+        "soot_sum": 52.2530517578125,
+        "sigma_max": 5.208248138427734,
+        "emission_max": 27.888179779052734
+      },
+      "mean_rgb": [
+        132.20090277777777,
+        134.19083984375,
+        139.21729166666665
+      ]
+    },
+    {
+      "index": 103,
+      "video_time": 4.291666666666667,
+      "simulation_time": 2.575,
+      "state_sha256": "90e3aa6589ea3ee9b8caf8e8568a739bc2f9589d7aba708c9e6192c2a921e01c",
+      "pixel_sha256": "55144e94955c2ee5dc2e1a1c684985505d6e8577764cc9ff6ef49bb8b7d67e25",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08518664538860321,
+        "density_max": 1.401496410369873,
+        "pressure_min": 0.3869512677192688,
+        "pressure_max": 1.554282307624817,
+        "temperature_max_kelvin_scaled": 2583.267578125,
+        "soot_max": 0.0032734519336372614,
+        "soot_sum": 52.334625244140625,
+        "sigma_max": 5.237523078918457,
+        "emission_max": 24.9776611328125
+      },
+      "mean_rgb": [
+        132.02210394965277,
+        134.07525824652777,
+        139.1665386284722
+      ]
+    },
+    {
+      "index": 104,
+      "video_time": 4.333333333333333,
+      "simulation_time": 2.6,
+      "state_sha256": "b8d100a5788a1e0614f7100eafbc53ef517c157ad5b1a347d00bc997f09e8613",
+      "pixel_sha256": "67f9b33c5c562425ab16297ff12877132d047ea29cea57c5afd9b10c6350fd89",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08590244501829147,
+        "density_max": 1.397578239440918,
+        "pressure_min": 0.3897140920162201,
+        "pressure_max": 1.5488661527633667,
+        "temperature_max_kelvin_scaled": 2565.35986328125,
+        "soot_max": 0.0032946562860161066,
+        "soot_sum": 52.417991638183594,
+        "sigma_max": 5.271450042724609,
+        "emission_max": 23.527202606201172
+      },
+      "mean_rgb": [
+        131.8526779513889,
+        133.96592339409722,
+        139.11766167534722
+      ]
+    },
+    {
+      "index": 105,
+      "video_time": 4.375,
+      "simulation_time": 2.625,
+      "state_sha256": "7f8c2f9fc7fdd29924c60686e9bebd5a42ed7dce06785f6965ad9deb08d17014",
+      "pixel_sha256": "ce65644c0c1e26efb43d2efd9a22f9b0b09a40fc5593c5430fc01e31ec296cc8",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08644227683544159,
+        "density_max": 1.3950780630111694,
+        "pressure_min": 0.38734200596809387,
+        "pressure_max": 1.544810175895691,
+        "temperature_max_kelvin_scaled": 2568.53564453125,
+        "soot_max": 0.003307696897536516,
+        "soot_sum": 52.50325393676758,
+        "sigma_max": 5.2923150062561035,
+        "emission_max": 23.779573440551758
+      },
+      "mean_rgb": [
+        131.68963975694444,
+        133.86055230034722,
+        139.0701193576389
+      ]
+    },
+    {
+      "index": 106,
+      "video_time": 4.416666666666667,
+      "simulation_time": 2.65,
+      "state_sha256": "83e3a11bb6aef9a1823cc7e04418610d55ffd8bae0b6b53a2af29ee677ecf6bc",
+      "pixel_sha256": "36aa066c898da6d7a5cb9de20985bf20a5c1f5b66b4030c093beeef30324701c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08681797236204147,
+        "density_max": 1.3895940780639648,
+        "pressure_min": 0.38754597306251526,
+        "pressure_max": 1.5372081995010376,
+        "temperature_max_kelvin_scaled": 2544.659423828125,
+        "soot_max": 0.0033139728475362062,
+        "soot_sum": 52.590293884277344,
+        "sigma_max": 5.302356719970703,
+        "emission_max": 21.932153701782227
+      },
+      "mean_rgb": [
+        131.5254611545139,
+        133.75614908854166,
+        139.02227756076388
+      ]
+    },
+    {
+      "index": 107,
+      "video_time": 4.458333333333333,
+      "simulation_time": 2.675,
+      "state_sha256": "77d1fc0131f1c7856f094782f10a194bb28c3b14c9c765f609dd10e6d60ab7b0",
+      "pixel_sha256": "d63dac5aeb5bea97eadd2dfae461a774e2cb4572506f6ac9a83418c970444b5f",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08753298223018646,
+        "density_max": 1.388113021850586,
+        "pressure_min": 0.38925281167030334,
+        "pressure_max": 1.5345895290374756,
+        "temperature_max_kelvin_scaled": 2503.103515625,
+        "soot_max": 0.003317364025861025,
+        "soot_sum": 52.67864990234375,
+        "sigma_max": 5.3077826499938965,
+        "emission_max": 18.982515335083008
+      },
+      "mean_rgb": [
+        131.35412868923612,
+        133.64834201388888,
+        138.97337890625
+      ]
+    },
+    {
+      "index": 108,
+      "video_time": 4.5,
+      "simulation_time": 2.7,
+      "state_sha256": "9f717345a682b7ed39019cada9c47c188a0d93e45596141e78794d833c966c52",
+      "pixel_sha256": "09942aad13118fda4e39a9be761634f1189bc54d0f2e815e7717ccdd4a957b45",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08873973786830902,
+        "density_max": 1.3824511766433716,
+        "pressure_min": 0.3916858732700348,
+        "pressure_max": 1.5260341167449951,
+        "temperature_max_kelvin_scaled": 2516.776611328125,
+        "soot_max": 0.003324504243209958,
+        "soot_sum": 52.76875305175781,
+        "sigma_max": 5.319206714630127,
+        "emission_max": 19.916881561279297
+      },
+      "mean_rgb": [
+        131.17342447916667,
+        133.53433702256945,
+        138.92287868923611
+      ]
+    },
+    {
+      "index": 109,
+      "video_time": 4.541666666666667,
+      "simulation_time": 2.725,
+      "state_sha256": "93efcb7eab21a42843a3521b8e7f89af2961923bc02fc7fc1da11dd906d7ad93",
+      "pixel_sha256": "7289aad46dac9cc08c606894fdbfcd495be025a6a3040f6539d4f6d34a84cf34",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08951348066329956,
+        "density_max": 1.3806253671646118,
+        "pressure_min": 0.3911171555519104,
+        "pressure_max": 1.5237245559692383,
+        "temperature_max_kelvin_scaled": 2508.990478515625,
+        "soot_max": 0.0033256260212510824,
+        "soot_sum": 52.861053466796875,
+        "sigma_max": 5.3210015296936035,
+        "emission_max": 19.380558013916016
+      },
+      "mean_rgb": [
+        130.98791232638888,
+        133.41772569444444,
+        138.87152018229168
+      ]
+    },
+    {
+      "index": 110,
+      "video_time": 4.583333333333333,
+      "simulation_time": 2.75,
+      "state_sha256": "85b58d64da04be714926dd1c0ac24f76501fc45c6841a6f0b7759a88aa97165b",
+      "pixel_sha256": "a32436deeff281df79f103d9abb8da4d1d7c56cbd964689254713513b31c9447",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08977106958627701,
+        "density_max": 1.376895546913147,
+        "pressure_min": 0.3920934498310089,
+        "pressure_max": 1.517893671989441,
+        "temperature_max_kelvin_scaled": 2478.599853515625,
+        "soot_max": 0.003331567859277129,
+        "soot_sum": 52.95568084716797,
+        "sigma_max": 5.330508708953857,
+        "emission_max": 17.393280029296875
+      },
+      "mean_rgb": [
+        130.81490342881943,
+        133.30663194444443,
+        138.82249348958334
+      ]
+    },
+    {
+      "index": 111,
+      "video_time": 4.625,
+      "simulation_time": 2.775,
+      "state_sha256": "4aaa03897a75f3f67e6bb9a3bce261da6a3543cba5174b974121d1d243ac4e04",
+      "pixel_sha256": "a39899fd3072f7755aab0d2983ebb431563c27f6330a6ee407eb12796190b8b2",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0906701534986496,
+        "density_max": 1.37321138381958,
+        "pressure_min": 0.39489462971687317,
+        "pressure_max": 1.5129367113113403,
+        "temperature_max_kelvin_scaled": 2453.621826171875,
+        "soot_max": 0.003349978942424059,
+        "soot_sum": 53.05345916748047,
+        "sigma_max": 5.359966278076172,
+        "emission_max": 15.881575584411621
+      },
+      "mean_rgb": [
+        130.65847439236111,
+        133.20359809027778,
+        138.7736577690972
+      ]
+    },
+    {
+      "index": 112,
+      "video_time": 4.666666666666667,
+      "simulation_time": 2.8,
+      "state_sha256": "1edab4d503bada42d2bd90424b08f25737e8dce4b18c826562daa522fb2c1bd1",
+      "pixel_sha256": "985c745819ab1dabf67e7cc220060d483add48f259fce7464ebc3d0656756ef9",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09052114188671112,
+        "density_max": 1.370747447013855,
+        "pressure_min": 0.3966120481491089,
+        "pressure_max": 1.5089468955993652,
+        "temperature_max_kelvin_scaled": 2460.763916015625,
+        "soot_max": 0.003366099903360009,
+        "soot_sum": 53.154293060302734,
+        "sigma_max": 5.3857598304748535,
+        "emission_max": 16.302961349487305
+      },
+      "mean_rgb": [
+        130.51814019097222,
+        133.10770399305557,
+        138.72506076388888
+      ]
+    },
+    {
+      "index": 113,
+      "video_time": 4.708333333333333,
+      "simulation_time": 2.825,
+      "state_sha256": "128fbdf31dec9d26b741222cf2162064a569d242363c5a7507809bc7dd46beee",
+      "pixel_sha256": "01779ce2f34acf3eecefcf0e4a0e4fba9a5d84829495f79bbb4cb0b1f5dc95ad",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08984397351741791,
+        "density_max": 1.3654416799545288,
+        "pressure_min": 0.3958624601364136,
+        "pressure_max": 1.5016728639602661,
+        "temperature_max_kelvin_scaled": 2448.378662109375,
+        "soot_max": 0.003377694869413972,
+        "soot_sum": 53.257720947265625,
+        "sigma_max": 5.404311656951904,
+        "emission_max": 15.577659606933594
+      },
+      "mean_rgb": [
+        130.38614800347221,
+        133.0143402777778,
+        138.67636610243056
+      ]
+    },
+    {
+      "index": 114,
+      "video_time": 4.75,
+      "simulation_time": 2.85,
+      "state_sha256": "c84c6eb4b080777cb8275980d025c0770d8b592e952a805a64ceca6c75d0e96c",
+      "pixel_sha256": "6bfbefe992b045f7efb94ca5110a77de68c3920b4e3923e2e3032e5c238e1666",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08978505432605743,
+        "density_max": 1.3642877340316772,
+        "pressure_min": 0.39800935983657837,
+        "pressure_max": 1.4996315240859985,
+        "temperature_max_kelvin_scaled": 2437.907470703125,
+        "soot_max": 0.00338201061822474,
+        "soot_sum": 53.36375427246094,
+        "sigma_max": 5.411217212677002,
+        "emission_max": 14.984291076660156
+      },
+      "mean_rgb": [
+        130.25639539930555,
+        132.92213758680555,
+        138.62676432291667
+      ]
+    },
+    {
+      "index": 115,
+      "video_time": 4.791666666666667,
+      "simulation_time": 2.875,
+      "state_sha256": "79aca8c31a4f551a88a415601055abf6b3737bdcb8d7a783a894ed2685ca0a5c",
+      "pixel_sha256": "badb6156bdf3bed442a3258ac4ae6da5cfb3fb57779a692793d20a490bea5571",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09060899168252945,
+        "density_max": 1.3599650859832764,
+        "pressure_min": 0.40119776129722595,
+        "pressure_max": 1.4961446523666382,
+        "temperature_max_kelvin_scaled": 2428.507568359375,
+        "soot_max": 0.003384194802492857,
+        "soot_sum": 53.471923828125,
+        "sigma_max": 5.4147114753723145,
+        "emission_max": 14.466776847839355
+      },
+      "mean_rgb": [
+        130.12463975694445,
+        132.82632161458332,
+        138.57421223958335
+      ]
+    },
+    {
+      "index": 116,
+      "video_time": 4.833333333333333,
+      "simulation_time": 2.9,
+      "state_sha256": "1d0ba3414e829af0b8ed5145b2c9929cf49ab7fe61667596797101bbea8300ca",
+      "pixel_sha256": "85627af6cfaba58aca28deaec033aa77e6631a03d405cd586e3dd09f9b03068b",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0915515124797821,
+        "density_max": 1.3575087785720825,
+        "pressure_min": 0.4048764705657959,
+        "pressure_max": 1.4969923496246338,
+        "temperature_max_kelvin_scaled": 2414.428955078125,
+        "soot_max": 0.003391984151676297,
+        "soot_sum": 53.582611083984375,
+        "sigma_max": 5.4271745681762695,
+        "emission_max": 13.717887878417969
+      },
+      "mean_rgb": [
+        129.9919314236111,
+        132.72895616319445,
+        138.52072591145833
+      ]
+    },
+    {
+      "index": 117,
+      "video_time": 4.875,
+      "simulation_time": 2.925,
+      "state_sha256": "44cdc5b8a29221cbff138596b02753a20328ea43543844ad02fd9ccb7f121b8c",
+      "pixel_sha256": "88cc7a3499d4725ad578078566d3c443866993637a403708526eafc6a7864cd9",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09096472710371017,
+        "density_max": 1.3546899557113647,
+        "pressure_min": 0.4046706557273865,
+        "pressure_max": 1.4935765266418457,
+        "temperature_max_kelvin_scaled": 2407.646728515625,
+        "soot_max": 0.003395188832655549,
+        "soot_sum": 53.69593811035156,
+        "sigma_max": 5.432301998138428,
+        "emission_max": 13.368128776550293
+      },
+      "mean_rgb": [
+        129.8651486545139,
+        132.63512152777778,
+        138.46618381076388
+      ]
+    },
+    {
+      "index": 118,
+      "video_time": 4.916666666666667,
+      "simulation_time": 2.95,
+      "state_sha256": "e7470f329a9bdc78ef956ee0943d137b817a6eb01490595a4f9dea22193d5c66",
+      "pixel_sha256": "f77bad5a36c17f0fcbdb8c92ed71666dab9c014a0193883a575223c98d64abcd",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0906648188829422,
+        "density_max": 1.350512981414795,
+        "pressure_min": 0.4074685275554657,
+        "pressure_max": 1.4925073385238647,
+        "temperature_max_kelvin_scaled": 2408.537841796875,
+        "soot_max": 0.003412122605368495,
+        "soot_sum": 53.811485290527344,
+        "sigma_max": 5.4593963623046875,
+        "emission_max": 13.413686752319336
+      },
+      "mean_rgb": [
+        129.74100043402777,
+        132.54347005208334,
+        138.41169813368055
+      ]
+    },
+    {
+      "index": 119,
+      "video_time": 4.958333333333333,
+      "simulation_time": 2.975,
+      "state_sha256": "e3377283392adeefe829b5a73ce064d809f8bb61a60661452c30c580e1443bac",
+      "pixel_sha256": "582e925f14c53deaa19f92e06d825c4aa4c174f47a0779fc7c3f0a04beb8498d",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09088955074548721,
+        "density_max": 1.348983883857727,
+        "pressure_min": 0.403920441865921,
+        "pressure_max": 1.4960806369781494,
+        "temperature_max_kelvin_scaled": 2403.643798828125,
+        "soot_max": 0.003431969555094838,
+        "soot_sum": 53.93000793457031,
+        "sigma_max": 5.491151332855225,
+        "emission_max": 13.164986610412598
+      },
+      "mean_rgb": [
+        129.61089518229167,
+        132.44965494791666,
+        138.3570138888889
+      ]
+    },
+    {
+      "index": 120,
+      "video_time": 5.0,
+      "simulation_time": 3,
+      "state_sha256": "fc55f0cd32799b06d147eea6afaf2a0758d310d5ee76415c1d13b7c89b05c44b",
+      "pixel_sha256": "cfed15aa95bcd7db0a255f8977827152f3c9a6a102a1780a11563ba6e19b5eb7",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09219974279403687,
+        "density_max": 1.3442622423171997,
+        "pressure_min": 0.40354785323143005,
+        "pressure_max": 1.494570255279541,
+        "temperature_max_kelvin_scaled": 2395.484375,
+        "soot_max": 0.0034456062130630016,
+        "soot_sum": 54.05181121826172,
+        "sigma_max": 5.512969970703125,
+        "emission_max": 12.758406639099121
+      },
+      "mean_rgb": [
+        129.47732747395833,
+        132.35272026909723,
+        138.30001627604167
+      ]
+    },
+    {
+      "index": 121,
+      "video_time": 5.041666666666667,
+      "simulation_time": 3.025,
+      "state_sha256": "4a00bf8a2be5524cb0e7f9759e5d0b41dda8c36a3fe7034f68c68ea0a77d4a29",
+      "pixel_sha256": "a2257c740e8429b0e778677b848f9bdacab760ebeb5978b4ee1966be9c07f3f9",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09164319932460785,
+        "density_max": 1.342791199684143,
+        "pressure_min": 0.40429824590682983,
+        "pressure_max": 1.495941400527954,
+        "temperature_max_kelvin_scaled": 2382.69384765625,
+        "soot_max": 0.0034519911278039217,
+        "soot_sum": 54.17701721191406,
+        "sigma_max": 5.523185729980469,
+        "emission_max": 12.140938758850098
+      },
+      "mean_rgb": [
+        129.35067599826388,
+        132.25729058159723,
+        138.24180230034722
+      ]
+    },
+    {
+      "index": 122,
+      "video_time": 5.083333333333333,
+      "simulation_time": 3.05,
+      "state_sha256": "69a881dd4fb904599a5699c2f61d36b3624a0b306c1d23deb256aadba38f070c",
+      "pixel_sha256": "c011b081332263e97514abf376af5720cae6c504c12cd5a1b31525b603e76a3e",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09143521636724472,
+        "density_max": 1.3397216796875,
+        "pressure_min": 0.4029753804206848,
+        "pressure_max": 1.4955542087554932,
+        "temperature_max_kelvin_scaled": 2384.830810546875,
+        "soot_max": 0.003458430990576744,
+        "soot_sum": 54.30604553222656,
+        "sigma_max": 5.53348970413208,
+        "emission_max": 12.24242877960205
+      },
+      "mean_rgb": [
+        129.23530598958334,
+        132.16572265625,
+        138.18188259548612
+      ]
+    },
+    {
+      "index": 123,
+      "video_time": 5.125,
+      "simulation_time": 3.075,
+      "state_sha256": "06d1d9ea124a572606eb4d57f779dbab1db919966a8621f9063b34f50f644200",
+      "pixel_sha256": "988d066d157f0e8fa9ddd18b17ce3ee36e6ada7c32d67855bc5fbc4a913e53f6",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09191685914993286,
+        "density_max": 1.3363301753997803,
+        "pressure_min": 0.39949044585227966,
+        "pressure_max": 1.5051709413528442,
+        "temperature_max_kelvin_scaled": 2382.2421875,
+        "soot_max": 0.0034625583793967962,
+        "soot_sum": 54.43865203857422,
+        "sigma_max": 5.540093421936035,
+        "emission_max": 12.1195707321167
+      },
+      "mean_rgb": [
+        129.13531901041668,
+        132.07917426215278,
+        138.12047417534723
+      ]
+    },
+    {
+      "index": 124,
+      "video_time": 5.166666666666667,
+      "simulation_time": 3.1,
+      "state_sha256": "bd3ea14cd265298b87d5f872cf684b1330cd5ad6cd29b90d777909f550cb8165",
+      "pixel_sha256": "19553db21268379ea95615c45d5ae50f9f045d664b0badef7088a32d0c559af1",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.09113070368766785,
+        "density_max": 1.334503412246704,
+        "pressure_min": 0.3963657319545746,
+        "pressure_max": 1.5137498378753662,
+        "temperature_max_kelvin_scaled": 2372.7666015625,
+        "soot_max": 0.003463249420747161,
+        "soot_sum": 54.57459259033203,
+        "sigma_max": 5.541199207305908,
+        "emission_max": 11.678058624267578
+      },
+      "mean_rgb": [
+        129.05641276041666,
+        132.00182183159723,
+        138.059296875
+      ]
+    },
+    {
+      "index": 125,
+      "video_time": 5.208333333333333,
+      "simulation_time": 3.125,
+      "state_sha256": "a51a48a0d991fac15b2e3e1c5bc7e8522887b97275c9cea8300dbaeede6d5e6a",
+      "pixel_sha256": "89bf6dadffd2b8a406c666c48d8a67c76c2f5e9174cbf2e3c45e1e695daeeb8a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08978884667158127,
+        "density_max": 1.3299944400787354,
+        "pressure_min": 0.3970414698123932,
+        "pressure_max": 1.508124828338623,
+        "temperature_max_kelvin_scaled": 2356.979736328125,
+        "soot_max": 0.0034695682115852833,
+        "soot_sum": 54.71368408203125,
+        "sigma_max": 5.551309108734131,
+        "emission_max": 10.970648765563965
+      },
+      "mean_rgb": [
+        128.99510308159722,
+        131.93417426215277,
+        137.99738606770833
+      ]
+    },
+    {
+      "index": 126,
+      "video_time": 5.25,
+      "simulation_time": 3.15,
+      "state_sha256": "b329b9fea92fcf1124fe4335a527f0e507ba48c9fb63d7ebefc776343b6f6ce2",
+      "pixel_sha256": "b6ada00fa2788b7257005e0c01521dd43f3d6f7ff4e72a1f153a7109a13bef42",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08838210254907608,
+        "density_max": 1.3286552429199219,
+        "pressure_min": 0.3950929045677185,
+        "pressure_max": 1.5109964609146118,
+        "temperature_max_kelvin_scaled": 2357.248779296875,
+        "soot_max": 0.0034948252141475677,
+        "soot_sum": 54.85486602783203,
+        "sigma_max": 5.5917205810546875,
+        "emission_max": 10.982417106628418
+      },
+      "mean_rgb": [
+        128.93014322916667,
+        131.86660047743055,
+        137.93438585069444
+      ]
+    },
+    {
+      "index": 127,
+      "video_time": 5.291666666666667,
+      "simulation_time": 3.175,
+      "state_sha256": "5e6a83e21f2fc4677f14d3195b4e9f106637c4af40268b6f7d4f2c1dbd8682c7",
+      "pixel_sha256": "9759925f409f8782932f453da3908b73f269937d785de860d0a1ccbbdc94e38f",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08699838072061539,
+        "density_max": 1.3254767656326294,
+        "pressure_min": 0.394187331199646,
+        "pressure_max": 1.502492070198059,
+        "temperature_max_kelvin_scaled": 2352.834716796875,
+        "soot_max": 0.003514496609568596,
+        "soot_sum": 54.999149322509766,
+        "sigma_max": 5.623194694519043,
+        "emission_max": 10.79062557220459
+      },
+      "mean_rgb": [
+        128.85040907118056,
+        131.79386067708333,
+        137.8681228298611
+      ]
+    },
+    {
+      "index": 128,
+      "video_time": 5.333333333333333,
+      "simulation_time": 3.2,
+      "state_sha256": "eecf3a19427696fb6025e0b61b6934a3a66dd07d1f9f3f268ba6625f783bc221",
+      "pixel_sha256": "70d7a7a202e0299056a5bd8a65f859abc6cf036c53e9e404966c478e9d0a2bba",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08621008694171906,
+        "density_max": 1.322678565979004,
+        "pressure_min": 0.3972437083721161,
+        "pressure_max": 1.5039558410644531,
+        "temperature_max_kelvin_scaled": 2336.986083984375,
+        "soot_max": 0.003522190498188138,
+        "soot_sum": 55.146568298339844,
+        "sigma_max": 5.635504722595215,
+        "emission_max": 10.123615264892578
+      },
+      "mean_rgb": [
+        128.7602191840278,
+        131.71446723090278,
+        137.79925347222223
+      ]
+    },
+    {
+      "index": 129,
+      "video_time": 5.375,
+      "simulation_time": 3.225,
+      "state_sha256": "4a00f79c7b10a27fbe4f5068e81a3ac4d4de1ff07fbb65f2146f10b0dee70a17",
+      "pixel_sha256": "3d1128bec2758200221f9635c7e8d7058c81d4c584bbbe7ae6d97201b16d0a79",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08601320534944534,
+        "density_max": 1.320719599723816,
+        "pressure_min": 0.3999178111553192,
+        "pressure_max": 1.5066252946853638,
+        "temperature_max_kelvin_scaled": 2315.241943359375,
+        "soot_max": 0.0035205252934247255,
+        "soot_sum": 55.29728698730469,
+        "sigma_max": 5.632840633392334,
+        "emission_max": 9.261910438537598
+      },
+      "mean_rgb": [
+        128.6709375,
+        131.63429796006943,
+        137.72867513020833
+      ]
+    },
+    {
+      "index": 130,
+      "video_time": 5.416666666666667,
+      "simulation_time": 3.25,
+      "state_sha256": "3be2c3397ba9ae1ee47fe63ae2fe6537a52be7c161f57e3a237f32888af1239c",
+      "pixel_sha256": "233121eeabf040ec20ee79ae8a8b17e7fb6f2be9d27992233005619434d55a72",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08603119850158691,
+        "density_max": 1.321054458618164,
+        "pressure_min": 0.3972083032131195,
+        "pressure_max": 1.5074084997177124,
+        "temperature_max_kelvin_scaled": 2314.976806640625,
+        "soot_max": 0.003520854515954852,
+        "soot_sum": 55.451873779296875,
+        "sigma_max": 5.63336706161499,
+        "emission_max": 9.251775741577148
+      },
+      "mean_rgb": [
+        128.58796983506946,
+        131.55505099826388,
+        137.65632921006946
+      ]
+    },
+    {
+      "index": 131,
+      "video_time": 5.458333333333333,
+      "simulation_time": 3.275,
+      "state_sha256": "c6e7824c7a6aacd4dd0e6ceacbbb9c5ee03e4e619274128535bdd5ab1e039c1b",
+      "pixel_sha256": "425e0cec8f33ac434eeb83654adeffd46e72cfb7c7a6493bfe6c83fa14fc98be",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08625012636184692,
+        "density_max": 1.3212610483169556,
+        "pressure_min": 0.39226797223091125,
+        "pressure_max": 1.5172210931777954,
+        "temperature_max_kelvin_scaled": 2305.316650390625,
+        "soot_max": 0.0035266433842480183,
+        "soot_sum": 55.60990524291992,
+        "sigma_max": 5.642629623413086,
+        "emission_max": 8.888381958007812
+      },
+      "mean_rgb": [
+        128.51954644097222,
+        131.47992513020833,
+        137.58187608506944
+      ]
+    },
+    {
+      "index": 132,
+      "video_time": 5.5,
+      "simulation_time": 3.3,
+      "state_sha256": "7123d1462f3debd443298706a2acce100389604945073fa7f59d217c97f44fcc",
+      "pixel_sha256": "6373ca60b6d0169204a276128851826142a423c7411f4d1982b9f0da2fbb6145",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08651481568813324,
+        "density_max": 1.3211992979049683,
+        "pressure_min": 0.3907618522644043,
+        "pressure_max": 1.518581509590149,
+        "temperature_max_kelvin_scaled": 2282.540283203125,
+        "soot_max": 0.0035369808319956064,
+        "soot_sum": 55.77153778076172,
+        "sigma_max": 5.6591691970825195,
+        "emission_max": 8.076252937316895
+      },
+      "mean_rgb": [
+        128.46752170138888,
+        131.40939127604167,
+        137.50525173611112
+      ]
+    },
+    {
+      "index": 133,
+      "video_time": 5.541666666666667,
+      "simulation_time": 3.325,
+      "state_sha256": "569b8dfb1d4f68f0cfa29d352c2e26a1f43ac174d974f4f62fe479338a2cde9c",
+      "pixel_sha256": "761288398de9d9a6e67cd2cde6ea26f9d64678a9af73eb56ab32bd2ae1ece15a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0867508128285408,
+        "density_max": 1.3233164548873901,
+        "pressure_min": 0.3931020200252533,
+        "pressure_max": 1.5237261056900024,
+        "temperature_max_kelvin_scaled": 2277.7939453125,
+        "soot_max": 0.003554503433406353,
+        "soot_sum": 55.93674850463867,
+        "sigma_max": 5.6872053146362305,
+        "emission_max": 7.914687156677246
+      },
+      "mean_rgb": [
+        128.4230023871528,
+        131.34287977430554,
+        137.42719075520833
+      ]
+    },
+    {
+      "index": 134,
+      "video_time": 5.583333333333333,
+      "simulation_time": 3.35,
+      "state_sha256": "3a191d0965c3e661974198a7957bc5f990b7a71a4474d4718662cd53cf194b09",
+      "pixel_sha256": "2db7d35592d155bde78f592bca84d7c04fb9f37d9a3f4b3e2b410161ac0feaa1",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08684821426868439,
+        "density_max": 1.3250346183776855,
+        "pressure_min": 0.39957699179649353,
+        "pressure_max": 1.5176137685775757,
+        "temperature_max_kelvin_scaled": 2273.08251953125,
+        "soot_max": 0.0035721834283322096,
+        "soot_sum": 56.10559844970703,
+        "sigma_max": 5.715493679046631,
+        "emission_max": 7.756852149963379
+      },
+      "mean_rgb": [
+        128.3820562065972,
+        131.27884114583333,
+        137.34699544270833
+      ]
+    },
+    {
+      "index": 135,
+      "video_time": 5.625,
+      "simulation_time": 3.375,
+      "state_sha256": "e2ec74d67aa1223c4b81f98a2fd8ca2c05363e428ceab297d905e4a7123e1f35",
+      "pixel_sha256": "6391f59ee27be8c0898498081a693873fdb05ea19c133fe9f8dec708e68de490",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08677021414041519,
+        "density_max": 1.3263049125671387,
+        "pressure_min": 0.4019709825515747,
+        "pressure_max": 1.5160630941390991,
+        "temperature_max_kelvin_scaled": 2258.366943359375,
+        "soot_max": 0.00359004526399076,
+        "soot_sum": 56.27826690673828,
+        "sigma_max": 5.744072437286377,
+        "emission_max": 7.279922008514404
+      },
+      "mean_rgb": [
+        128.34281684027778,
+        131.21486653645835,
+        137.26487413194445
+      ]
+    },
+    {
+      "index": 136,
+      "video_time": 5.666666666666667,
+      "simulation_time": 3.4,
+      "state_sha256": "80243990bf8f83c347a1d54474569a876f50a91592ac6789e07ef71f067eaa6d",
+      "pixel_sha256": "6ebb01394294b81ecf0f2f81edd4ed0099092329d7d3b3f1e664602031b7cfda",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08618021011352539,
+        "density_max": 1.327162742614746,
+        "pressure_min": 0.39941802620887756,
+        "pressure_max": 1.5092384815216064,
+        "temperature_max_kelvin_scaled": 2255.599853515625,
+        "soot_max": 0.0035962346009910107,
+        "soot_sum": 56.45344543457031,
+        "sigma_max": 5.7539753913879395,
+        "emission_max": 7.19290828704834
+      },
+      "mean_rgb": [
+        128.2980154079861,
+        131.14794053819443,
+        137.17989908854167
+      ]
+    },
+    {
+      "index": 137,
+      "video_time": 5.708333333333333,
+      "simulation_time": 3.425,
+      "state_sha256": "2f06832adb0652ccf80a0e566131deaa80acfe75c5432aef26f250f6fe312189",
+      "pixel_sha256": "4584124b39d8e312ec99b67a30d76867f1be32796f7732998cae461511d8ba43",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08552930504083633,
+        "density_max": 1.3277024030685425,
+        "pressure_min": 0.39595192670822144,
+        "pressure_max": 1.5151540040969849,
+        "temperature_max_kelvin_scaled": 2252.386474609375,
+        "soot_max": 0.0035908822901546955,
+        "soot_sum": 56.6315803527832,
+        "sigma_max": 5.7454118728637695,
+        "emission_max": 7.092904090881348
+      },
+      "mean_rgb": [
+        128.24922417534722,
+        131.07737413194445,
+        137.09200846354167
+      ]
+    },
+    {
+      "index": 138,
+      "video_time": 5.75,
+      "simulation_time": 3.45,
+      "state_sha256": "ff4a915d89b889a6b4d93f54ed52ec6b424ea63011243d933441a9787022c6e2",
+      "pixel_sha256": "e86a103e733cee4dae1a3cf9ac82bf3afa2289634b21d4161faa461d2eaaf8f0",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08485350012779236,
+        "density_max": 1.327791452407837,
+        "pressure_min": 0.3938252329826355,
+        "pressure_max": 1.5270450115203857,
+        "temperature_max_kelvin_scaled": 2234.0576171875,
+        "soot_max": 0.0035896683111786842,
+        "soot_sum": 56.81268310546875,
+        "sigma_max": 5.74346923828125,
+        "emission_max": 6.543447971343994
+      },
+      "mean_rgb": [
+        128.20435438368057,
+        131.0065212673611,
+        137.00165147569444
+      ]
+    },
+    {
+      "index": 139,
+      "video_time": 5.791666666666667,
+      "simulation_time": 3.475,
+      "state_sha256": "8aef7dd14beab2f88eb2de89ceb5886dfa8d047aa35dc33e9f1ccf52b26006a8",
+      "pixel_sha256": "f3774cf972cd3d53400e791ed62db7bcc4533660c77bff8e71dd3410dd36bb79",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08398544043302536,
+        "density_max": 1.328598976135254,
+        "pressure_min": 0.39632806181907654,
+        "pressure_max": 1.5277538299560547,
+        "temperature_max_kelvin_scaled": 2227.817138671875,
+        "soot_max": 0.0035899693612009287,
+        "soot_sum": 56.99617004394531,
+        "sigma_max": 5.743950843811035,
+        "emission_max": 6.364324569702148
+      },
+      "mean_rgb": [
+        128.17355360243056,
+        130.940625,
+        136.91014105902778
+      ]
+    },
+    {
+      "index": 140,
+      "video_time": 5.833333333333333,
+      "simulation_time": 3.5,
+      "state_sha256": "32c1b8b3b8a5b7282377b2ef241c0a2b4d300b51e1ef1554706850a9ee7391d0",
+      "pixel_sha256": "5dd7b000757dc105cf5cb0ec3f1acceb0c8c507a409330d5cb5b09ebac0f4830",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08320016413927078,
+        "density_max": 1.3305431604385376,
+        "pressure_min": 0.3962489068508148,
+        "pressure_max": 1.5337204933166504,
+        "temperature_max_kelvin_scaled": 2227.55224609375,
+        "soot_max": 0.003609712002798915,
+        "soot_sum": 57.18304443359375,
+        "sigma_max": 5.775539398193359,
+        "emission_max": 6.356814384460449
+      },
+      "mean_rgb": [
+        128.1510883246528,
+        130.87734375,
+        136.8185525173611
+      ]
+    },
+    {
+      "index": 141,
+      "video_time": 5.875,
+      "simulation_time": 3.525,
+      "state_sha256": "dd7c3b959f757a03d7c407d18751437f6187b47a755151c785b2d7dab5352e9e",
+      "pixel_sha256": "2a934f2a26ec6388061e7e2096377553d9c190020c490639eabc399b8612c90c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08241342753171921,
+        "density_max": 1.332022786140442,
+        "pressure_min": 0.39653465151786804,
+        "pressure_max": 1.5291162729263306,
+        "temperature_max_kelvin_scaled": 2210.408447265625,
+        "soot_max": 0.003627598285675049,
+        "soot_sum": 57.37209701538086,
+        "sigma_max": 5.804157257080078,
+        "emission_max": 5.885275363922119
+      },
+      "mean_rgb": [
+        128.12878797743056,
+        130.8149761284722,
+        136.7245334201389
+      ]
+    },
+    {
+      "index": 142,
+      "video_time": 5.916666666666667,
+      "simulation_time": 3.55,
+      "state_sha256": "3e8f34d43bb0629bf13cb4c1ef2feaf4a04109f918013a53b7ac31dcbe6d7d60",
+      "pixel_sha256": "d99de5068b04a565bf74e764b3c4c786148ddf4a0605f254ce16911dcf02230c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08242136240005493,
+        "density_max": 1.3329590559005737,
+        "pressure_min": 0.4008626341819763,
+        "pressure_max": 1.5274770259857178,
+        "temperature_max_kelvin_scaled": 2189.3212890625,
+        "soot_max": 0.003634750610217452,
+        "soot_sum": 57.563636779785156,
+        "sigma_max": 5.815600872039795,
+        "emission_max": 5.344114303588867
+      },
+      "mean_rgb": [
+        128.0997243923611,
+        130.7491872829861,
+        136.62708550347222
+      ]
+    },
+    {
+      "index": 143,
+      "video_time": 5.958333333333333,
+      "simulation_time": 3.575,
+      "state_sha256": "c1e8abb43645aff19ef64afe74644b474922cac6ecd81e5172404cf97a30e8ba",
+      "pixel_sha256": "3cea2a4a693400b24a686e2dffebce1bc58665212e4e43d4d832add66ae1fdd0",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08294103294610977,
+        "density_max": 1.333589792251587,
+        "pressure_min": 0.4020179510116577,
+        "pressure_max": 1.5177456140518188,
+        "temperature_max_kelvin_scaled": 2192.019287109375,
+        "soot_max": 0.0036396796349436045,
+        "soot_sum": 57.758460998535156,
+        "sigma_max": 5.823487281799316,
+        "emission_max": 5.411042213439941
+      },
+      "mean_rgb": [
+        128.06906467013889,
+        130.68228515625,
+        136.5265896267361
+      ]
+    },
+    {
+      "index": 144,
+      "video_time": 6.0,
+      "simulation_time": 3.6,
+      "state_sha256": "e7a6c2209256e0e21821b6a9eb7689aa843974fd13cabf8a1020159fe7eb0f7e",
+      "pixel_sha256": "05f3c942a2159a8567e62f5b7ffff2845a99a42cc51a41a5d54acd231034679b",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08376757800579071,
+        "density_max": 1.3344253301620483,
+        "pressure_min": 0.39702633023262024,
+        "pressure_max": 1.5254122018814087,
+        "temperature_max_kelvin_scaled": 2178.11328125,
+        "soot_max": 0.0036506166215986013,
+        "soot_sum": 57.956932067871094,
+        "sigma_max": 5.840986728668213,
+        "emission_max": 5.073180198669434
+      },
+      "mean_rgb": [
+        128.04121527777778,
+        130.6146169704861,
+        136.42355251736112
+      ]
+    },
+    {
+      "index": 145,
+      "video_time": 6.041666666666667,
+      "simulation_time": 3.625,
+      "state_sha256": "ec6448c4fee9581fc89dff584422726512898392695f0224fb08cd894248db64",
+      "pixel_sha256": "2b1d37ecd7e08f5e5b936cc8c682188305c4eab39b573b4c9458ddbae7fbc43c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08463422954082489,
+        "density_max": 1.3343480825424194,
+        "pressure_min": 0.3982349932193756,
+        "pressure_max": 1.5365360975265503,
+        "temperature_max_kelvin_scaled": 2161.415771484375,
+        "soot_max": 0.0036565393675118685,
+        "soot_sum": 58.16040802001953,
+        "sigma_max": 5.850462913513184,
+        "emission_max": 4.690117359161377
+      },
+      "mean_rgb": [
+        128.02617513020834,
+        130.55068250868055,
+        136.31998697916666
+      ]
+    },
+    {
+      "index": 146,
+      "video_time": 6.083333333333333,
+      "simulation_time": 3.65,
+      "state_sha256": "c2c76a6bea990fe10bf3bed5d0073ae5d4a21eee3aea62011c4ca635b54d5040",
+      "pixel_sha256": "ef65a4739bd847fb79748376525b55e0906e3216b727dd13179965eeeab11c57",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08365270495414734,
+        "density_max": 1.3351999521255493,
+        "pressure_min": 0.40288490056991577,
+        "pressure_max": 1.5359724760055542,
+        "temperature_max_kelvin_scaled": 2167.06689453125,
+        "soot_max": 0.003660051617771387,
+        "soot_sum": 58.3681640625,
+        "sigma_max": 5.856082439422607,
+        "emission_max": 4.817062854766846
+      },
+      "mean_rgb": [
+        128.02287760416667,
+        130.489775390625,
+        136.21488823784722
+      ]
+    },
+    {
+      "index": 147,
+      "video_time": 6.125,
+      "simulation_time": 3.675,
+      "state_sha256": "59a2aef010fdaaec08dabec8424e5a22297961271364db7d9d4d4e41fc8b1a00",
+      "pixel_sha256": "5121c0187abf1afe7734bddebbc09222c183dcf74bf8a638e9b782f78cf611f9",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08260896801948547,
+        "density_max": 1.3374429941177368,
+        "pressure_min": 0.4035853445529938,
+        "pressure_max": 1.5391281843185425,
+        "temperature_max_kelvin_scaled": 2162.349365234375,
+        "soot_max": 0.0036639475729316473,
+        "soot_sum": 58.58007049560547,
+        "sigma_max": 5.862316131591797,
+        "emission_max": 4.71090030670166
+      },
+      "mean_rgb": [
+        128.03259331597224,
+        130.43417643229168,
+        136.10900390625
+      ]
+    },
+    {
+      "index": 148,
+      "video_time": 6.166666666666667,
+      "simulation_time": 3.7,
+      "state_sha256": "b9be618da00fab1fa29e2bb90c7cac3f23267e3d309064c21a16a94644cd6a41",
+      "pixel_sha256": "f883ef68bdeef1cca79b932743fbd31b3a45950d9cf4156727924c12c0015b74",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08175212144851685,
+        "density_max": 1.339236855506897,
+        "pressure_min": 0.40542706847190857,
+        "pressure_max": 1.535605549812317,
+        "temperature_max_kelvin_scaled": 2149.1259765625,
+        "soot_max": 0.0036680165212601423,
+        "soot_sum": 58.79449462890625,
+        "sigma_max": 5.868826389312744,
+        "emission_max": 4.423328399658203
+      },
+      "mean_rgb": [
+        128.05040473090278,
+        130.38311089409723,
+        136.00217664930557
+      ]
+    },
+    {
+      "index": 149,
+      "video_time": 6.208333333333333,
+      "simulation_time": 3.725,
+      "state_sha256": "cacd53db938033efc79ef364cab75303fed6069bd86d5742a3bec79f9b5ce87d",
+      "pixel_sha256": "59bff890b9c0dd9c488b927b2a8576f306f869746bb0654920dedcd1ec71f4cb",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08106139302253723,
+        "density_max": 1.3404245376586914,
+        "pressure_min": 0.40706679224967957,
+        "pressure_max": 1.5378367900848389,
+        "temperature_max_kelvin_scaled": 2137.9287109375,
+        "soot_max": 0.0036878392565995455,
+        "soot_sum": 59.01129150390625,
+        "sigma_max": 5.900542736053467,
+        "emission_max": 4.191031455993652
+      },
+      "mean_rgb": [
+        128.07393771701388,
+        130.3352224392361,
+        135.89477756076388
+      ]
+    },
+    {
+      "index": 150,
+      "video_time": 6.25,
+      "simulation_time": 3.75,
+      "state_sha256": "44559df3689308b990a4915d9b7fad7f782040fff21d227312a4f0ed6d436cbd",
+      "pixel_sha256": "1881b9d15723705b2895cb338d202a6eae10302e33c1a0908e7e04e9372dfc02",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0807214006781578,
+        "density_max": 1.3410168886184692,
+        "pressure_min": 0.4081915020942688,
+        "pressure_max": 1.5289098024368286,
+        "temperature_max_kelvin_scaled": 2139.514404296875,
+        "soot_max": 0.0037074247375130653,
+        "soot_sum": 59.230194091796875,
+        "sigma_max": 5.93187952041626,
+        "emission_max": 4.223319053649902
+      },
+      "mean_rgb": [
+        128.0942209201389,
+        130.28595160590277,
+        135.78603841145832
+      ]
+    },
+    {
+      "index": 151,
+      "video_time": 6.291666666666667,
+      "simulation_time": 3.775,
+      "state_sha256": "5c34cbcfe5ce512cc2be5e6b7be68e7c0e6c7971e419bd1c5496a14b5ef34ac4",
+      "pixel_sha256": "f8e63184b8668e891c6279984c155f384a953169fef4097979f5e7890d00b611",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08070274442434311,
+        "density_max": 1.3410212993621826,
+        "pressure_min": 0.4083898663520813,
+        "pressure_max": 1.536807656288147,
+        "temperature_max_kelvin_scaled": 2139.691650390625,
+        "soot_max": 0.0037251135800033808,
+        "soot_sum": 59.45124816894531,
+        "sigma_max": 5.960181713104248,
+        "emission_max": 4.226937294006348
+      },
+      "mean_rgb": [
+        128.10816080729165,
+        130.23108506944445,
+        135.67417426215277
+      ]
+    },
+    {
+      "index": 152,
+      "video_time": 6.333333333333333,
+      "simulation_time": 3.8,
+      "state_sha256": "966c84130955ec8d0fce83df0fb00db44cdebf72a3e4f7bc270006364afb41bc",
+      "pixel_sha256": "8aa5ab3c29a01bf1decf6353b28a309c01ff2abd479adb54fc71a838bf8a80a0",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08066590875387192,
+        "density_max": 1.3413156270980835,
+        "pressure_min": 0.4076373279094696,
+        "pressure_max": 1.5433449745178223,
+        "temperature_max_kelvin_scaled": 2129.83984375,
+        "soot_max": 0.0037383679300546646,
+        "soot_sum": 59.67526626586914,
+        "sigma_max": 5.981388568878174,
+        "emission_max": 4.0294294357299805
+      },
+      "mean_rgb": [
+        128.1147341579861,
+        130.169365234375,
+        135.5591286892361
+      ]
+    },
+    {
+      "index": 153,
+      "video_time": 6.375,
+      "simulation_time": 3.825,
+      "state_sha256": "fa0d5483276373dfbc2f255df7ed9ea3b0f81f2ee7817e6b712bfca5a4f308cc",
+      "pixel_sha256": "4bd5b8903c0558e5e583c50189008be19f7542a499b3a5548b6416840639d586",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0807042047381401,
+        "density_max": 1.3430579900741577,
+        "pressure_min": 0.4065369665622711,
+        "pressure_max": 1.5533536672592163,
+        "temperature_max_kelvin_scaled": 2132.228759765625,
+        "soot_max": 0.0037458972074091434,
+        "soot_sum": 59.90199661254883,
+        "sigma_max": 5.993435382843018,
+        "emission_max": 4.076624870300293
+      },
+      "mean_rgb": [
+        128.12230034722222,
+        130.10605251736112,
+        135.44014973958335
+      ]
+    },
+    {
+      "index": 154,
+      "video_time": 6.416666666666667,
+      "simulation_time": 3.85,
+      "state_sha256": "4d2a77c155b99295757036cf788377ae3db1bc9e6930802f4c4326bfef29ec52",
+      "pixel_sha256": "235f81efcd215f8b0b5401463fbc6d7a30bca9b648620828c7daa885b328858e",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08084811270236969,
+        "density_max": 1.3451166152954102,
+        "pressure_min": 0.4050361216068268,
+        "pressure_max": 1.5812543630599976,
+        "temperature_max_kelvin_scaled": 2130.994384765625,
+        "soot_max": 0.003748854622244835,
+        "soot_sum": 60.13185119628906,
+        "sigma_max": 5.998167514801025,
+        "emission_max": 4.052185535430908
+      },
+      "mean_rgb": [
+        128.12057291666667,
+        130.03927300347223,
+        135.3186892361111
+      ]
+    },
+    {
+      "index": 155,
+      "video_time": 6.458333333333333,
+      "simulation_time": 3.875,
+      "state_sha256": "53a2fb3e49c0017ffcfcedc3aaf1c34009eb4048bbea8a3363afafac940b0031",
+      "pixel_sha256": "7f45cab2f2699e53d349d4196f15abcf3c02010506b53bafa32af76146c79ea3",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08109124004840851,
+        "density_max": 1.3465044498443604,
+        "pressure_min": 0.40505340695381165,
+        "pressure_max": 1.575969934463501,
+        "temperature_max_kelvin_scaled": 2125.38427734375,
+        "soot_max": 0.003748719347640872,
+        "soot_sum": 60.3656120300293,
+        "sigma_max": 5.997951030731201,
+        "emission_max": 3.9425876140594482
+      },
+      "mean_rgb": [
+        128.1154220920139,
+        129.96998914930555,
+        135.196416015625
+      ]
+    },
+    {
+      "index": 156,
+      "video_time": 6.5,
+      "simulation_time": 3.9,
+      "state_sha256": "2f09dfb6423dbb6ebeba9d103a10a389b4c032778bd4fda4d9a85513a11a2be1",
+      "pixel_sha256": "b9a4055e45f19e2a26ce546290a7df2c7a2c571fee2c124ff4f1fe80b131f2d9",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08144330978393555,
+        "density_max": 1.3468719720840454,
+        "pressure_min": 0.4022893011569977,
+        "pressure_max": 1.5734914541244507,
+        "temperature_max_kelvin_scaled": 2123.43115234375,
+        "soot_max": 0.0037492718547582626,
+        "soot_sum": 60.60346221923828,
+        "sigma_max": 5.99883508682251,
+        "emission_max": 3.904999017715454
+      },
+      "mean_rgb": [
+        128.11759765625,
+        129.90248372395834,
+        135.072373046875
+      ]
+    },
+    {
+      "index": 157,
+      "video_time": 6.541666666666667,
+      "simulation_time": 3.925,
+      "state_sha256": "f71452619a6659d321680f88746ea7299fea684bf96442459f2aea0b7e944d8a",
+      "pixel_sha256": "6f2b6312c4221798530c836160d1441267c291c55dbc028f515bd532ba59328a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08196460455656052,
+        "density_max": 1.3481154441833496,
+        "pressure_min": 0.40016600489616394,
+        "pressure_max": 1.582857608795166,
+        "temperature_max_kelvin_scaled": 2123.92626953125,
+        "soot_max": 0.003761592321097851,
+        "soot_sum": 60.8448486328125,
+        "sigma_max": 6.018547534942627,
+        "emission_max": 3.914499521255493
+      },
+      "mean_rgb": [
+        128.12827799479166,
+        129.83855794270832,
+        134.94774522569443
+      ]
+    },
+    {
+      "index": 158,
+      "video_time": 6.583333333333333,
+      "simulation_time": 3.95,
+      "state_sha256": "1b52942b48f0e49c782659acf2a7d65c9d9938960f800e8a4d0595ef0edb748a",
+      "pixel_sha256": "c99a6c534c5ef4a74f8fc993c9127c8377a4193b70c6f6aef2ccb0cf47437436",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08248361945152283,
+        "density_max": 1.3508200645446777,
+        "pressure_min": 0.39955267310142517,
+        "pressure_max": 1.6089369058609009,
+        "temperature_max_kelvin_scaled": 2119.956298828125,
+        "soot_max": 0.0037846029736101627,
+        "soot_sum": 61.0899543762207,
+        "sigma_max": 6.055364608764648,
+        "emission_max": 3.8388426303863525
+      },
+      "mean_rgb": [
+        128.13999891493054,
+        129.77439127604165,
+        134.820478515625
+      ]
+    },
+    {
+      "index": 159,
+      "video_time": 6.625,
+      "simulation_time": 3.975,
+      "state_sha256": "949b8cdaa4917290f046c80f04dfae9c97491d1d6ef1b07ade90be7b0b6e7f47",
+      "pixel_sha256": "cbe3bbb7cc960f0a476308079d0b5fe466aa5830f4fe48653ff31ad7037bb9a4",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08302944898605347,
+        "density_max": 1.35336172580719,
+        "pressure_min": 0.40290459990501404,
+        "pressure_max": 1.6418999433517456,
+        "temperature_max_kelvin_scaled": 2116.644287109375,
+        "soot_max": 0.0038069812580943108,
+        "soot_sum": 61.33949279785156,
+        "sigma_max": 6.091169834136963,
+        "emission_max": 3.776630163192749
+      },
+      "mean_rgb": [
+        128.15223090277777,
+        129.7074262152778,
+        134.69123589409722
+      ]
+    },
+    {
+      "index": 160,
+      "video_time": 6.666666666666667,
+      "simulation_time": 4,
+      "state_sha256": "047dd083f5ff85c5ec7906ac1136dcd37fa89c9b00b23caace20a82369c5e7fc",
+      "pixel_sha256": "5fccb05ae484e9d2b2718f184e39abbf2d0d3f7f4c033f0a4ecce893a8182386",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08373913913965225,
+        "density_max": 1.3554110527038574,
+        "pressure_min": 0.4089910387992859,
+        "pressure_max": 1.6861093044281006,
+        "temperature_max_kelvin_scaled": 2116.262451171875,
+        "soot_max": 0.003824635874480009,
+        "soot_sum": 61.59370422363281,
+        "sigma_max": 6.119417190551758,
+        "emission_max": 3.7695086002349854
+      },
+      "mean_rgb": [
+        128.16454427083335,
+        129.63791883680557,
+        134.55976019965277
+      ]
+    },
+    {
+      "index": 161,
+      "video_time": 6.708333333333333,
+      "simulation_time": 4.025,
+      "state_sha256": "6e2d22ce35bb44f7920d8ba7444678c64f7993d5d4de0b772788228ca751d8c7",
+      "pixel_sha256": "64f47664a6e7b4a1d53b7b63f9a57923b5e11271c817928c6fb2928ea8d64a74",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08445020765066147,
+        "density_max": 1.3574645519256592,
+        "pressure_min": 0.4143182635307312,
+        "pressure_max": 1.6732488870620728,
+        "temperature_max_kelvin_scaled": 2113.3427734375,
+        "soot_max": 0.003836209885776043,
+        "soot_sum": 61.85263442993164,
+        "sigma_max": 6.137935638427734,
+        "emission_max": 3.7154324054718018
+      },
+      "mean_rgb": [
+        128.18026801215277,
+        129.56665364583333,
+        134.42587239583332
+      ]
+    },
+    {
+      "index": 162,
+      "video_time": 6.75,
+      "simulation_time": 4.05,
+      "state_sha256": "792952d3f1a2a3d8e074edc5b4f9c571d1b4d9d60dfaee2f9544656d0c199f61",
+      "pixel_sha256": "8b5ffcb7bb2a9f630800f79a89e242675e0932ceaf34cdafbb180718976d83af",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08509766310453415,
+        "density_max": 1.3600059747695923,
+        "pressure_min": 0.41672101616859436,
+        "pressure_max": 1.6648273468017578,
+        "temperature_max_kelvin_scaled": 2104.14794921875,
+        "soot_max": 0.0038468262646347284,
+        "soot_sum": 62.11506652832031,
+        "sigma_max": 6.154922008514404,
+        "emission_max": 3.5492072105407715
+      },
+      "mean_rgb": [
+        128.20114691840277,
+        129.4985568576389,
+        134.2894574652778
+      ]
+    },
+    {
+      "index": 163,
+      "video_time": 6.791666666666667,
+      "simulation_time": 4.075,
+      "state_sha256": "b5fe057c31c45bd05b3d659e30a7c0163722e034aff4d9576d5df6441d595518",
+      "pixel_sha256": "d11ae04d20cbc29de05b661121dbb800443c1d678483c63415769422356f52c0",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08539945632219315,
+        "density_max": 1.3623955249786377,
+        "pressure_min": 0.4108937382698059,
+        "pressure_max": 1.6890701055526733,
+        "temperature_max_kelvin_scaled": 2103.580322265625,
+        "soot_max": 0.0038582186680287123,
+        "soot_sum": 62.380313873291016,
+        "sigma_max": 6.173150062561035,
+        "emission_max": 3.53914475440979
+      },
+      "mean_rgb": [
+        128.22095811631945,
+        129.43154622395832,
+        134.15229383680557
+      ]
+    },
+    {
+      "index": 164,
+      "video_time": 6.833333333333333,
+      "simulation_time": 4.1,
+      "state_sha256": "e77fe0fe6ffa63202f7f157048168e0cbb85642174533f8c87d8d5ef17455cea",
+      "pixel_sha256": "c34b7df82724baafd54b8b8dd9d6ca3f6dd838c869ed7310d04c56fbd0b4c4db",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08599231392145157,
+        "density_max": 1.368478536605835,
+        "pressure_min": 0.40719693899154663,
+        "pressure_max": 1.7386174201965332,
+        "temperature_max_kelvin_scaled": 2108.541259765625,
+        "soot_max": 0.0038803222123533487,
+        "soot_sum": 62.64868927001953,
+        "sigma_max": 6.208515644073486,
+        "emission_max": 3.6278607845306396
+      },
+      "mean_rgb": [
+        128.23041666666666,
+        129.3606890190972,
+        134.0127951388889
+      ]
+    },
+    {
+      "index": 165,
+      "video_time": 6.875,
+      "simulation_time": 4.125,
+      "state_sha256": "39298215aabe2f7e1951be696e8c73252c1a78f2179ce726489ad650419969b8",
+      "pixel_sha256": "1e23be136c01407f06dea751de40038783f2b722183220d20eef13739edb0280",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08562888950109482,
+        "density_max": 1.3750807046890259,
+        "pressure_min": 0.4086809456348419,
+        "pressure_max": 1.781941294670105,
+        "temperature_max_kelvin_scaled": 2107.731689453125,
+        "soot_max": 0.003907100297510624,
+        "soot_sum": 62.92092514038086,
+        "sigma_max": 6.2513604164123535,
+        "emission_max": 3.613258123397827
+      },
+      "mean_rgb": [
+        128.2209125434028,
+        129.27999891493056,
+        133.8705935329861
+      ]
+    },
+    {
+      "index": 166,
+      "video_time": 6.916666666666667,
+      "simulation_time": 4.15,
+      "state_sha256": "42cc4fd4eb7c1503879bd7265c83852c79a14d3f223e909541b8185ebb094179",
+      "pixel_sha256": "b508dfa2a5ab013fbe5b782c57edd099607ff3d307573e539996ca142747283c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08541672676801682,
+        "density_max": 1.381648063659668,
+        "pressure_min": 0.4144197702407837,
+        "pressure_max": 1.7775602340698242,
+        "temperature_max_kelvin_scaled": 2108.838623046875,
+        "soot_max": 0.003931277431547642,
+        "soot_sum": 63.19782257080078,
+        "sigma_max": 6.290043830871582,
+        "emission_max": 3.633234739303589
+      },
+      "mean_rgb": [
+        128.19520616319446,
+        129.1878439670139,
+        133.7246148003472
+      ]
+    },
+    {
+      "index": 167,
+      "video_time": 6.958333333333333,
+      "simulation_time": 4.175,
+      "state_sha256": "30ea3a5988447a70ac52c8435f40b5a8bc3b7d326d6e4565ddaefc57d90eff13",
+      "pixel_sha256": "6b59742c85caa4249b0d2a06f5e8b1f0855bd3fcdcc494daa1b1c109f2c7831d",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08528032153844833,
+        "density_max": 1.3885103464126587,
+        "pressure_min": 0.42407935857772827,
+        "pressure_max": 1.7396022081375122,
+        "temperature_max_kelvin_scaled": 2120.460205078125,
+        "soot_max": 0.003951236139982939,
+        "soot_sum": 63.47978973388672,
+        "sigma_max": 6.321977615356445,
+        "emission_max": 3.848376750946045
+      },
+      "mean_rgb": [
+        128.1669162326389,
+        129.09036783854165,
+        133.576103515625
+      ]
+    },
+    {
+      "index": 168,
+      "video_time": 7.0,
+      "simulation_time": 4.2,
+      "state_sha256": "a505b903dbdc51f8b7c9ecff77ffd9fe783db383794180d2d52293fa51b7a37a",
+      "pixel_sha256": "90764acef4a55bbfcb7f90967f62b368a877310292fd7e5537690c4e60fe2d9b",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08610837906599045,
+        "density_max": 1.3951488733291626,
+        "pressure_min": 0.43762505054473877,
+        "pressure_max": 1.7710965871810913,
+        "temperature_max_kelvin_scaled": 2136.7431640625,
+        "soot_max": 0.0039675189182162285,
+        "soot_sum": 63.766441345214844,
+        "sigma_max": 6.348030090332031,
+        "emission_max": 4.167026519775391
+      },
+      "mean_rgb": [
+        128.14820095486112,
+        128.99658962673612,
+        133.42593098958332
+      ]
+    },
+    {
+      "index": 169,
+      "video_time": 7.041666666666667,
+      "simulation_time": 4.225,
+      "state_sha256": "0b656daa7509de1055d2c3ee391702c14c8db8e3262e329e158be881a995a8a7",
+      "pixel_sha256": "0283e27a74d83c61d9f5977c0ab4d90aef9b8b67e951dca2273dcc03618b638a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08451449126005173,
+        "density_max": 1.400033712387085,
+        "pressure_min": 0.44223177433013916,
+        "pressure_max": 1.824207067489624,
+        "temperature_max_kelvin_scaled": 2144.76318359375,
+        "soot_max": 0.003981261979788542,
+        "soot_sum": 64.05885314941406,
+        "sigma_max": 6.37001895904541,
+        "emission_max": 4.3316144943237305
+      },
+      "mean_rgb": [
+        128.13673936631943,
+        128.90719292534723,
+        133.27522026909722
+      ]
+    },
+    {
+      "index": 170,
+      "video_time": 7.083333333333333,
+      "simulation_time": 4.25,
+      "state_sha256": "05d9cdec8fbcbc4eb6905924c87373a3947e9a7a6120fd6715189d1b52f86183",
+      "pixel_sha256": "3baaf31a035355b668b48e013871264725abedd50b4ed9287f08e02df99ddcd3",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08335977792739868,
+        "density_max": 1.4030505418777466,
+        "pressure_min": 0.4454755187034607,
+        "pressure_max": 1.8787416219711304,
+        "temperature_max_kelvin_scaled": 2147.89453125,
+        "soot_max": 0.003991917707026005,
+        "soot_sum": 64.35595703125,
+        "sigma_max": 6.387068271636963,
+        "emission_max": 4.397283554077148
+      },
+      "mean_rgb": [
+        128.11819986979165,
+        128.814638671875,
+        133.12349717881943
+      ]
+    },
+    {
+      "index": 171,
+      "video_time": 7.125,
+      "simulation_time": 4.275,
+      "state_sha256": "ebdd47b411f5b2e6ae49f140b36cfa48c28cfdb578d1dec5071002ceaa4026e3",
+      "pixel_sha256": "cdf45a4d793065dddc5e2a3becb740880f9f1565099893c229213c668d9b9225",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08352385461330414,
+        "density_max": 1.4130165576934814,
+        "pressure_min": 0.45311060547828674,
+        "pressure_max": 1.8557182550430298,
+        "temperature_max_kelvin_scaled": 2154.529541015625,
+        "soot_max": 0.004007279407233,
+        "soot_sum": 64.65628051757812,
+        "sigma_max": 6.411646842956543,
+        "emission_max": 4.5390801429748535
+      },
+      "mean_rgb": [
+        128.08900933159723,
+        128.7165310329861,
+        132.97026909722223
+      ]
+    },
+    {
+      "index": 172,
+      "video_time": 7.166666666666667,
+      "simulation_time": 4.3,
+      "state_sha256": "f6c1ac67973bcf88eb638482776f13a396fb26e05213cbd76283c8f19e7c3457",
+      "pixel_sha256": "9dde01fb4394aa3923afbe71fd74c7ceeb397f81cf14b7a4a5d3bc2f886e8e05",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08465323597192764,
+        "density_max": 1.4235376119613647,
+        "pressure_min": 0.4523766040802002,
+        "pressure_max": 1.8047657012939453,
+        "temperature_max_kelvin_scaled": 2155.055419921875,
+        "soot_max": 0.0040275282226502895,
+        "soot_sum": 64.96099090576172,
+        "sigma_max": 6.444045066833496,
+        "emission_max": 4.550475120544434
+      },
+      "mean_rgb": [
+        128.060751953125,
+        128.61451063368057,
+        132.8145041232639
+      ]
+    },
+    {
+      "index": 173,
+      "video_time": 7.208333333333333,
+      "simulation_time": 4.325,
+      "state_sha256": "ad2fc1fd2947a0e5a9c0119bab580750ed3c4b2331a2d5cd6c4163e7f5358bd8",
+      "pixel_sha256": "d5e5f12d43cf563fd10ac8d94ac5e314996ec344b391b9ee71933c5a373aa349",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08624768257141113,
+        "density_max": 1.4330624341964722,
+        "pressure_min": 0.4543192982673645,
+        "pressure_max": 1.8370944261550903,
+        "temperature_max_kelvin_scaled": 2165.417236328125,
+        "soot_max": 0.00404896168038249,
+        "soot_sum": 65.2708969116211,
+        "sigma_max": 6.478338718414307,
+        "emission_max": 4.779719829559326
+      },
+      "mean_rgb": [
+        128.04083224826388,
+        128.51356770833334,
+        132.65575520833335
+      ]
+    },
+    {
+      "index": 174,
+      "video_time": 7.25,
+      "simulation_time": 4.35,
+      "state_sha256": "aa68b4cff90c093915233fa9396dadd615e4e2e1ded3944ef0934b217b99a279",
+      "pixel_sha256": "fe986dfb77915ebfed56c945494e7a3312ce566d432cd0075b390bf0934de88c",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08493053168058395,
+        "density_max": 1.4401386976242065,
+        "pressure_min": 0.4580034911632538,
+        "pressure_max": 1.8966999053955078,
+        "temperature_max_kelvin_scaled": 2175.65771484375,
+        "soot_max": 0.004067221190780401,
+        "soot_sum": 65.58623504638672,
+        "sigma_max": 6.507554054260254,
+        "emission_max": 5.015321731567383
+      },
+      "mean_rgb": [
+        128.0302202690972,
+        128.41960503472222,
+        132.49769205729166
+      ]
+    },
+    {
+      "index": 175,
+      "video_time": 7.291666666666667,
+      "simulation_time": 4.375,
+      "state_sha256": "9aa9cea94693e1ba179f88150680f0c0ad043c2c1a61aa81e28dcdca0c3d6390",
+      "pixel_sha256": "cef15b3e18c3f630ec66c958b8ebe3508b035df3eb48d085d02e8ac6d8cb0723",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08325347304344177,
+        "density_max": 1.4449512958526611,
+        "pressure_min": 0.45911920070648193,
+        "pressure_max": 1.9582624435424805,
+        "temperature_max_kelvin_scaled": 2159.951904296875,
+        "soot_max": 0.004076818469911814,
+        "soot_sum": 65.90707397460938,
+        "sigma_max": 6.522909641265869,
+        "emission_max": 4.657675266265869
+      },
+      "mean_rgb": [
+        128.01667860243055,
+        128.3270388454861,
+        132.3381228298611
+      ]
+    },
+    {
+      "index": 176,
+      "video_time": 7.333333333333333,
+      "simulation_time": 4.4,
+      "state_sha256": "3b516dbc91cf3de4229881ecd5de90711428f07863aeceb2c2d67fdb58edeb87",
+      "pixel_sha256": "c9ee8d09d17b42636af3c1c1bbb4d298fd26da772b30c569e6e4b68003ef83c2",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08319099992513657,
+        "density_max": 1.447075366973877,
+        "pressure_min": 0.4580507278442383,
+        "pressure_max": 1.904964566230774,
+        "temperature_max_kelvin_scaled": 2119.931640625,
+        "soot_max": 0.00408300431445241,
+        "soot_sum": 66.23296356201172,
+        "sigma_max": 6.532806873321533,
+        "emission_max": 3.838374376296997
+      },
+      "mean_rgb": [
+        127.9904318576389,
+        128.22865668402778,
+        132.17614800347224
+      ]
+    },
+    {
+      "index": 177,
+      "video_time": 7.375,
+      "simulation_time": 4.425,
+      "state_sha256": "5abb4fe0af793db034c1747cf3601d42d967f7e8da70ee6b3939a26a1006ae99",
+      "pixel_sha256": "890fcb37cc6f12f360341aa02842e725b29c612c5bd2ed8ce001cde13b7a17c0",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08488423377275467,
+        "density_max": 1.4591635465621948,
+        "pressure_min": 0.4575589597225189,
+        "pressure_max": 1.9004769325256348,
+        "temperature_max_kelvin_scaled": 2132.718994140625,
+        "soot_max": 0.004098870325833559,
+        "soot_sum": 66.56388854980469,
+        "sigma_max": 6.558192729949951,
+        "emission_max": 4.086364269256592
+      },
+      "mean_rgb": [
+        127.96423285590278,
+        128.12777452256944,
+        132.01190863715277
+      ]
+    },
+    {
+      "index": 178,
+      "video_time": 7.416666666666667,
+      "simulation_time": 4.45,
+      "state_sha256": "7ca4eed27947de9267c92dc31750ab3c47ac31dad850949fc1a98a0d1253491b",
+      "pixel_sha256": "ca8ff45e1a56edda72c4b29d2a59cd9a73921da64ec8a2ed6f55d502895916ef",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08701230585575104,
+        "density_max": 1.4696545600891113,
+        "pressure_min": 0.4639548361301422,
+        "pressure_max": 1.9187449216842651,
+        "temperature_max_kelvin_scaled": 2123.558349609375,
+        "soot_max": 0.004121542442589998,
+        "soot_sum": 66.8995590209961,
+        "sigma_max": 6.594468116760254,
+        "emission_max": 3.9074387550354004
+      },
+      "mean_rgb": [
+        127.94831922743056,
+        128.0305740017361,
+        131.8470334201389
+      ]
+    },
+    {
+      "index": 179,
+      "video_time": 7.458333333333333,
+      "simulation_time": 4.475,
+      "state_sha256": "2105245ad70829bcdacd6501a5ccb41da52b7948fe3615f7640bdd0348938d59",
+      "pixel_sha256": "df56268189813435ef7ed4310153583893370b51e0d3c49ac8d5b98d6a6c436f",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08595726639032364,
+        "density_max": 1.4772785902023315,
+        "pressure_min": 0.4651082456111908,
+        "pressure_max": 1.9713718891143799,
+        "temperature_max_kelvin_scaled": 2142.9580078125,
+        "soot_max": 0.004140386823564768,
+        "soot_sum": 67.24024200439453,
+        "sigma_max": 6.624619007110596,
+        "emission_max": 4.294118881225586
+      },
+      "mean_rgb": [
+        127.94216362847222,
+        127.93872395833333,
+        131.68313368055556
+      ]
+    },
+    {
+      "index": 180,
+      "video_time": 7.5,
+      "simulation_time": 4.5,
+      "state_sha256": "167378c4225b78c3494529020e719ce5d88cc2c8744f0c4606048667b639c50c",
+      "pixel_sha256": "7d7a79495487ee168140e75365acdb27a98360f3759740ef73e2fc2ba51c55aa",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08537226170301437,
+        "density_max": 1.482700228691101,
+        "pressure_min": 0.46471449732780457,
+        "pressure_max": 2.008974313735962,
+        "temperature_max_kelvin_scaled": 2156.82275390625,
+        "soot_max": 0.004150776658207178,
+        "soot_sum": 67.58578491210938,
+        "sigma_max": 6.641242504119873,
+        "emission_max": 4.588935852050781
+      },
+      "mean_rgb": [
+        127.9413161892361,
+        127.8504904513889,
+        131.51944010416668
+      ]
+    },
+    {
+      "index": 181,
+      "video_time": 7.541666666666667,
+      "simulation_time": 4.525,
+      "state_sha256": "96b60ccacccb2ba2a188b4241d6b7f297905f865d9aba96b2a003741beafb5d3",
+      "pixel_sha256": "289d9aa3a52ae41b765b53bc438ec27d4a9ca40ff4b64502a0b6118598b38dee",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08531580865383148,
+        "density_max": 1.4802534580230713,
+        "pressure_min": 0.46529993414878845,
+        "pressure_max": 1.9661874771118164,
+        "temperature_max_kelvin_scaled": 2160.013671875,
+        "soot_max": 0.004175285343080759,
+        "soot_sum": 67.93486022949219,
+        "sigma_max": 6.680456638336182,
+        "emission_max": 4.659043788909912
+      },
+      "mean_rgb": [
+        127.95235026041667,
+        127.76562825520833,
+        131.35580729166668
+      ]
+    },
+    {
+      "index": 182,
+      "video_time": 7.583333333333333,
+      "simulation_time": 4.55,
+      "state_sha256": "21e23b7223349d250b4f599fbbbaa486c0b1c9152dd44aa912d1e9a75390b649",
+      "pixel_sha256": "1e12627f0b39b8a497d2a20a3d6d090bae0a16432a4cc6deb7b789ffca4b3f45",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08691246062517166,
+        "density_max": 1.492029070854187,
+        "pressure_min": 0.4647487998008728,
+        "pressure_max": 1.9933170080184937,
+        "temperature_max_kelvin_scaled": 2155.513671875,
+        "soot_max": 0.0041933441534638405,
+        "soot_sum": 68.28662109375,
+        "sigma_max": 6.7093505859375,
+        "emission_max": 4.5604248046875
+      },
+      "mean_rgb": [
+        127.97499782986111,
+        127.68464735243056,
+        131.19119032118056
+      ]
+    },
+    {
+      "index": 183,
+      "video_time": 7.625,
+      "simulation_time": 4.575,
+      "state_sha256": "a8511f9b737ea186dd7db7d032fd05475115c48d913add2ab64170a9123946b3",
+      "pixel_sha256": "2a34988c1f4e5b3f91fae9f802ffd85d14a1bb47166e8334e49f72928b4a4c3a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08693934231996536,
+        "density_max": 1.5016090869903564,
+        "pressure_min": 0.4652358293533325,
+        "pressure_max": 1.9917787313461304,
+        "temperature_max_kelvin_scaled": 2171.576904296875,
+        "soot_max": 0.004206573124974966,
+        "soot_sum": 68.64187622070312,
+        "sigma_max": 6.7305169105529785,
+        "emission_max": 4.920340061187744
+      },
+      "mean_rgb": [
+        128.00237413194444,
+        127.60682725694444,
+        131.02621961805556
+      ]
+    },
+    {
+      "index": 184,
+      "video_time": 7.666666666666667,
+      "simulation_time": 4.6,
+      "state_sha256": "73ad6807e9e12bd68db9661cf2f876d795a9b4f08e9ffa9ca4ffdb591df4a23f",
+      "pixel_sha256": "4da89b23b98254a7eaa924dd0ad7cf8b1b1a7f9b3ca594865824c4495744c188",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.0861940011382103,
+        "density_max": 1.5086686611175537,
+        "pressure_min": 0.4720183312892914,
+        "pressure_max": 2.041653871536255,
+        "temperature_max_kelvin_scaled": 2170.6875,
+        "soot_max": 0.004215389024466276,
+        "soot_sum": 69.00184631347656,
+        "sigma_max": 6.744622230529785,
+        "emission_max": 4.899833679199219
+      },
+      "mean_rgb": [
+        128.03428276909722,
+        127.52930338541667,
+        130.859443359375
+      ]
+    },
+    {
+      "index": 185,
+      "video_time": 7.708333333333333,
+      "simulation_time": 4.625,
+      "state_sha256": "201b0796c5b52cdba66a9a108ddbea093f3ef61847d3d0c0c29dc222edb0b4c9",
+      "pixel_sha256": "beb35f733d43e9679b184e6544535f03a054ba56bb18320cfb7bd84907a62f3f",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08652988821268082,
+        "density_max": 1.513972282409668,
+        "pressure_min": 0.47335317730903625,
+        "pressure_max": 2.0458638668060303,
+        "temperature_max_kelvin_scaled": 2175.64306640625,
+        "soot_max": 0.004224943462759256,
+        "soot_sum": 69.36685943603516,
+        "sigma_max": 6.759909629821777,
+        "emission_max": 5.0149827003479
+      },
+      "mean_rgb": [
+        128.0691156684028,
+        127.45067925347222,
+        130.69196397569445
+      ]
+    },
+    {
+      "index": 186,
+      "video_time": 7.75,
+      "simulation_time": 4.65,
+      "state_sha256": "510b6b0ee34c8625f818fa4da85147ac5e63826864b6a78a6be9075e20d73da5",
+      "pixel_sha256": "2f269b9173337e869ce6d2b96b2ef3b54dba7247d5304a3f0a1e5da67345e63a",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08629079163074493,
+        "density_max": 1.5263442993164062,
+        "pressure_min": 0.4715915024280548,
+        "pressure_max": 2.0617570877075195,
+        "temperature_max_kelvin_scaled": 2186.852294921875,
+        "soot_max": 0.00424067722633481,
+        "soot_sum": 69.73587036132812,
+        "sigma_max": 6.785083770751953,
+        "emission_max": 5.2834577560424805
+      },
+      "mean_rgb": [
+        128.11039713541666,
+        127.37380533854167,
+        130.52379231770834
+      ]
+    },
+    {
+      "index": 187,
+      "video_time": 7.791666666666667,
+      "simulation_time": 4.675,
+      "state_sha256": "27ef24e39fa9cd77840a9c0e4eb4fe669f8381d1c4254dce7ba5bba996ad5250",
+      "pixel_sha256": "b4a68f86e7ec1f8c12f2790ed0f5c7a12f0994d6dbacc2aa71f4fe0c630e2374",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08612015098333359,
+        "density_max": 1.538343906402588,
+        "pressure_min": 0.4729371666908264,
+        "pressure_max": 2.0115387439727783,
+        "temperature_max_kelvin_scaled": 2199.458251953125,
+        "soot_max": 0.004269271623343229,
+        "soot_sum": 70.1080322265625,
+        "sigma_max": 6.83083438873291,
+        "emission_max": 5.599045753479004
+      },
+      "mean_rgb": [
+        128.15593424479167,
+        127.29843207465278,
+        130.35539713541667
+      ]
+    },
+    {
+      "index": 188,
+      "video_time": 7.833333333333333,
+      "simulation_time": 4.7,
+      "state_sha256": "e7b3a6a54718555f87f0c6934d1f8584f353576b2016546031651cfb11ed10f7",
+      "pixel_sha256": "3bfb405b38bcd90b28f8ef663f5c01b98028eacf26fd228cd1626102254a49b8",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08588999509811401,
+        "density_max": 1.5490878820419312,
+        "pressure_min": 0.4749836027622223,
+        "pressure_max": 2.060499668121338,
+        "temperature_max_kelvin_scaled": 2223.650146484375,
+        "soot_max": 0.004289517644792795,
+        "soot_sum": 70.48416137695312,
+        "sigma_max": 6.8632283210754395,
+        "emission_max": 6.246920108795166
+      },
+      "mean_rgb": [
+        128.20575303819444,
+        127.22643337673611,
+        130.18761284722223
+      ]
+    },
+    {
+      "index": 189,
+      "video_time": 7.875,
+      "simulation_time": 4.725,
+      "state_sha256": "8b5da9a3b3352106ce801fbc37d669688386cc884581b0d39b8b42da7ba3ab3f",
+      "pixel_sha256": "76f89fe63e81764ba192c20673bbbf5a9afc99c678ad658361a0d6836cd5f419",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08567697554826736,
+        "density_max": 1.5555096864700317,
+        "pressure_min": 0.47781968116760254,
+        "pressure_max": 2.1098549365997314,
+        "temperature_max_kelvin_scaled": 2237.29638671875,
+        "soot_max": 0.004298688378185034,
+        "soot_sum": 70.86573791503906,
+        "sigma_max": 6.877901554107666,
+        "emission_max": 6.637977123260498
+      },
+      "mean_rgb": [
+        128.25152452256944,
+        127.15743489583333,
+        130.02050998263888
+      ]
+    },
+    {
+      "index": 190,
+      "video_time": 7.916666666666667,
+      "simulation_time": 4.75,
+      "state_sha256": "c86e46d5cdedf10407842ae7b36d90cba88e50dfadbb55dc6e3bcfc50f2b14aa",
+      "pixel_sha256": "d6ce4aaa7a033297bdd95f94eaa8638f514a8191c701d1c2acaf888b9d373bfd",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08552151918411255,
+        "density_max": 1.5577154159545898,
+        "pressure_min": 0.48169535398483276,
+        "pressure_max": 2.10319447517395,
+        "temperature_max_kelvin_scaled": 2239.1279296875,
+        "soot_max": 0.004302706103771925,
+        "soot_sum": 71.25398254394531,
+        "sigma_max": 6.884329795837402,
+        "emission_max": 6.691924571990967
+      },
+      "mean_rgb": [
+        128.29163736979166,
+        127.088955078125,
+        129.85411458333334
+      ]
+    },
+    {
+      "index": 191,
+      "video_time": 7.958333333333333,
+      "simulation_time": 4.775,
+      "state_sha256": "0d37b9afa396241c0f4ab3be12c6acc4bf571bc77d20173a6820a3b9d06a5e3e",
+      "pixel_sha256": "5d81fa6dd47bbef9574e415f55bba76d079c6487fcf43307f5c0732e58b65d50",
+      "config_sha256": "63ea425a9ce03539fb7f051c32d13acdb93d8bc185c7aee2d2688b567b1ea1f9",
+      "all_finite": true,
+      "field_stats": {
+        "density_min": 0.08549920469522476,
+        "density_max": 1.5699280500411987,
+        "pressure_min": 0.48570528626441956,
+        "pressure_max": 2.0783605575561523,
+        "temperature_max_kelvin_scaled": 2238.818603515625,
+        "soot_max": 0.00430480670183897,
+        "soot_sum": 71.64677429199219,
+        "sigma_max": 6.887690544128418,
+        "emission_max": 6.682784557342529
+      },
+      "mean_rgb": [
+        128.32855794270833,
+        127.02214409722222,
+        129.68997829861112
+      ]
+    }
+  ]
+}

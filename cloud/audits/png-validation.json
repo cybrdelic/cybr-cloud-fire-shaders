@@ -1,0 +1,16 @@
+{
+  "frames": 240,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+  "all_pngs_decoded_and_pixel_hash_checked": true,
+  "all_finite": true,
+  "unique_raw_frames": 240,
+  "global_mean_rgb_first_difference_max": 0.009429415067036984,
+  "global_first_difference_time": 8.416666666666666,
+  "global_mean_rgb_second_difference_max": 0.003027359644572014,
+  "global_second_difference_time": 8.375,
+  "thumbnail_mean_absolute_frame_change_max": 0.009616692550480366,
+  "interpretation": "Motion and fog crossings also change these values; these are diagnostics, not a proof that all temporal aliasing is absent."
+}

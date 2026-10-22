@@ -1,0 +1,51 @@
+{
+  "scope": "Execute unchanged GOLF converter, auto-language detector and #code decoder extracted from official FragCoord website bundle; compile and link the converter output in native OpenGL ES 3. No browser playback or remote compile call.",
+  "verified_at_utc": "2026-10-22T11:16:44.073754+00:00",
+  "official_guide": "https://fragcoord.xyz/llms-full.txt",
+  "converter_source_url": "https://fragcoord.xyz/assets/index-DaqIJd5E.js",
+  "converter_bundle_sha256": "09da98a1f40a6f01b6d5bfd6df3fa947db82872a5cf77e62de0a86647921fb6c",
+  "bundle_currently_referenced_by_site_homepage": true,
+  "bundle_matches_saved_v16_provenance": true,
+  "extraction_method": "Acorn AST top-level declaration dependency closure; unchanged function/initializer source text evaluated in a Node VM with no filesystem or network functions exposed.",
+  "executed_functions": {
+    "GOLF_to_GLSL": "mI -> So -> Bm",
+    "language_detection": "on",
+    "URL_hash_decoder": "Mb -> Lb"
+  },
+  "extracted_declaration_count": 176,
+  "conversion_executed_locally": true,
+  "remote_validation": false,
+  "browser_runtime_tested": false,
+  "detected_language": "golf",
+  "characters": 493,
+  "source_sha256": "30f8ad4e5313a50f6c595d742a769d38d70c4f762fa91f75dc01399d2cf02309",
+  "official_converted_glsl_sha256": "dd74845071ef5647c6f3f9575008223cb702cddf0924e86faf290495495d680b",
+  "saved_v16_conversion_glsl_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+  "open_link": "https://fragcoord.xyz/#code=ZiBnKGYzIHAsZiBiKXtmIGQ9LjQ1LWFiKHAueSouMTIpLGE9MS40O3AqPS4xNTtAKGImJmQ-LTEuMiphKXtmIHY9MTtAKGksMjcpe2YzIHE9ZmxyKHApK2YzKGkzKGksaS8zLGkvOSklMyktMTt2PW1pbih2LGxlbihwLXEtZnJjKHNpbihxK3EueXp4K3Euenh5KjU3KSoxZTQpKSk7fWQrPWEqKC42NS12KTtwPXAqMi4xKzM7YSo9LjQ1O31yZXR1cm4gc21zKDAsLjEyLGQpO31mMyByPW5vcihmMyhDLnh5LVIvMixSLnkpKSxwPWYzKDMrc2luKFQqLjIpLDgrVC80LFQqMS42KS1yLzY0LGMsaz1mMyguMDUsLjE4LC40KS1yLnkvOTtmIHQ9MTtAKGksMmUzJiZ0Pi4wMDUpe3ArPXIvMzI7ZiBhPWV4cCgtZyhwLDYuKS8xMSkscztpZihhPDEpe0Aoaiw2NClzKz1nKHArZjMoLTIsMywxKSooZihqKSsuNSkvMTYsNC4pO2MrPXQqfmEqbWl4KGssZjMoNCw1LDYpLzMwKyguOC0uNCpyLngpKmV4cCgtcyouNjgpLGV4cCgtaS8xZTMpKTt0Kj1hO319Tz1mNChzcXQoYyt0KmspLDEpOw",
+  "official_hash_loader_accepts_exact_open_link": true,
+  "official_hash_loader_returns_exact_source": true,
+  "url_shape": "https://fragcoord.xyz/#code=<UTF-8 source encoded as URL-safe Base64 without padding>",
+  "URL_supported_by_official_authoring_guide": true,
+  "checks": {
+    "implicit_loop_expands_to_bounded_for": true,
+    "complement_is_one_minus": true,
+    "color_accumulator_zero_initialized": true,
+    "shadow_accumulator_zero_initialized": true,
+    "main_injected": true,
+    "uniform_aliases_expanded": true,
+    "source_under_500_ascii": true,
+    "saved_v16_byte_exact_reproduction": true,
+    "integer_constructor_equivalent_for_all_neighbor_indices": true
+  },
+  "manual_expansion_equivalence_note": "Official conversion casts i/3 and i/9 to floats before ivec3 truncation; for the actual indices 0 through 26 this equals the manual integer divisions. Other differences are explicit constructors/casts, float spelling, formatting, loop-counter naming, entry wrapper and uniform names.",
+  "native_gles3_compile_link": "fragcoord-official-gles3.json",
+  "bounds_metadata_aligned_to_production": [
+    -50,
+    -18,
+    -1,
+    48,
+    18,
+    84
+  ],
+  "runtime_source_files_changed": false
+}

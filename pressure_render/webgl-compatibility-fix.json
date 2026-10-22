@@ -1,0 +1,64 @@
+{
+  "reported_error": "ERROR: 0:146: '?:' : ternary operator is not allowed for structures in ESSL 1.0 and webgl",
+  "cause": "WebGL2 forbids conditional expressions whose result type is a struct. Native desktop GLSL and GLES3 accept this case, so earlier compilation checks missed the browser restriction.",
+  "before": "s=first?sourceStep(old,DT*.5):readS(u_pass1,p,1);",
+  "after": "if(first)s=sourceStep(old,DT*.5); else s=readS(u_pass1,p,1);",
+  "behavior_change": "Equivalent branch selection. Physics, camera, lighting, and the existing reference videos are unchanged.",
+  "struct_valued_ternaries_remaining": 0,
+  "other_ternaries": "Three remaining expressions return float or vec4 and are allowed.",
+  "html_javascript_syntax_checked": true,
+  "html_embedded_sources_exactly_match_glsl_files": true,
+  "essl_compile_link": {
+    "scope": "OpenGL ES 3 compiler/linker, not a browser or ANGLE WebGL2 validation",
+    "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+    "shading_language": "OpenGL ES GLSL ES 3.20",
+    "vertex": {
+      "compiled": true,
+      "log": "",
+      "sha256": "f1f9cd980fb2a724efa23a03e804dc2d418136a740026af9bab6189d0bd773d9"
+    },
+    "passes": {
+      "simulation": {
+        "compiled": true,
+        "log": "",
+        "sha256": "cd20440e37c13dc015dd92df2971b2e1d5ac000aae3974f865021be797f91146",
+        "linked": true,
+        "link_log": ""
+      },
+      "shading": {
+        "compiled": true,
+        "log": "",
+        "sha256": "e9657033215199089bcdc1e104ad270f060a0731e38d59149a261a11103efe13",
+        "linked": true,
+        "link_log": ""
+      },
+      "main": {
+        "compiled": true,
+        "log": "",
+        "sha256": "3d46040c92206fd99273d51cba30c686291cef9e553e8866587712fa683fce06",
+        "linked": true,
+        "link_log": ""
+      }
+    },
+    "struct_ternary_negative_control": {
+      "compiled": true,
+      "log": "",
+      "sha256": "e77acfbbae6a0a872101456ed518fc7b8677fce35d31c046a28b27bb7442004f"
+    },
+    "webgl_specific_gap": "ANGLE SH_WEBGL2_SPEC forbids struct ternaries even when native GLES3 accepts them.",
+    "all_passes_compiled_linked": true
+  },
+  "browser_runtime_tested": false,
+  "webgl_validation_limit": "No local ANGLE WebGL2 compiler or functioning browser graphics context was available. The exact prohibited construct was removed and audited against ANGLE source; native GLES compilation is not presented as a browser runtime test.",
+  "primary_source": "https://chromium.googlesource.com/angle/angle/+/refs/heads/main/src/compiler/translator/ParseContext.cpp",
+  "primary_source_condition": "(mShaderVersion < 300 || mShaderSpec == SH_WEBGL2_SPEC) && basicType == EbtStruct",
+  "historical_reports": "GPU numerical and official validation reports already in this archive were run before this equivalent branch rewrite; their recorded source hashes are retained.",
+  "shader_body_characters": 9318,
+  "current_shader_sha256": {
+    "main.glsl": "a3bdbb0f8bc4564f2a1d985d9543a1966b86f46737c4b09f344e4be1b04131d2",
+    "simulation.glsl": "da53e6d9de63bf5e47afd93b143690117ad2100e282d2fcb457479f1b70ca68c",
+    "common.glsl": "6a523abdf30e7e68035e62e59eb7c33b9e5dcf5c8bfe6833d29932116fccbbf8",
+    "shading.glsl": "bd46e3f7b3477fa073a582d1cf9baf18c25ad7b1a4092585d60e4946eedb94ad"
+  }
+}

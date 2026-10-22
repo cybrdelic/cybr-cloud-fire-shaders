@@ -1,0 +1,60 @@
+{
+  "configuration": {
+    "source": "erosion-flight-adapter.glsl",
+    "bounds": [
+      [
+        -50.0,
+        -18.0,
+        -1.0
+      ],
+      [
+        48.0,
+        18.0,
+        84.0
+      ]
+    ],
+    "extinction": 2.909090909090909,
+    "shadow_step": [
+      -0.125,
+      0.1875,
+      0.0625
+    ],
+    "shadow_weight": 0.68,
+    "shadow_samples": 64,
+    "shadow_tau_cutoff": 24.0,
+    "view_step": 0.03125,
+    "max_distance": 62.5,
+    "transmittance_cutoff": 0.005,
+    "aerial_coefficient": 0.0,
+    "source_sha256": "498f1414e2be6e2e73074e4c4d006ee96c025ea474b0e6695a965295bef7d06c",
+    "scene": "erosion"
+  },
+  "grid": [
+    896,
+    384,
+    800
+  ],
+  "dtype": "f2",
+  "channels": 2,
+  "channel_meanings": [
+    "density",
+    "density_times_sun_optical_depth"
+  ],
+  "voxel_spacing": [
+    0.109375,
+    0.09375,
+    0.10625
+  ],
+  "occupancy_grid": [
+    112,
+    48,
+    100
+  ],
+  "occupancy_fraction": 0.5957347470238096,
+  "density_fraction": 0.3673421550932385,
+  "density_seconds": 213.94507027000145,
+  "total_bake_seconds": 301.68884112700107,
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "cache_sha256": "98065e6b0943d94399c1f34e01ec53a921886b8f6f6e8c765b82f26ba6aea186",
+  "approximation": "Spatial trilinear density and density-weighted optical depth; standalone procedural source retained"
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "Native Mesa OpenGL ES3 compile/link, not browser WebGL or live FragCoord validation",
+  "vertex": {
+    "compiled": true,
+    "log": "",
+    "sha256": "c7eb2a8c08f0a1e35447da0afd445be343cb91ef2a07eb7a5a54625e3d236ecd"
+  },
+  "fragment": {
+    "compiled": true,
+    "log": "",
+    "sha256": "8172ddac76108355b97b502e1002dee90d64d571200503989f5f7ddffbcb7f39"
+  },
+  "linked": true,
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+}

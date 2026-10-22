@@ -1,0 +1,565 @@
+{
+  "revision": "16-cloud-field",
+  "character_count_scope": "Complete FragCoord GOLF source: density, camera, illumination, integration, output. The viewer and expanded GLSL are separate wrappers.",
+  "cloud": {
+    "characters": 497,
+    "ascii": true,
+    "compact_sha256": "4a410ebe5b0ef4b96358db61d08e00feb17288a1389e95dd5f76708e485ad2fa",
+    "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+    "design": [
+      "Many rounded cloud formations across an unbounded horizontal field; the envelope repeats every 16 units while billow noise stays in absolute world coordinates.",
+      "Continuous capped 27-neighbor Worley noise, six primary and four shadow octaves, conservative early exit.",
+      "No hard horizontal density cutoff and no random temporal jitter.",
+      "Up to 2000 fixed midpoint samples at 1/32 spacing; 64 sun probes; distance haze.",
+      "Camera descends between formations, crosses thin mist near 8.4 seconds, and emerges before the end.",
+      "Static procedural density viewed by a moving camera; no fluid solver."
+    ],
+    "video": {
+      "file": "cloud-flight-v16.mp4",
+      "frames": 240,
+      "fps": 24,
+      "seconds": 10,
+      "native_width": 1280,
+      "native_height": 720,
+      "unique_raw_frames": 240,
+      "unique_decoded_frames": 240,
+      "all_finite": true,
+      "all_pngs_pixel_hash_checked": true,
+      "encoded_stream": {
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
+        "duration": "10.000000",
+        "nb_read_frames": "240"
+      },
+      "decode_verified_without_errors": true,
+      "frame_interpolation": false,
+      "image_upscaling": false,
+      "temporal_averaging": false,
+      "ai_generated_imagery": false,
+      "renderer": "Offline interpolated world-space density and density-weighted illumination with conservative empty-brick acceleration.",
+      "cache_grid": [
+        1024,
+        384,
+        896
+      ],
+      "storage_dtype": "float16",
+      "approximation": "Trilinear reconstruction smooths the smallest details. Empty-brick skipping retains sample indices and introduces tiny measured floating-point accumulation differences.",
+      "temporal_diagnostics": {
+        "frames": 240,
+        "fps": 24,
+        "width": 1280,
+        "height": 720,
+        "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+        "all_pngs_decoded_and_pixel_hash_checked": true,
+        "all_finite": true,
+        "unique_raw_frames": 240,
+        "global_mean_rgb_first_difference_max": 0.009429415067036984,
+        "global_first_difference_time": 8.416666666666666,
+        "global_mean_rgb_second_difference_max": 0.003027359644572014,
+        "global_second_difference_time": 8.375,
+        "thumbnail_mean_absolute_frame_change_max": 0.009616692550480366,
+        "interpretation": "Motion and fog crossings also change these values; these are diagnostics, not a proof that all temporal aliasing is absent."
+      }
+    },
+    "direct_temporal_check": {
+      "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+      "golf_sha256": "4a410ebe5b0ef4b96358db61d08e00feb17288a1389e95dd5f76708e485ad2fa",
+      "characters": 497,
+      "width": 48,
+      "height": 27,
+      "fps": 24,
+      "sample_count": 35,
+      "time_start": 7.791666666666667,
+      "time_end": 9.208333333333334,
+      "all_finite": true,
+      "unique_float_frames": 35,
+      "scope": "Focused exact low-resolution integration checks near the cloud fringe; does not prove absence of all high-resolution spatial or temporal aliasing.",
+      "frame_delta": {
+        "mean": 0.005386685486882925,
+        "max_mean_abs_rgb": 0.013529579155147076,
+        "max_time": 8.416666666666666,
+        "max_pixel_abs_rgb": 0.11434772610664368,
+        "max_second_difference_mean_rgb": 0.008380862884223461,
+        "second_difference_time": 8.291666666666666
+      },
+      "tiny_time_probe": {
+        "times": [
+          8.349,
+          8.35,
+          8.351
+        ],
+        "delta_time": 0.001,
+        "mean_abs_rgb_per_step": [
+          0.00020181199943181127,
+          0.00020261332974769175
+        ],
+        "p99_abs_rgb_per_step": [
+          0.0007104963297024369,
+          0.0007101382361724973
+        ],
+        "max_abs_rgb_per_step": [
+          0.0012575387954711914,
+          0.0012905001640319824
+        ]
+      },
+      "primary_step_reference": {
+        "delivered_step": 0.03125,
+        "reference_step": 0.015625,
+        "ray_distance": 62.5,
+        "shadow_integration_unchanged": true,
+        "samples": [
+          {
+            "time": 8.125,
+            "mean_abs_rgb": 0.00010782157187350094,
+            "p99_abs_rgb": 0.00065364979673177,
+            "max_abs_rgb": 0.0014983713626861572,
+            "psnr_db": 75.45902521967943
+          },
+          {
+            "time": 8.416666666666666,
+            "mean_abs_rgb": 0.00027744233375415206,
+            "p99_abs_rgb": 0.001636392087675631,
+            "max_abs_rgb": 0.0020813941955566406,
+            "psnr_db": 67.87167697426301
+          },
+          {
+            "time": 8.708333333333334,
+            "mean_abs_rgb": 9.568202221998945e-05,
+            "p99_abs_rgb": 0.0005762833170592785,
+            "max_abs_rgb": 0.0015646964311599731,
+            "psnr_db": 76.04918660789649
+          }
+        ]
+      },
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    "cache_accuracy": {
+      "reference_dimensions": [
+        320,
+        180
+      ],
+      "comparisons": [
+        {
+          "time": 0.0,
+          "all_finite": true,
+          "mean_absolute_rgb_error": 0.0023178125265985727,
+          "max_absolute_rgb_error": 0.11482410132884979,
+          "percentile_absolute_rgb_error": {
+            "50": 0.0005284994840621948,
+            "90": 0.006582705304026604,
+            "95": 0.009141351096332073,
+            "99": 0.01776306703686714,
+            "99.9": 0.04729371517896652
+          },
+          "psnr_db": 46.30042314553705
+        },
+        {
+          "time": 8.4,
+          "all_finite": true,
+          "mean_absolute_rgb_error": 0.006227176170796156,
+          "max_absolute_rgb_error": 0.13919492065906525,
+          "percentile_absolute_rgb_error": {
+            "50": 0.004216820001602173,
+            "90": 0.012324707582592964,
+            "95": 0.016502751037478447,
+            "99": 0.03835415840148926,
+            "99.9": 0.1037817969918251
+          },
+          "psnr_db": 39.824863692824984
+        },
+        {
+          "time": 9.958333,
+          "all_finite": true,
+          "mean_absolute_rgb_error": 0.0034016715362668037,
+          "max_absolute_rgb_error": 0.14866569638252258,
+          "percentile_absolute_rgb_error": {
+            "50": 0.001021265983581543,
+            "90": 0.008704490959644318,
+            "95": 0.013188662007451057,
+            "99": 0.03185787796974182,
+            "99.9": 0.08464976400136948
+          },
+          "psnr_db": 42.22275791494455
+        }
+      ],
+      "approximation": "World-space trilinear interpolation of density; light cache integrates trilinear 4-octave density and stores density-weighted transmittance; outside-cache probes evaluate source density and light exactly; no frame interpolation or image upscaling"
+    },
+    "empty_brick_acceleration_check": [
+      {
+        "time": 0,
+        "original_seconds": 0.9878285489976406,
+        "fast_seconds": 0.4547426630015252,
+        "speedup": 2.1722803452781103,
+        "mean_abs_float_error": 4.769381121150218e-06,
+        "max_abs_float_error": 0.0005492866039276123,
+        "p99_abs_float_error": 5.465792492032051e-05,
+        "mean_abs_rgb8_error": 0.001244212962962963,
+        "max_abs_rgb8_error": 1,
+        "rgb8_fraction_changed": 0.001244212962962963
+      },
+      {
+        "time": 8.4,
+        "original_seconds": 1.0264220850076526,
+        "fast_seconds": 0.4704083469987381,
+        "speedup": 2.1819810204396863,
+        "mean_abs_float_error": 3.3502813039376633e-06,
+        "max_abs_float_error": 0.00040209293365478516,
+        "p99_abs_float_error": 5.0067901611328125e-05,
+        "mean_abs_rgb8_error": 0.0009027777777777777,
+        "max_abs_rgb8_error": 1,
+        "rgb8_fraction_changed": 0.0009027777777777777
+      },
+      {
+        "time": 9.96,
+        "original_seconds": 1.3369349220010918,
+        "fast_seconds": 0.3348469080083305,
+        "speedup": 3.9926751301159715,
+        "mean_abs_float_error": 5.139369477547007e-06,
+        "max_abs_float_error": 0.0005714595317840576,
+        "p99_abs_float_error": 6.079766899347305e-05,
+        "mean_abs_rgb8_error": 0.0012731481481481483,
+        "max_abs_rgb8_error": 1,
+        "rgb8_fraction_changed": 0.0012731481481481483
+      }
+    ],
+    "cache_boundary_proof": {
+      "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+      "scope": "Any 16:9 pixel grid, time 0 through 10 seconds inclusive",
+      "pixel_centers": "Continuous screen rectangle bound, conservative for all finite resolutions",
+      "ray_samples": 2000,
+      "ray_step": 0.03125,
+      "last_midpoint_distance": 62.484375,
+      "primary_query_bounds": [
+        [
+          -38.01235924188826,
+          -22.943862006317683,
+          0.010939357147280823
+        ],
+        [
+          45.01235924188826,
+          34.94386200631769,
+          72.484375
+        ]
+      ],
+      "shadow_query_bounds": [
+        [
+          -40.6581925752216,
+          -22.912612006317683,
+          -1.3119773095193858
+        ],
+        [
+          44.99152590855493,
+          38.91261200631769,
+          72.47395833333333
+        ]
+      ],
+      "density_support_y": [
+        -12.954545454545451,
+        12.954545454545451
+      ],
+      "support_proof": "v is capped into [0,1]; each octave adds at most .6*a. Infinite sum is .8*.6/(1-.45). Envelope <=1.2-.16*abs(y). Thus density is zero when abs(y)>=(1.2+.8*.6/(1-.45))/.16.",
+      "bounds": [
+        [
+          -42.0,
+          -14.0,
+          -2.0
+        ],
+        [
+          48.0,
+          14.0,
+          74.0
+        ]
+      ],
+      "grid": [
+        1024,
+        384,
+        896
+      ],
+      "voxel_size": [
+        0.087890625,
+        0.07291666666666667,
+        0.08482142857142858
+      ],
+      "inner_interpolation_bounds": [
+        [
+          -41.9560546875,
+          -13.963541666666666,
+          -1.9575892857142858
+        ],
+        [
+          47.9560546875,
+          13.963541666666666,
+          73.95758928571429
+        ]
+      ],
+      "cache_storage": "f2",
+      "cache_bytes": 1409286144,
+      "proof": "All primary and shadow probes are within the inner cache in x/z. Any y probe outside the inner cache is in identically zero density, with over one world unit of empty margin. Consequently no cached/exact transition intersects nonzero cloud density in this ten-second clip.",
+      "cache_boundary_visible_transition": false,
+      "recommended_workers": 2,
+      "numerical_roundoff_allowance": "All relevant x margins exceed 1 world unit and the smallest z margin exceeds .6 world units, far above float accumulation roundoff."
+    },
+    "poster": {
+      "file": "cloud-flight-v16.jpg",
+      "width": 1280,
+      "height": 720,
+      "time": 0,
+      "source": "Native first video frame, using the same offline cache approximation."
+    },
+    "validation": {
+      "compact_characters": 497,
+      "compact_ascii": true,
+      "compact_source_sha256": "4a410ebe5b0ef4b96358db61d08e00feb17288a1389e95dd5f76708e485ad2fa",
+      "glsl_source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+      "html_sha256": "1f8cc2b312ff56203ef4d6fad7db8af63781f249fbcade3f0f52ab8ac0c473fe",
+      "exact_embedded_source": true,
+      "browser_runtime_tested": false,
+      "duration_shader_seconds": 10,
+      "html_wrapper_excluded_from_compact_count": true,
+      "external_dependencies": [],
+      "resolution_caps": [
+        480,
+        960,
+        1600
+      ],
+      "hidden_page_clock_paused": true,
+      "frame_timing": "Wall-clock interval between render submissions, GPU fenced; not a GPU timer query.",
+      "javascript_parse_passed": true,
+      "independent_source_embedding_check": true,
+      "exact_open_link_round_trip": true,
+      "native_gles_compiles_and_links": true,
+      "compiled_preamble_matches_actual_html": true,
+      "compiled_vertex_matches_actual_html": true,
+      "verification_scope": "Independent JavaScript parse and exact-source/preamble checks plus native GLES compilation/linking; no browser runtime test."
+    },
+    "quality_scope": "Multiple near, middle and distant cloud formations were visually checked. Close edges are soft. Focused low-resolution integration tests do not prove that every device or every pixel is free of aliasing. Native GLES compilation was tested, not a browser or ANGLE runtime."
+  },
+  "preserved_fire": {
+    "scope": "Files preserved byte-for-byte from the preceding source package during the cloud-field revision",
+    "all_unchanged": true,
+    "file_count": 33,
+    "files": [
+      {
+        "path": "pressure-fireball-fragcoord.txt",
+        "sha256": "794e9fe814f3fe5e9582e24d671741f78657702b0b8a0cfdb6a27b6455675985",
+        "size_bytes": 11363,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/README.md",
+        "sha256": "8d82e55f3672accc5f306eaeb9bd3c4c7bba31970c5b2bdaf940400a9ec71c02",
+        "size_bytes": 11106,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/analyze.py",
+        "sha256": "f7f16e9ee511c259a48cf2aab07309065c919ad572695b8f16020918421e9586",
+        "size_bytes": 2116,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/audit_production.py",
+        "sha256": "c533d56a5073c2a353abb3253c42b79a6c6caa0114e98aef9d824e7892e8138a",
+        "size_bytes": 2415,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/euler.cpp",
+        "sha256": "52939ee3a173ab199cfdac037b4ad06c824b65afc04a36eeff669c4a141d2be4",
+        "size_bytes": 20273,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/fields.py",
+        "sha256": "1359db826958ec3b1d990151620677924f02eb720af6dcd84047b7c15a35ae99",
+        "size_bytes": 5480,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/production_audit.json",
+        "sha256": "a00d71e9454b56253c425039e8d7dfdc272432d8df0e6a00763e8d817ab21638",
+        "size_bytes": 30268,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/production_manifest.json",
+        "sha256": "5543d551cb3503ab22a6c2f3e03d223aaf9e334cc01072414af1bf196be4873f",
+        "size_bytes": 1048,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/provenance.json",
+        "sha256": "60d84b56f30afe3012b51d25a31cf737c10f31faa9ec5f7416b5669ccd5d2168",
+        "size_bytes": 1936,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/run.py",
+        "sha256": "8f3bc10152209261537b38e8a3b5821693f7f6fd581a497471bfe8f0d972960a",
+        "size_bytes": 3868,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/validate.py",
+        "sha256": "ca768c067b59a130e19cfefc6852517f11e2c0a989a30267a2c312ba0db969f4",
+        "size_bytes": 3501,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_fire/validation/hot/checks.json",
+        "sha256": "b319e311e8ba0681971e89f41d066f8ae361bb67286ae1e7282db9802a37b5c3",
+        "size_bytes": 875,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/build_player.py",
+        "sha256": "7887a637909accd889019b953e5e634557a3afab1ba6808bc87b26af9ea42e74",
+        "size_bytes": 7614,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/check_essl.py",
+        "sha256": "bdf79e617d83a6347b4c268bd686e0783438e1ed329c77a0dceba63ef612c376",
+        "size_bytes": 5017,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/check_gpu.py",
+        "sha256": "faa358d0dc839569b3f0d7785219e1c82e68a25c577a61a25d8cf0dfed1843c0",
+        "size_bytes": 3312,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/check_gpu_full.py",
+        "sha256": "2ae19cac1b605c503dbba3d8173c8170707c01212d1bc468af11dab67e3ba051",
+        "size_bytes": 6766,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/essl-compile.json",
+        "sha256": "7af33260cd58ef0e5c03bf9912f96c98ae205084b88e9e05d96528981a6caa81",
+        "size_bytes": 1285,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/fragcoord/common.glsl",
+        "sha256": "6a523abdf30e7e68035e62e59eb7c33b9e5dcf5c8bfe6833d29932116fccbbf8",
+        "size_bytes": 6383,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/fragcoord/main-validation.json",
+        "sha256": "7aa78339933a96f0c3beb3cb7320131ae9caad5cbdd2cff0b118c157b10b036c",
+        "size_bytes": 230,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/fragcoord/main.glsl",
+        "sha256": "a3bdbb0f8bc4564f2a1d985d9543a1966b86f46737c4b09f344e4be1b04131d2",
+        "size_bytes": 1371,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/fragcoord/shading-validation.json",
+        "sha256": "82385865283fc9d3badad4f4fd64332354f7a1f81194a95874c3633a8f82894b",
+        "size_bytes": 230,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/fragcoord/shading.glsl",
+        "sha256": "bd46e3f7b3477fa073a582d1cf9baf18c25ad7b1a4092585d60e4946eedb94ad",
+        "size_bytes": 678,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/fragcoord/simulation-validation.json",
+        "sha256": "3e26ec20bd23a726b72c603529254ec4ec8802e988146334844bc0ca26eae77e",
+        "size_bytes": 230,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/fragcoord/simulation.glsl",
+        "sha256": "da53e6d9de63bf5e47afd93b143690117ad2100e282d2fcb457479f1b70ca68c",
+        "size_bytes": 886,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/gpu-evolved-parity.json",
+        "sha256": "afaf8ecf00254b7436783355456e6191982177795732f49b11eab0c156f177eb",
+        "size_bytes": 814,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/gpu-final-parity.json",
+        "sha256": "0e806213526d49531e33388688a20f774ce20d7f1f726647034e9e51c31f50b0",
+        "size_bytes": 808,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/gpu-full-run.json",
+        "sha256": "61d838f3d406d4a4de655e8c737efa06e7805c573c835495a23c7381f9388345",
+        "size_bytes": 3414,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/gpu-oil-init.json",
+        "sha256": "31cf02357d63eecc042bcafc4f11fc7777c61460ec903f26036fc4c0ce204f4d",
+        "size_bytes": 692,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/pressure-fireball.html",
+        "sha256": "1d52395388ec4375e4184069149f098f2cf1f26b8e1a08dfa7e7c6d468cdd7d4",
+        "size_bytes": 16730,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/reference-video-manifest.json",
+        "sha256": "29f378befcc6692dc90a01109c0ef7f2cc88ea29b163f606b3fa82247792d25e",
+        "size_bytes": 179229,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/render_fields.py",
+        "sha256": "3d2fb21fbf7e021aba9ba70ce94cf96fe648a702449cab90ddb6b9f825433aff",
+        "size_bytes": 8421,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/render_sequence.py",
+        "sha256": "bb08f1e7d1e7dd214a1ae2d9e0db8c180b41d58cc02476965f7eb4a9a1530d99",
+        "size_bytes": 4742,
+        "unchanged": true
+      },
+      {
+        "path": "pressure_render/webgl-compatibility-fix.json",
+        "sha256": "86259e2dd9c4357ec2b97961b37583de061d7f2565be86f27659f7c49ee76c1a",
+        "size_bytes": 3346,
+        "unchanged": true
+      }
+    ]
+  },
+  "artifacts": {
+    "cloud-flight.fragcoord.txt": {
+      "bytes": 497,
+      "sha256": "4a410ebe5b0ef4b96358db61d08e00feb17288a1389e95dd5f76708e485ad2fa"
+    },
+    "cloud-flight.glsl": {
+      "bytes": 906,
+      "sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88"
+    },
+    "cloud-flight.html": {
+      "bytes": 11956,
+      "sha256": "1f8cc2b312ff56203ef4d6fad7db8af63781f249fbcade3f0f52ab8ac0c473fe"
+    },
+    "cloud-flight-v16.mp4": {
+      "bytes": 1242805,
+      "sha256": "9af4e6181ed416d8b4e06697b0dc534429a2c3aa998099427dafa0684bac7f49"
+    },
+    "cloud-flight-v16.jpg": {
+      "bytes": 123415,
+      "sha256": "a093b2a4eccfc85bf46d1a7e2e4bd86b4c7ede13bbd81ee2335df428bc768e24"
+    }
+  }
+}

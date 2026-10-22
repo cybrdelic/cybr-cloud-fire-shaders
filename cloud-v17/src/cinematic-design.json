@@ -1,0 +1,33 @@
+{
+  "status": "Reconstructed V17 cinematic implementation; not the lost original shader",
+  "source": "cinematic.glsl",
+  "duration_seconds": 10,
+  "domain_min": [-44.0, -12.0, -20.0],
+  "domain_max": [48.0, 35.0, 112.0],
+  "extinction": 1.65,
+  "sun_direction": [-0.5271685, 0.6853190, 0.5024253],
+  "sunlight_step": 0.48,
+  "sunlight_steps": 96,
+  "density_time_dependence": false,
+  "density_structure": "Eighteen unequal overlapping formation envelopes, coherent low frequency warp, broad billows, boundary weighted finer erosion, continuous density transition; curved separate cloud bases and no plane",
+  "lighting": "Direct directional illumination with HG-like angular response, two optical-depth-dependent approximate scattering lobes, cool height-dependent fill, common sun/sky colors, fixed exposure and smooth highlight shoulder",
+  "camera": "Smooth forward approach from z=-9 to z=27, three-unit lateral bend into a thin fringe, then early retreat from the right-hand wall and rising reveal to y=26.2; pitch opens the lower cloud field at the end",
+  "density_transition": [-0.012,0.055],
+  "revision_notes": "Second visual iteration: narrower continuous density boundary preserves erosion detail, deeper blue sky and reduced scattering fill restore contrast, camera clears nearby wall earlier and rises above the cloud field",
+  "direct_march_step": 0.065,
+  "direct_march_maximum_steps": 2400,
+  "offline_interface": {
+    "density": "float density(vec3 p)",
+    "densityShadow": "float densityShadow(vec3 p)",
+    "shade": "vec3 shade(vec3 p,vec3 rd,float d,float sunTau)",
+    "sky": "vec3 sky(vec3 rd)",
+    "camera": "void camera(float time,out vec3 ro,out vec3 rd,vec2 fragCoord)",
+    "display": "vec3 displayTransform(vec3 linearColor)"
+  },
+  "limitations": [
+    "Analytic cloud appearance; no moisture, buoyancy or fluid solver",
+    "Static density field; movement is the camera",
+    "Multiple scattering is approximated, not path traced",
+    "Offline density interpolation and cached sunlight must be documented by the renderer"
+  ]
+}

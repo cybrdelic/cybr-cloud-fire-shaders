@@ -1,0 +1,432 @@
+{
+  "configuration": {
+    "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+    "density_sha256": "dc77dce9776e1e7bca41d92f4c371c5ac724d7f3692099ac6b946b2d331cd948",
+    "view_octaves": 6.0,
+    "shadow_octaves": 4.0,
+    "shadow_samples": 64,
+    "shadow_position": "p+vec3(-2.0, 3.0, -1.0)*(float(j)+.5)/48.0",
+    "shadow_weight": 0.167,
+    "extinction_denominator": 11.0,
+    "bounds": [
+      [
+        -42.0,
+        -14.0,
+        -2.0
+      ],
+      [
+        48.0,
+        14.0,
+        74.0
+      ]
+    ],
+    "outside_cache": "exact_source_density_and_lighting",
+    "algorithm_version": 2,
+    "grid": [
+      1024,
+      384,
+      896
+    ],
+    "storage_dtype": "f2"
+  },
+  "setup": {
+    "cache_loaded": false,
+    "density_seconds": 53.248235642007785,
+    "shadow_seconds": 79.64661407499807,
+    "total_seconds": 132.90327100100694,
+    "all_finite": true,
+    "density_nonzero_voxels": 50826682,
+    "density_nonzero_fraction": 0.14426220598674955,
+    "mean_lattice_density": 0.12143899018458634,
+    "gpu_cache_bytes": 1409286144,
+    "density_and_light_storage": "f2",
+    "description": "Exact source density on voxel centers; trilinear shadow-density probes; trilinear density and density-weighted transmittance at render time; exact source fallback outside the cache bounds"
+  },
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "frames": [
+    {
+      "time": 0.0,
+      "render_seconds": 1.0454786460031755,
+      "all_finite": true,
+      "min": 0.023042771965265274,
+      "max": 1.0,
+      "mean_rgb": [
+        0.3974567651748657,
+        0.535173237323761,
+        0.6734968423843384
+      ],
+      "pixel_sha256": "3b4666330f55db57752e9616e3027b696f0f3c6f9d3c7335fbbb4b025d2433e9",
+      "float_sha256": "8755d85ac9d083b7744cab00f25f85743d481f1b67d4a0e53488697899f53861",
+      "renderer_kind": "offline_interpolated_field",
+      "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+      "grid": [
+        1024,
+        384,
+        896
+      ],
+      "bounds": [
+        [
+          -42.0,
+          -14.0,
+          -2.0
+        ],
+        [
+          48.0,
+          14.0,
+          74.0
+        ]
+      ],
+      "storage_dtype": "f2",
+      "index": 0,
+      "width": 320,
+      "height": 180,
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "time": 8.4,
+      "render_seconds": 0.598318919990561,
+      "all_finite": true,
+      "min": 0.10881482064723969,
+      "max": 1.0,
+      "mean_rgb": [
+        0.5386931300163269,
+        0.6262766718864441,
+        0.722040057182312
+      ],
+      "pixel_sha256": "090ead0fbdac71e8fcc50d18d20d2db3953115eea4922aa49bdecb1e62239d57",
+      "float_sha256": "93ab4e7ca102dc1edc80d3c2704ea5f4b6802bb1300877fa01e6e12201e783ce",
+      "renderer_kind": "offline_interpolated_field",
+      "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+      "grid": [
+        1024,
+        384,
+        896
+      ],
+      "bounds": [
+        [
+          -42.0,
+          -14.0,
+          -2.0
+        ],
+        [
+          48.0,
+          14.0,
+          74.0
+        ]
+      ],
+      "storage_dtype": "f2",
+      "index": 1,
+      "width": 320,
+      "height": 180,
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    },
+    {
+      "time": 9.958333,
+      "render_seconds": 0.7276289879955584,
+      "all_finite": true,
+      "min": 0.023042771965265274,
+      "max": 1.0,
+      "mean_rgb": [
+        0.4297468662261963,
+        0.5490642786026001,
+        0.6727498173713684
+      ],
+      "pixel_sha256": "9db7ff5de57f43dafbb5e41a1acdf8f56f2c6536d3eeb2b8f5be9d0cc4e1e7ea",
+      "float_sha256": "a12c01218342c21275c4cc6d95b3b1c5090603325f539c351040bee3c31ef230",
+      "renderer_kind": "offline_interpolated_field",
+      "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+      "grid": [
+        1024,
+        384,
+        896
+      ],
+      "bounds": [
+        [
+          -42.0,
+          -14.0,
+          -2.0
+        ],
+        [
+          48.0,
+          14.0,
+          74.0
+        ]
+      ],
+      "storage_dtype": "f2",
+      "index": 2,
+      "width": 320,
+      "height": 180,
+      "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+    }
+  ],
+  "audits": [
+    {
+      "time": 0.0,
+      "all_finite": true,
+      "exact_reference_reused": false,
+      "mean_absolute_rgb_error": 0.0023178125265985727,
+      "max_absolute_rgb_error": 0.11482410132884979,
+      "percentile_absolute_rgb_error": {
+        "50": 0.0005284994840621948,
+        "90": 0.006582705304026604,
+        "95": 0.009141351096332073,
+        "99": 0.01776306703686714,
+        "99.9": 0.04729371517896652
+      },
+      "mse": 2.3440004215273058e-05,
+      "psnr_db": 46.30042314553705,
+      "direct": {
+        "time": 0.0,
+        "render_seconds": 48.74277567300305,
+        "all_finite": true,
+        "min": 0.023042771965265274,
+        "max": 1.0,
+        "mean_rgb": [
+          0.39722347259521484,
+          0.535270094871521,
+          0.6737685203552246
+        ],
+        "pixel_sha256": "e9a85df2ecc684f9d67043e61d84efd4b61ab77273821d565d8ebf7f4808c6e4",
+        "float_sha256": "6de2bdfb96f343e7670f12db66e042f2fd7e5e04707087d74b6d8c21cf3e9124",
+        "renderer_kind": "direct",
+        "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+        "grid": [
+          1024,
+          384,
+          896
+        ],
+        "bounds": [
+          [
+            -42.0,
+            -14.0,
+            -2.0
+          ],
+          [
+            48.0,
+            14.0,
+            74.0
+          ]
+        ],
+        "storage_dtype": "f2"
+      },
+      "cached": {
+        "time": 0.0,
+        "render_seconds": 1.0454786460031755,
+        "all_finite": true,
+        "min": 0.023042771965265274,
+        "max": 1.0,
+        "mean_rgb": [
+          0.3974567651748657,
+          0.535173237323761,
+          0.6734968423843384
+        ],
+        "pixel_sha256": "3b4666330f55db57752e9616e3027b696f0f3c6f9d3c7335fbbb4b025d2433e9",
+        "float_sha256": "8755d85ac9d083b7744cab00f25f85743d481f1b67d4a0e53488697899f53861",
+        "renderer_kind": "offline_interpolated_field",
+        "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+        "grid": [
+          1024,
+          384,
+          896
+        ],
+        "bounds": [
+          [
+            -42.0,
+            -14.0,
+            -2.0
+          ],
+          [
+            48.0,
+            14.0,
+            74.0
+          ]
+        ],
+        "storage_dtype": "f2",
+        "index": 0,
+        "width": 320,
+        "height": 180,
+        "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+      },
+      "frame_speedup": 46.622449783498496
+    },
+    {
+      "time": 8.4,
+      "all_finite": true,
+      "exact_reference_reused": false,
+      "mean_absolute_rgb_error": 0.006227176170796156,
+      "max_absolute_rgb_error": 0.13919492065906525,
+      "percentile_absolute_rgb_error": {
+        "50": 0.004216820001602173,
+        "90": 0.012324707582592964,
+        "95": 0.016502751037478447,
+        "99": 0.03835415840148926,
+        "99.9": 0.1037817969918251
+      },
+      "mse": 0.00010411507845513372,
+      "psnr_db": 39.824863692824984,
+      "direct": {
+        "time": 8.4,
+        "render_seconds": 49.42065586001263,
+        "all_finite": true,
+        "min": 0.09579656273126602,
+        "max": 1.0,
+        "mean_rgb": [
+          0.5335530042648315,
+          0.6235306262969971,
+          0.7206757068634033
+        ],
+        "pixel_sha256": "c0c2385fd57d97afe71df80398b9391372d0ab32376d51b7b4ba2db9062a5686",
+        "float_sha256": "452728fdfc15c0c801e056aee950a961b0857ab44da70533190c6e82a98729c8",
+        "renderer_kind": "direct",
+        "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+        "grid": [
+          1024,
+          384,
+          896
+        ],
+        "bounds": [
+          [
+            -42.0,
+            -14.0,
+            -2.0
+          ],
+          [
+            48.0,
+            14.0,
+            74.0
+          ]
+        ],
+        "storage_dtype": "f2"
+      },
+      "cached": {
+        "time": 8.4,
+        "render_seconds": 0.598318919990561,
+        "all_finite": true,
+        "min": 0.10881482064723969,
+        "max": 1.0,
+        "mean_rgb": [
+          0.5386931300163269,
+          0.6262766718864441,
+          0.722040057182312
+        ],
+        "pixel_sha256": "090ead0fbdac71e8fcc50d18d20d2db3953115eea4922aa49bdecb1e62239d57",
+        "float_sha256": "93ab4e7ca102dc1edc80d3c2704ea5f4b6802bb1300877fa01e6e12201e783ce",
+        "renderer_kind": "offline_interpolated_field",
+        "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+        "grid": [
+          1024,
+          384,
+          896
+        ],
+        "bounds": [
+          [
+            -42.0,
+            -14.0,
+            -2.0
+          ],
+          [
+            48.0,
+            14.0,
+            74.0
+          ]
+        ],
+        "storage_dtype": "f2",
+        "index": 1,
+        "width": 320,
+        "height": 180,
+        "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+      },
+      "frame_speedup": 82.59918616779207
+    },
+    {
+      "time": 9.958333,
+      "all_finite": true,
+      "exact_reference_reused": false,
+      "mean_absolute_rgb_error": 0.0034016715362668037,
+      "max_absolute_rgb_error": 0.14866569638252258,
+      "percentile_absolute_rgb_error": {
+        "50": 0.001021265983581543,
+        "90": 0.008704490959644318,
+        "95": 0.013188662007451057,
+        "99": 0.03185787796974182,
+        "99.9": 0.08464976400136948
+      },
+      "mse": 5.994103098112144e-05,
+      "psnr_db": 42.22275791494455,
+      "direct": {
+        "time": 9.958333,
+        "render_seconds": 56.14888733100088,
+        "all_finite": true,
+        "min": 0.023042771965265274,
+        "max": 1.0,
+        "mean_rgb": [
+          0.42858704924583435,
+          0.5486257076263428,
+          0.6727622747421265
+        ],
+        "pixel_sha256": "2cd550b8c5584d877d8384bcf9e58ea938295c36b082c9234bbfb4ada9f06aba",
+        "float_sha256": "5e70ba3715595501d754c8ee7a5c3f9616980910cfc2f388967ac783a527887d",
+        "renderer_kind": "direct",
+        "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+        "grid": [
+          1024,
+          384,
+          896
+        ],
+        "bounds": [
+          [
+            -42.0,
+            -14.0,
+            -2.0
+          ],
+          [
+            48.0,
+            14.0,
+            74.0
+          ]
+        ],
+        "storage_dtype": "f2"
+      },
+      "cached": {
+        "time": 9.958333,
+        "render_seconds": 0.7276289879955584,
+        "all_finite": true,
+        "min": 0.023042771965265274,
+        "max": 1.0,
+        "mean_rgb": [
+          0.4297468662261963,
+          0.5490642786026001,
+          0.6727498173713684
+        ],
+        "pixel_sha256": "9db7ff5de57f43dafbb5e41a1acdf8f56f2c6536d3eeb2b8f5be9d0cc4e1e7ea",
+        "float_sha256": "a12c01218342c21275c4cc6d95b3b1c5090603325f539c351040bee3c31ef230",
+        "renderer_kind": "offline_interpolated_field",
+        "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+        "grid": [
+          1024,
+          384,
+          896
+        ],
+        "bounds": [
+          [
+            -42.0,
+            -14.0,
+            -2.0
+          ],
+          [
+            48.0,
+            14.0,
+            74.0
+          ]
+        ],
+        "storage_dtype": "f2",
+        "index": 2,
+        "width": 320,
+        "height": 180,
+        "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+      },
+      "frame_speedup": 77.16691920930398
+    }
+  ],
+  "approximation": "World-space trilinear interpolation of density; light cache integrates trilinear 4-octave density and stores density-weighted transmittance; outside-cache probes evaluate source density and light exactly; no frame interpolation or image upscaling"
+}

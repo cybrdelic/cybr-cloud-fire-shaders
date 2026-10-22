@@ -1,0 +1,10 @@
+{
+  "float16_vs_float32": {
+    "mae": 5.636412879539421e-06,
+    "max": 6.896257400512695e-05,
+    "p99": 4.850028199143708e-05
+  },
+  "fallback_report": "cloud-v16/cache-fallback-smoke/cache-audit-0.json",
+  "rectangular_float32_report": "cloud-v16/cache-smoke/cache-audit-0.json",
+  "rectangular_float16_report": "cloud-v16/cache-half-smoke/cache-audit-0.json"
+}

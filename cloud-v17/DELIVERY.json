@@ -1,0 +1,55 @@
+{
+  "title": "Cloud Flight \u2014 completed V17 continuation",
+  "created_at_utc": "2026-10-22T11:19:44.935157+00:00",
+  "provenance": "Reconstructed from saved V16 source and the shared conversation design; all V17 frames newly rendered.",
+  "videos": {
+    "cinematic": {
+      "file": "cinematic-cloud-flight.mp4",
+      "sha256": "e5d9ffb5352f406bed97e9623e7d7a36796a550adb54e89e03830e53984daeb0",
+      "bytes": 1713012,
+      "width": 1280,
+      "height": 720,
+      "frames": 240,
+      "fps": 24,
+      "duration_seconds": 10,
+      "unique_rendered_frames": 240,
+      "unique_decoded_video_frames": 240,
+      "strict_decode_passed": true,
+      "verification_report": "validation/cinematic-delivery.json"
+    },
+    "erosion": {
+      "file": "erosion-flight-493.mp4",
+      "sha256": "34600636f3f145533f41c33d420a76c30ed6ede43866ebee8710cb900cb5c6a4",
+      "bytes": 1417691,
+      "width": 1280,
+      "height": 720,
+      "frames": 240,
+      "fps": 24,
+      "duration_seconds": 10,
+      "unique_rendered_frames": 240,
+      "unique_decoded_video_frames": 240,
+      "strict_decode_passed": true,
+      "verification_report": "validation/erosion-delivery.json"
+    }
+  },
+  "compact": {
+    "characters": 493,
+    "ascii": true,
+    "sha256": "30f8ad4e5313a50f6c595d742a769d38d70c4f762fa91f75dc01399d2cf02309",
+    "official_converter_validation": "validation/compact/fragcoord-compiler-validation.json"
+  },
+  "player": {
+    "file": "cloud-flight.html",
+    "sha256": "ea8d0df5fe8ad31fba050a117e0a69b53737d1ed89290acdb1937fb6e40d1c79",
+    "native_gles3_compile_and_link": true,
+    "javascript_syntax_valid": true,
+    "browser_interaction_tested": false
+  },
+  "offline_rendering": "Native 1280x720 independent frame evaluation with trilinearly reconstructed spatial density/light cache; no temporal interpolation or image enlargement.",
+  "cache_accuracy_reports": [
+    "validation/cinematic-cache/comparison.json",
+    "validation/erosion-cache/comparison.json"
+  ],
+  "visual_review": "Opening, middle and final frames decoded from both finished MP4s were inspected.",
+  "preservation": "The enclosing archive retains all prior V16 cloud and fire source entries; only its top-level README is extended."
+}

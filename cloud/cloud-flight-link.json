@@ -1,0 +1,13 @@
+{
+  "source": "cloud-v16/final/cloud-flight.txt",
+  "char_count": 497,
+  "ascii": true,
+  "source_sha256": "4a410ebe5b0ef4b96358db61d08e00feb17288a1389e95dd5f76708e485ad2fa",
+  "glsl_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+  "converter_source_url": "https://fragcoord.xyz/assets/index-DaqIJd5E.js",
+  "converter_bundle_sha256": "09da98a1f40a6f01b6d5bfd6df3fa947db82872a5cf77e62de0a86647921fb6c",
+  "conversion_executed_locally": true,
+  "remote_validation": false,
+  "exact_open_link_round_trip": true,
+  "url": "https://fragcoord.xyz/#code=ZiBnKGYzIHAsZiBiKXtmIGQ9MS4yLWxlbihmMyhtb2QocC54eiwxNiktOCxwLnkqLjY0KSkqLjI1LGE9Ljg7cCo9LjM1O0AoYiYmZD4tMS4xKmEpe2Ygdj0xO0AoaSwyNyl7ZjMgcT1mbHIocCkrZjMoaTMoaSxpLzMsaS85KSUzKS0xO3Y9bWluKHYsbGVuKHAtcS1mcmMoc2luKHErcS55engrcS56eHkqNTcpKjFlNCkpKTt9ZCs9YSooLjYtdik7cD1wKjIuMSszO2EqPS40NTt9cmV0dXJuIHNtcygwLC4xNixkKTt9ZjMgcj1ub3IoZjMoQy54eS1SLzIsUi55KSkscD1mMygzLjUsNy1ULzUsVCktci82NCxjLGs9ZjMoLjA1LC4xOCwuNCktci55Lzk7ZiB0PTE7QChpLDJlMyYmdD4uMDA1KXtwKz1yLzMyO2YgYT1leHAoLWcocCw2LikvMTEpLHM7aWYoYTwxKXtAKGosNjQpcys9ZyhwK2YzKC0yLDMsLTEpKihmKGopKy41KS80OCw0Lik7Yys9dCp-YSptaXgoayxmMyg0LDUsNikvMzArLjc4KmV4cCgtcyouMTY3KSxleHAoLWkvMWUzKSk7dCo9YTt9fU89ZjQoc3F0KGMrdCprKSwxKTs"
+}

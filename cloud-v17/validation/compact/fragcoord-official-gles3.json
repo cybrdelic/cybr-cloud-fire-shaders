@@ -1,0 +1,23 @@
+{
+  "scope": "Native OpenGL ES 3 compiler/linker, not browser or ANGLE WebGL2 runtime validation",
+  "source": "cloud-v17/validation/compact/fragcoord-official-converted.glsl",
+  "source_sha256": "dd74845071ef5647c6f3f9575008223cb702cddf0924e86faf290495495d680b",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+  "shading_language": "OpenGL ES GLSL ES 3.20",
+  "exact_player_prefix": true,
+  "vertex": {
+    "compiled": true,
+    "log": "",
+    "sha256": "9661362d96fa39ce6a268d1185ec8c66110968d17e390b0a676d7a88897e3605"
+  },
+  "fragment": {
+    "compiled": true,
+    "log": "",
+    "sha256": "be36355ac8306c31c9bd210e46d68bea4d9912d9cce4d13e00594ed513b0a20a"
+  },
+  "linked": true,
+  "link_log": "",
+  "all_compiled_linked": true,
+  "browser_runtime_tested": false
+}

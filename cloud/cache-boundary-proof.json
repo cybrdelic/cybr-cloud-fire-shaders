@@ -1,0 +1,77 @@
+{
+  "source_sha256": "7407aed8b9c1d8afe968c50539bda7c80e8c4de80685c18f83d2e007659a6d88",
+  "scope": "Any 16:9 pixel grid, time 0 through 10 seconds inclusive",
+  "pixel_centers": "Continuous screen rectangle bound, conservative for all finite resolutions",
+  "ray_samples": 2000,
+  "ray_step": 0.03125,
+  "last_midpoint_distance": 62.484375,
+  "primary_query_bounds": [
+    [
+      -38.01235924188826,
+      -22.943862006317683,
+      0.010939357147280823
+    ],
+    [
+      45.01235924188826,
+      34.94386200631769,
+      72.484375
+    ]
+  ],
+  "shadow_query_bounds": [
+    [
+      -40.6581925752216,
+      -22.912612006317683,
+      -1.3119773095193858
+    ],
+    [
+      44.99152590855493,
+      38.91261200631769,
+      72.47395833333333
+    ]
+  ],
+  "density_support_y": [
+    -12.954545454545451,
+    12.954545454545451
+  ],
+  "support_proof": "v is capped into [0,1]; each octave adds at most .6*a. Infinite sum is .8*.6/(1-.45). Envelope <=1.2-.16*abs(y). Thus density is zero when abs(y)>=(1.2+.8*.6/(1-.45))/.16.",
+  "bounds": [
+    [
+      -42.0,
+      -14.0,
+      -2.0
+    ],
+    [
+      48.0,
+      14.0,
+      74.0
+    ]
+  ],
+  "grid": [
+    1024,
+    384,
+    896
+  ],
+  "voxel_size": [
+    0.087890625,
+    0.07291666666666667,
+    0.08482142857142858
+  ],
+  "inner_interpolation_bounds": [
+    [
+      -41.9560546875,
+      -13.963541666666666,
+      -1.9575892857142858
+    ],
+    [
+      47.9560546875,
+      13.963541666666666,
+      73.95758928571429
+    ]
+  ],
+  "cache_storage": "f2",
+  "cache_bytes": 1409286144,
+  "proof": "All primary and shadow probes are within the inner cache in x/z. Any y probe outside the inner cache is in identically zero density, with over one world unit of empty margin. Consequently no cached/exact transition intersects nonzero cloud density in this ten-second clip.",
+  "cache_boundary_visible_transition": false,
+  "recommended_workers": 2,
+  "numerical_roundoff_allowance": "All relevant x margins exceed 1 world unit and the smallest z margin exceeds .6 world units, far above float accumulation roundoff."
+}

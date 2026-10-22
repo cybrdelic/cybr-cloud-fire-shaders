@@ -1,0 +1,60 @@
+{
+  "scope": "Exact original-source embedding and native GLES 3 compile/link of the actual HTML runtime strings; no drawing",
+  "browser_runtime_tested": false,
+  "html_sha256": "ea8d0df5fe8ad31fba050a117e0a69b53737d1ed89290acdb1937fb6e40d1c79",
+  "compact_characters": 493,
+  "compact_ascii": true,
+  "compact_sha256": "30f8ad4e5313a50f6c595d742a769d38d70c4f762fa91f75dc01399d2cf02309",
+  "compact_exact": true,
+  "external_script_dependencies": false,
+  "scenes": {
+    "cinematic": {
+      "source_exact": true,
+      "source_sha256": "67c4b5ada8d4c5eba51ea88cb2d872187ea0edd1aeebd6c173d345c2dd75ce52",
+      "runtime_sha256": "508415351af3f4557c48736b708491746308ff408aa3505824b9bee41f1075e5",
+      "native_gles3": {
+        "vertex": {
+          "compiled": true,
+          "log": "",
+          "sha256": "eb24568221957dba47cf90903957d20935b0f8bdae19003d31f0c97baf07ee0f"
+        },
+        "fragment": {
+          "compiled": true,
+          "log": "",
+          "sha256": "508415351af3f4557c48736b708491746308ff408aa3505824b9bee41f1075e5"
+        },
+        "linked": true,
+        "link_log": "",
+        "passed": true
+      },
+      "standalone_webgl2_export_exact": true,
+      "standalone_webgl2_sha256": "508415351af3f4557c48736b708491746308ff408aa3505824b9bee41f1075e5",
+      "download_selects_runtime": true
+    },
+    "erosion": {
+      "source_exact": true,
+      "source_sha256": "8172ddac76108355b97b502e1002dee90d64d571200503989f5f7ddffbcb7f39",
+      "runtime_sha256": "ff2a450b6ae454bda2e1bd661fb0c1b002356c26d2381939af5f71b4ddd6feb3",
+      "native_gles3": {
+        "vertex": {
+          "compiled": true,
+          "log": "",
+          "sha256": "eb24568221957dba47cf90903957d20935b0f8bdae19003d31f0c97baf07ee0f"
+        },
+        "fragment": {
+          "compiled": true,
+          "log": "",
+          "sha256": "ff2a450b6ae454bda2e1bd661fb0c1b002356c26d2381939af5f71b4ddd6feb3"
+        },
+        "linked": true,
+        "link_log": "",
+        "passed": true
+      }
+    }
+  },
+  "javascript_parse_passed": true,
+  "javascript_parse_log": "",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "gles_version": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.2",
+  "passed": true
+}

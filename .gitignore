@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+cloud-v17/cache/*.bin
+cloud-v17/frames/
+cloud-v17/direct-reference/
+pressure_fire/checkpoints/
+pressure_fire/production_oil96/
+pressure_fire/euler
