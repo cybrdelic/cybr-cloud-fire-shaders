@@ -117,10 +117,12 @@ function setUniforms(t,dt){for(const [name,u] of Object.entries(active.uniforms)
 function completePending(now){
  if(!pending)return true;
  const submitted=pending;
- if(now-submitted.started>10000){gl.deleteSync(submitted.sync);pending=null;error('This GPU did not finish a frame within 10 seconds. Restart or use the rendered video.','Frame time limit reached; no further frames will be submitted.');return false;}
  const result=gl.clientWaitSync(submitted.sync,0,0);
  if(result===gl.WAIT_FAILED){gl.deleteSync(submitted.sync);pending=null;error('The browser could not complete a graphics frame. Try a lower preview resolution or use the rendered video.','WebGL synchronization returned WAIT_FAILED.');return false;}
- if(result!==gl.ALREADY_SIGNALED&&result!==gl.CONDITION_SATISFIED)return false;
+ if(result!==gl.ALREADY_SIGNALED&&result!==gl.CONDITION_SATISFIED){
+  if(now-submitted.started>10000){gl.deleteSync(submitted.sync);pending=null;error('This GPU did not finish a frame within 10 seconds. Restart or use the rendered video.','Frame time limit reached; no further frames will be submitted.');}
+  return false;
+ }
  gl.deleteSync(submitted.sync);pending=null;
  if(submitted.generation!==sceneGeneration||submitted.scene!==sceneKey)return true;
  displayedTime=submitted.time;const elapsed=now-submitted.started;

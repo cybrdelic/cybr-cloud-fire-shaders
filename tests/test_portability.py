@@ -2,6 +2,7 @@ from pathlib import Path
 import contextlib
 import io
 import sys
+import subprocess
 import tempfile
 import types
 import unittest
@@ -14,6 +15,9 @@ import fields
 import numpy as np
 
 class PortabilityTests(unittest.TestCase):
+    def test_completed_frame_before_elapsed_policy(self):
+        subprocess.run(['node',str(ROOT/'tests/test_frame_completion.cjs')],check=True)
+
     def test_desktop_noise_namespace_preserves_body_and_builtin_calls(self):
         original='float noise3(vec3 p) { return p.x*p.y; } void main(){ float n=noise3(vec3(1)); }'
         self.assertEqual(portable_gl.desktop_identifiers(original).replace('cybr_scalar_noise3','noise3'),original)

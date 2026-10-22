@@ -21,7 +21,17 @@ COMPLETED="""expected => {
 }"""
 
 def wait_for_completed(page,scene,generation,minimum_frames=1,timeout=45000):
-    page.wait_for_function(COMPLETED,arg={'scene':scene,'generation':generation,'minimumFrames':minimum_frames},polling=50,timeout=timeout)
+    try:
+        page.wait_for_function(COMPLETED,arg={'scene':scene,'generation':generation,'minimumFrames':minimum_frames},polling=50,timeout=timeout)
+    except PlaywrightTimeoutError:
+        # Preserve the actual terminal state; do not reinterpret a stopped frame
+        # or capability fallback as a completed render.
+        if timeout > 300:
+            failure=page.evaluate("""() => ({diagnostics:window.getCloudPreviewDiagnostics(),
+                summary:document.getElementById('errorSummary').textContent,
+                detail:document.getElementById('errorLog').textContent})""")
+            (output/'failure.json').write_text(json.dumps(failure,indent=2)+'\n')
+        raise
     return page.evaluate('window.getCloudPreviewDiagnostics()')
 
 def hold_animation_frames(page):

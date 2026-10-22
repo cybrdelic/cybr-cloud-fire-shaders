@@ -36,4 +36,6 @@ python tests/browser_smoke.py
 
 The CI matrix runs core tests, the small C++ simulation and browser checks on Windows, macOS and Linux. CI configuration is not evidence that remote CI has already passed. Native GPU drivers vary; hosted CI browser execution is not a hardware-performance benchmark.
 
+Completed GPU fences are checked before the elapsed-time policy: a delayed browser poll must not discard an already completed frame. A still-pending fence beyond ten seconds continues to stop new work, and stale scene/generation fences cannot count. The production completion function has a regression for each case. Hosted Windows initially completed the cinematic scene but failed waiting for the erosion scene; failure diagnostics are retained rather than treating that result as a passed renderer check.
+
 The historical `cloud-v17/src/check_essl.py` and `check_cloud_essl.py` are Linux EGL diagnostic scripts. Use the maintained portable `tools/verify_player.py` and actual browser checks above for current validation. No renderer equation, integration rule, simulation model, existing license or historical media is replaced by the portability layer.
