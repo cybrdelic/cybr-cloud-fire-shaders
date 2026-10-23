@@ -7,6 +7,10 @@ os.environ.setdefault('MESA_SHADER_CACHE_DIR','/tmp/fragcoord-mesa-cache')
 sys.path.insert(0,'/tmp/fragcoord-deps')
 import numpy as np
 import moderngl
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
+from portable_gl import create_context
 ROOT=Path(__file__).resolve().parent
 def pack(U):
  nz,ny,nx,_=U.shape;tw,th=nx*8,ny*((nz+7)//8)
@@ -27,7 +31,7 @@ def unpack(v,shape):
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('initial',type=Path);ap.add_argument('--cpu',type=Path);ap.add_argument('--out',type=Path,default=ROOT/'gpu-check.json');ap.add_argument('--steps',type=int,default=1);ap.add_argument('--initialize',action='store_true')
  args=ap.parse_args();U=np.load(args.initial)['U'];packed=pack(U);h,w,_=packed.shape
- ctx=moderngl.create_standalone_context(backend='egl')
+ ctx=create_context()
  prefix='#version 330\nuniform vec2 u_resolution;uniform float u_time,u_time_delta;uniform int u_frame,u_recursion,u_max_recursion;uniform sampler2D u_pass1,u_pass2;out vec4 fragColor;\n'
  vs='#version 330\nin vec2 position;void main(){gl_Position=vec4(position,0,1);}'
  common=(ROOT/'fragcoord/common.glsl').read_text()

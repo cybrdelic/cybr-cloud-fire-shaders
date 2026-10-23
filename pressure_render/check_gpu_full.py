@@ -9,6 +9,10 @@ from pathlib import Path
 sys.path.insert(0,'/tmp/fragcoord-deps')
 import numpy as np
 import moderngl
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
+from portable_gl import create_context
 from check_gpu import pack,unpack
 
 ROOT=Path(__file__).resolve().parent
@@ -31,7 +35,7 @@ def main():
     zero=pack(np.zeros(shape,dtype='f4'));h,w,_=zero.shape
     target_steps=int(round(args.end/dt))
     assert abs(target_steps*dt-args.end)<1e-9
-    ctx=moderngl.create_standalone_context(backend='egl')
+    ctx=create_context()
     prefix='#version 330\nuniform vec2 u_resolution;uniform float u_time,u_time_delta;uniform int u_frame,u_recursion,u_max_recursion;uniform sampler2D u_pass1,u_pass2;out vec4 fragColor;\n'
     vs='#version 330\nin vec2 position;void main(){gl_Position=vec4(position,0,1);}'
     programs={name:ctx.program(vertex_shader=vs,fragment_shader=prefix+common+sources[name]) for name in ['simulation','shading','main']}

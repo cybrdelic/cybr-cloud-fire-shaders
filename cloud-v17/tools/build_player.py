@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build an offline, dependency-free WebGL2 player from the delivered sources.
 
-The original GLSL strings are embedded byte-for-byte. The runtime copy gets
+The original GLSL strings are embedded with canonical LF newlines. The runtime copy gets
 an ES 3.00 preamble where needed; that adaptation is recorded in the manifest.
 The cinematic download is that complete runtime, also written to a GLSL file.
 This wrapper is not part of the compact FragCoord character count.
@@ -22,8 +22,9 @@ def digest(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
-def read_exact(path: Path) -> str:
-    return path.read_bytes().decode("utf-8")
+def read_source(path: Path) -> str:
+    """Git may check text out as CRLF on Windows; keep generated payloads portable."""
+    return path.read_bytes().decode("utf-8").replace("\r\n", "\n")
 
 
 def fragment_for_webgl(source: str) -> str:
@@ -89,22 +90,53 @@ const DURATION=10;
 const VERTEX='#version 300 es\nvoid main(){vec2 p=vec2(float((gl_VertexID<<1)&2),float(gl_VertexID&2));gl_Position=vec4(p*2.0-1.0,0.0,1.0);}';
 const $=id=>document.getElementById(id);
 const canvas=$('canvas'),playButton=$('play'),scrub=$('scrub'),clock=$('clock'),scenePicker=$('scene'),qualityPicker=$('quality');
+function initialPreviewQuality(search,options){
+ const requested=new URLSearchParams(search).getAll('preview');
+ return requested.length===1&&options.includes(requested[0])?requested[0]:'auto';
+}
+// Apply an explicit, visible cap before setup can schedule the first draw.
+qualityPicker.value=initialPreviewQuality(location.search,Array.from(qualityPicker.options,option=>option.value));
 const programs=new Map();
 let gl=null,vao=null,active=null,pending=null,raf=0,playing=false,lost=false,failed=false,dirty=true;
 let logicalTime=0,displayedTime=0,lastClock=null,frame=0,lastDelta=0,autoCap=matchMedia('(pointer:coarse)').matches?240:320;
 let lastSubmit=0,submittedTime=0,submissionStart=0,completedFrames=0,emaFrameMs=0;
 let sceneKey='cinematic';
+let sceneGeneration=0,lastCompleted=null;
+window.getCloudPreviewDiagnostics=()=>({scene:sceneKey,generation:sceneGeneration,quality:qualityPicker.value,completedFrames,lastCompleted:lastCompleted?{...lastCompleted}:null,pending:!!pending,failed,lost});
 $('source').value=COMPACT;
 function error(summary,details){failed=true;playing=false;playButton.textContent='Play';$('errorSummary').textContent=summary;$('errorLog').textContent=details||'';$('error').classList.add('visible');$('stageStatus').textContent='Preview stopped';$('status').textContent='The rendered videos remain available.';if(raf)cancelAnimationFrame(raf);raf=0;}
 function compile(type,source){const shader=gl.createShader(type);gl.shaderSource(shader,source);gl.compileShader(shader);if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS)){const message=gl.getShaderInfoLog(shader)||'No compiler log returned.';gl.deleteShader(shader);throw new Error(message);}return shader;}
 function makeProgram(key){const source=SCENES[key];let vertex=null,fragment=null,program=null;try{vertex=compile(gl.VERTEX_SHADER,VERTEX);fragment=compile(gl.FRAGMENT_SHADER,source.runtime);program=gl.createProgram();gl.attachShader(program,vertex);gl.attachShader(program,fragment);gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error(gl.getProgramInfoLog(program)||'Program linking failed.');const uniforms={};for(let i=0;i<gl.getProgramParameter(program,gl.ACTIVE_UNIFORMS);i++){const info=gl.getActiveUniform(program,i);uniforms[info.name]={location:gl.getUniformLocation(program,info.name),type:info.type};}return {program,uniforms};}catch(e){if(program)gl.deleteProgram(program);throw e;}finally{if(vertex)gl.deleteShader(vertex);if(fragment)gl.deleteShader(fragment);}}
 function setup(){gl=canvas.getContext('webgl2',{alpha:false,antialias:false,depth:false,stencil:false,preserveDrawingBuffer:false,powerPreference:'high-performance'});if(!gl)throw new Error('This browser did not provide a WebGL2 context.');vao=gl.createVertexArray();gl.bindVertexArray(vao);gl.disable(gl.BLEND);gl.disable(gl.DEPTH_TEST);gl.disable(gl.DITHER);gl.clearColor(.04,.08,.13,1);programs.clear();pending=null;activate(sceneKey);}
-function activate(key){sceneKey=key;const scene=SCENES[key];$('heading').textContent=scene.label;$('videoLink').href=scene.video;$('videoLink').hidden=!scene.video;canvas.setAttribute('aria-label',scene.label+' procedural cloud preview');$('downloadCompact').hidden=key!=='erosion';$('copyCompact').hidden=key!=='erosion';$('source').hidden=key!=='erosion';$('sourceNote').textContent=key==='erosion'?'The complete compact FragCoord source is '+COMPACT.length+' ASCII characters. Expanded GLSL and this viewer are separate. The preview runs locally; playback speed depends on your device.':'This scene uses the full cinematic GLSL source. The preview runs locally; playback speed depends on your device. The rendered video uses a separate offline rendering path.';try{if(!programs.has(key))programs.set(key,makeProgram(key));active=programs.get(key);failed=false;$('error').classList.remove('visible');dirty=true;logicalTime=0;displayedTime=0;frame=0;lastClock=null;lastSubmit=0;completedFrames=0;emaFrameMs=0;playing=false;sync();schedule();}catch(e){error('The '+scene.label.toLowerCase()+' shader could not compile in this browser. The compiler details are below.',e.message);}}
+function activate(key){
+ sceneKey=key;sceneGeneration++;completedFrames=0;lastCompleted=null;
+ // Retiring the old fence does not cancel GPU work, but it prevents attributing
+ // that work to the newly selected scene. Only the new scene's fence can count.
+ if(pending){gl.deleteSync(pending.sync);pending=null;}
+ $('stageStatus').textContent='Preparing '+SCENES[key].label;
+ const scene=SCENES[key];$('heading').textContent=scene.label;$('videoLink').href=scene.video;$('videoLink').hidden=!scene.video;canvas.setAttribute('aria-label',scene.label+' procedural cloud preview');$('downloadCompact').hidden=key!=='erosion';$('copyCompact').hidden=key!=='erosion';$('source').hidden=key!=='erosion';$('sourceNote').textContent=key==='erosion'?'The complete compact FragCoord source is '+COMPACT.length+' ASCII characters. Expanded GLSL and this viewer are separate. The preview runs locally; playback speed depends on your device.':'This scene uses the full cinematic GLSL source. The preview runs locally; playback speed depends on your device. The rendered video uses a separate offline rendering path.';try{if(!programs.has(key))programs.set(key,makeProgram(key));active=programs.get(key);failed=false;$('error').classList.remove('visible');dirty=true;logicalTime=0;displayedTime=0;frame=0;lastClock=null;lastSubmit=0;emaFrameMs=0;playing=false;sync();schedule();}catch(e){error('The '+scene.label.toLowerCase()+' shader could not compile in this browser. The compiler details are below.',e.message);}
+}
 function sync(){playButton.textContent=playing?'Pause':'Play';scrub.value=String(logicalTime);clock.textContent=logicalTime.toFixed(2)+' / 10 s';}
 function resize(){const box=canvas.getBoundingClientRect();const cap=qualityPicker.value==='auto'?autoCap:Number(qualityPicker.value);const width=Math.max(2,Math.round(Math.min(cap,Math.max(2,box.width)*Math.min(devicePixelRatio||1,2))/2)*2);const height=Math.max(2,Math.round(width*9/16));if(canvas.width!==width||canvas.height!==height){canvas.width=width;canvas.height=height;dirty=true;}}
 function schedule(){if(!raf&&!lost&&!failed&&!document.hidden)raf=requestAnimationFrame(tick);}
 function setUniforms(t,dt){for(const [name,u] of Object.entries(active.uniforms)){if(name==='u_resolution'||name==='iResolution'){if(u.type===gl.FLOAT_VEC3)gl.uniform3f(u.location,canvas.width,canvas.height,1);else gl.uniform2f(u.location,canvas.width,canvas.height);}else if(name==='u_time'||name==='iTime')gl.uniform1f(u.location,t);else if(name==='u_time_delta'||name==='iTimeDelta')gl.uniform1f(u.location,dt);else if(name==='u_frame'||name==='iFrame')gl.uniform1i(u.location,frame);}}
-function completePending(now){if(!pending)return true;const result=gl.clientWaitSync(pending,0,0);if(result===gl.WAIT_FAILED){gl.deleteSync(pending);pending=null;error('The browser could not complete a graphics frame. Try a lower preview resolution or use the rendered video.','WebGL synchronization returned WAIT_FAILED.');return false;}if(result!==gl.ALREADY_SIGNALED&&result!==gl.CONDITION_SATISFIED)return false;gl.deleteSync(pending);pending=null;displayedTime=submittedTime;const elapsed=now-submissionStart;emaFrameMs=completedFrames?emaFrameMs*.8+elapsed*.2:elapsed;completedFrames++;if(qualityPicker.value==='auto'&&elapsed>180&&autoCap>160){autoCap=Math.max(160,Math.floor(autoCap*.75/16)*16);dirty=true;}return true;}
+function completePending(now){
+ if(!pending)return true;
+ const submitted=pending;
+ const result=gl.clientWaitSync(submitted.sync,0,0);
+ if(result===gl.WAIT_FAILED){gl.deleteSync(submitted.sync);pending=null;error('The browser could not complete a graphics frame. Try a lower preview resolution or use the rendered video.','WebGL synchronization returned WAIT_FAILED.');return false;}
+ if(result!==gl.ALREADY_SIGNALED&&result!==gl.CONDITION_SATISFIED){
+  if(now-submitted.started>10000){gl.deleteSync(submitted.sync);pending=null;error('This GPU did not finish a frame within 10 seconds. Restart or use the rendered video.','Frame time limit reached; no further frames will be submitted.');}
+  return false;
+ }
+ gl.deleteSync(submitted.sync);pending=null;
+ if(submitted.generation!==sceneGeneration||submitted.scene!==sceneKey)return true;
+ displayedTime=submitted.time;const elapsed=now-submitted.started;
+ emaFrameMs=completedFrames?emaFrameMs*.8+elapsed*.2:elapsed;completedFrames++;
+ lastCompleted={scene:submitted.scene,generation:submitted.generation,frame:submitted.frame,time:submitted.time,width:submitted.width,height:submitted.height};
+ if(qualityPicker.value==='auto'&&elapsed>180&&autoCap>160){autoCap=Math.max(160,Math.floor(autoCap*.75/16)*16);dirty=true;}
+ return true;
+}
 function tick(now){
  raf=0;if(lost||failed||document.hidden)return;
  const ready=completePending(now);if(failed)return;
@@ -113,7 +145,7 @@ function tick(now){
   if(playing||dirty){
    if(playing){const elapsed=lastClock===null?0:Math.max(0,(now-lastClock)/1000);lastDelta=Math.min(elapsed,1/24);logicalTime=Math.min(DURATION,logicalTime+lastDelta);if(logicalTime>=DURATION)playing=false;}
    sync();
-   gl.viewport(0,0,canvas.width,canvas.height);gl.useProgram(active.program);gl.bindVertexArray(vao);setUniforms(logicalTime,lastDelta);gl.drawArrays(gl.TRIANGLES,0,3);pending=gl.fenceSync(gl.SYNC_GPU_COMMANDS_COMPLETE,0);gl.flush();submissionStart=now;submittedTime=logicalTime;lastSubmit=now;lastClock=now;frame++;dirty=false;
+   gl.viewport(0,0,canvas.width,canvas.height);gl.useProgram(active.program);gl.bindVertexArray(vao);setUniforms(logicalTime,lastDelta);gl.drawArrays(gl.TRIANGLES,0,3);pending={sync:gl.fenceSync(gl.SYNC_GPU_COMMANDS_COMPLETE,0),scene:sceneKey,generation:sceneGeneration,frame,time:logicalTime,width:canvas.width,height:canvas.height,started:now};gl.flush();submissionStart=now;submittedTime=logicalTime;lastSubmit=now;lastClock=now;frame++;dirty=false;
   }
  }
  sync();const size=canvas.width+' × '+canvas.height;$('stageStatus').textContent=pending?'Rendering '+submittedTime.toFixed(2)+' s':(playing?'Playing':'Paused')+' · '+displayedTime.toFixed(2)+' s';$('status').textContent=size+' preview'+(emaFrameMs>0?' · '+Math.round(emaFrameMs)+' ms frame-time estimate':'')+(qualityPicker.value==='auto'?' · auto resolution':'');if(playing||dirty||pending)schedule();
@@ -143,9 +175,9 @@ def safe_json(value: object) -> str:
 
 
 def build(args: argparse.Namespace) -> dict:
-    cinematic = read_exact(args.cinematic)
-    erosion = read_exact(args.erosion)
-    compact = read_exact(args.compact)
+    cinematic = read_source(args.cinematic)
+    erosion = read_source(args.erosion)
+    compact = read_source(args.compact)
     if not compact.isascii():
         raise ValueError("The compact FragCoord source must be ASCII.")
     if args.expected_compact_chars and len(compact) != args.expected_compact_chars:
@@ -171,7 +203,7 @@ def build(args: argparse.Namespace) -> dict:
     cinematic_webgl_output.parent.mkdir(parents=True, exist_ok=True)
     cinematic_webgl_output.write_bytes(scenes["cinematic"]["runtime"].encode("utf-8"))
     result = {
-        "output": str(args.output.resolve()),
+        "output": args.output.name,
         "html_sha256": digest(page),
         "compact_characters": len(compact),
         "compact_ascii": True,
@@ -184,11 +216,12 @@ def build(args: argparse.Namespace) -> dict:
         "external_network_dependencies": [],
         "video_links_are_relative_sibling_files": not args.no_video_links,
         "exact_original_glsl_embedding": True,
+        "source_line_endings": "LF; CRLF checkout newlines normalized without changing source text",
         "glsl_downloads": {
             "cinematic": {"filename": "cinematic-webgl2.glsl", "content": "exact compiled WebGL2 runtime", "sha256": digest(scenes["cinematic"]["runtime"])},
             "erosion": {"filename": "erosion-flight.glsl", "content": "exact expanded GLSL input", "sha256": digest(erosion)},
         },
-        "cinematic_webgl_output": str(cinematic_webgl_output.resolve()),
+        "cinematic_webgl_output": "src/" + cinematic_webgl_output.name,
         "wrapper_excluded_from_compact_count": True,
         "browser_runtime_tested": False,
         "provenance": "New continuation built from recovered V16 source and the documented V17 design; not resumed original V17 frames.",

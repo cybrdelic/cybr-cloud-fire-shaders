@@ -217,8 +217,8 @@ Use `--no-video-links` when distributing the HTML without the MP4 files.
 The runtime shader is adapted to GLSL ES 3.00 with a precision preamble and
 any missing standard uniforms. A source that supplies `mainImage` without
 `main` receives a small output wrapper with its own global fragment output;
-an existing `main` is retained. The original source embedding is byte-for-byte
-identical to its input. The cinematic GLSL download includes this wrapper and
+an existing `main` is retained. The original source embedding is identical to
+its input after CRLF-to-LF newline normalization for portable checkouts. The cinematic GLSL download includes this wrapper and
 is byte-for-byte identical to the runtime compiled by the viewer; the erosion
 download is its already complete expanded GLSL input. The build manifest
 distinguishes original-source, runtime, and download hashes. This wrapper does

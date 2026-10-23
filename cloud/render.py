@@ -12,6 +12,10 @@ for dep in ['/tmp/fragcoord-py','/tmp/fragcoord-deps']:
         sys.path.insert(0,dep);break
 import argparse,hashlib,json,time
 import moderngl
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
+from portable_gl import create_context
 import numpy as np
 from PIL import Image,ImageDraw
 
@@ -28,7 +32,7 @@ void main(){gl_Position=vec4(position,0,1);}
 class Renderer:
     def __init__(self,source,width=640,height=360):
         self.width,self.height=width,height
-        self.ctx=moderngl.create_standalone_context(backend='egl',require=330)
+        self.ctx=create_context(require=330)
         self.program=self.ctx.program(vertex_shader=VERTEX,fragment_shader=PREFIX+source)
         self.vbo=self.ctx.buffer(np.array([-1,-1,3,-1,-1,3],dtype='f4').tobytes())
         self.vao=self.ctx.vertex_array(self.program,[(self.vbo,'2f','position')])

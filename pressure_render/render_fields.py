@@ -15,6 +15,10 @@ import numpy as np
 from scipy.ndimage import gaussian_filter, shift
 from PIL import Image
 import moderngl
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
+from portable_gl import create_context
 
 VERTEX = '#version 330\nin vec2 position;void main(){gl_Position=vec4(position,0,1);}'
 FRAGMENT = '''#version 330
@@ -110,7 +114,7 @@ def shade(U,cell,gamma=1.3,ambient_pressure=1.,ambient_density=1.,soot_gain=38.,
 class Renderer:
     def __init__(self,width,height,domain_min,domain_max,eye,target,step,exposure):
         self.width,self.height=width,height
-        self.ctx=moderngl.create_standalone_context(backend='egl')
+        self.ctx=create_context()
         self.program=self.ctx.program(vertex_shader=VERTEX,fragment_shader=FRAGMENT)
         p=self.program
         for k,v in {'resolution':(width,height),'domainMin':domain_min,'domainMax':domain_max,
