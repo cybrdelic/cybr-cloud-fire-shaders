@@ -2,6 +2,8 @@
 
 The browser previews need a current browser with WebGL2 and a working graphics driver. Serve the repository with `python -m http.server 8000` and open `http://localhost:8000/cloud-v17/cloud-flight.html`. The controls adapt to narrow screens; Auto adjusts preview resolution, and explicit resolutions remain selectable. This is not a physical mobile-GPU qualification. The MP4 links are historical offline renders, not captures of the current preview.
 
+For a bounded first draw on a slow graphics implementation, open `http://localhost:8000/cloud-v17/cloud-flight.html?preview=160`. The selected cap is visible in the Preview control before rendering starts. Only existing options (`auto`, `160`, `240`, `320`, `480`, `640`, `960`) are accepted; missing, invalid or repeated parameters preserve Auto. Default Auto still starts at 320 pixels on desktop pointers and 240 pixels on coarse pointers. The browser smoke explicitly requests 160 from navigation, checks the first completed frame is 160 by 90, and records the reported WebGL renderer. This avoids submitting an unintended larger Auto frame before the test can change its selection; it does not change shader equations or quality behind the control.
+
 For native Python tools, install Python 3.12 and create an isolated environment:
 
 ```sh

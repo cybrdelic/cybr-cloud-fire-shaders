@@ -90,13 +90,19 @@ const DURATION=10;
 const VERTEX='#version 300 es\nvoid main(){vec2 p=vec2(float((gl_VertexID<<1)&2),float(gl_VertexID&2));gl_Position=vec4(p*2.0-1.0,0.0,1.0);}';
 const $=id=>document.getElementById(id);
 const canvas=$('canvas'),playButton=$('play'),scrub=$('scrub'),clock=$('clock'),scenePicker=$('scene'),qualityPicker=$('quality');
+function initialPreviewQuality(search,options){
+ const requested=new URLSearchParams(search).getAll('preview');
+ return requested.length===1&&options.includes(requested[0])?requested[0]:'auto';
+}
+// Apply an explicit, visible cap before setup can schedule the first draw.
+qualityPicker.value=initialPreviewQuality(location.search,Array.from(qualityPicker.options,option=>option.value));
 const programs=new Map();
 let gl=null,vao=null,active=null,pending=null,raf=0,playing=false,lost=false,failed=false,dirty=true;
 let logicalTime=0,displayedTime=0,lastClock=null,frame=0,lastDelta=0,autoCap=matchMedia('(pointer:coarse)').matches?240:320;
 let lastSubmit=0,submittedTime=0,submissionStart=0,completedFrames=0,emaFrameMs=0;
 let sceneKey='cinematic';
 let sceneGeneration=0,lastCompleted=null;
-window.getCloudPreviewDiagnostics=()=>({scene:sceneKey,generation:sceneGeneration,completedFrames,lastCompleted:lastCompleted?{...lastCompleted}:null,pending:!!pending,failed,lost});
+window.getCloudPreviewDiagnostics=()=>({scene:sceneKey,generation:sceneGeneration,quality:qualityPicker.value,completedFrames,lastCompleted:lastCompleted?{...lastCompleted}:null,pending:!!pending,failed,lost});
 $('source').value=COMPACT;
 function error(summary,details){failed=true;playing=false;playButton.textContent='Play';$('errorSummary').textContent=summary;$('errorLog').textContent=details||'';$('error').classList.add('visible');$('stageStatus').textContent='Preview stopped';$('status').textContent='The rendered videos remain available.';if(raf)cancelAnimationFrame(raf);raf=0;}
 function compile(type,source){const shader=gl.createShader(type);gl.shaderSource(shader,source);gl.compileShader(shader);if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS)){const message=gl.getShaderInfoLog(shader)||'No compiler log returned.';gl.deleteShader(shader);throw new Error(message);}return shader;}

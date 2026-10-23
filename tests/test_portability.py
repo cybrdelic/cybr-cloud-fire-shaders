@@ -15,6 +15,9 @@ import fields
 import numpy as np
 
 class PortabilityTests(unittest.TestCase):
+    def test_explicit_initial_preview_quality(self):
+        subprocess.run(['node',str(ROOT/'tests/test_initial_quality.cjs')],check=True)
+
     def test_completed_frame_before_elapsed_policy(self):
         subprocess.run(['node',str(ROOT/'tests/test_frame_completion.cjs')],check=True)
 
